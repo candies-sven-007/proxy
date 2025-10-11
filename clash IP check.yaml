@@ -1,0 +1,13 @@
+payload:
+  - DOMAIN,ipwho.is
+  - DOMAIN,api.myip.com
+  - DOMAIN,ipapi.co
+  - DOMAIN,ident.me
+  - DOMAIN,ip-api.com
+  - DOMAIN,api.ip.sb
+  - DOMAIN,ipinfo.io
+  - DOMAIN-SUFFIX,ipcheck.ing
+  - DOMAIN-SUFFIX,browserleaks.com
+  - DOMAIN-SUFFIX,ip.ping0.cc
+  - DOMAIN-SUFFIX,iplark.com
+  - DOMAIN-SUFFIX,net.netart.cn

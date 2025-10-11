@@ -1,0 +1,4 @@
+payload:
+  - GEOSITE,CN,全球直连
+  - GEOIP,LAN,全球直连,no-resolve
+  - GEOIP,CN,全球直连,no-resolve
