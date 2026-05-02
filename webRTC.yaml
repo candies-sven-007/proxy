@@ -1,4 +1,5 @@
 payload:
+  - DOMAIN-KEYWORD,stun
   - DOMAIN-SUFFIX,stun.qq.com
   - DOMAIN-SUFFIX,stun.miwifi.com
   - DOMAIN-SUFFIX,stun.chat.bilibili.com
