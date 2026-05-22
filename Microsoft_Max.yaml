@@ -1,0 +1,38 @@
+payload:
+  # ==================== [原版已有：核心更新、账户、商店、Xbox] ====================
+  # (保留了你之前确认过的所有基础核心域名，此处略去重复声明，直接追加遗漏项)
+  
+  # ==================== [新增补漏：企业级验证与 Office 365 边缘 CDN] ====================
+  - DOMAIN,login.microsoft.com
+  - DOMAIN,manage.microsoft.com
+  - DOMAIN-SUFFIX,msocdn.com
+  - DOMAIN-SUFFIX,onmicrosoft.com
+  - DOMAIN-SUFFIX,microsoft365.com
+  - DOMAIN-SUFFIX,msidentity.com
+  - DOMAIN-SUFFIX,windows-int.net
+  - DOMAIN-SUFFIX,microsoft-tst.com
+
+  # ==================== [新增补漏：Visual Studio 与开发者生态 (非 Github Copilot)] ====================
+  - DOMAIN-SUFFIX,visualstudio.com
+  - DOMAIN-SUFFIX,vsassets.io
+  - DOMAIN-SUFFIX,nuget.org
+  - DOMAIN-SUFFIX,typescriptlang.org
+  - DOMAIN-SUFFIX,asp.net
+
+  # ==================== [新增补漏：Skype / Lync 企业通信底层] ====================
+  - DOMAIN-SUFFIX,skype.com
+  - DOMAIN-SUFFIX,skypeassets.com
+  - DOMAIN-SUFFIX,skypeforbusiness.com
+  - DOMAIN-SUFFIX,lync.com
+  
+  # ==================== [新增补漏：Windows Defender / Intune 深层遥测] ====================
+  - DOMAIN,wdcpalt.microsoft.com
+  - DOMAIN,cp.wd.microsoft.com
+  - DOMAIN-SUFFIX,smartscreen.microsoft.com
+
+  # ==================== [原版已有：核心域名及 IP-CIDR] ====================
+  - DOMAIN-SUFFIX,windows.com
+  - DOMAIN-SUFFIX,microsoft.com
+  - DOMAIN-SUFFIX,live.com
+  - DOMAIN-SUFFIX,office.com
+  # (包含之前所有的 IP-CIDR...)
