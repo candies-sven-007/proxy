@@ -122,3 +122,104 @@ payload:
   - DOMAIN-SUFFIX,notion.site
   - DOMAIN-SUFFIX,notion.so
   # Notin ^
+
+  # ==================== [查漏补缺：Claude 致命级遗漏] ====================
+  # 解决：你在 Claude 网页端生成的代码、图表、SVG（Artifacts 右侧窗口）完全无法加载的问题
+  - DOMAIN-SUFFIX,claudeusercontent.com
+  - DOMAIN,api.anthropic.com
+  - DOMAIN,cdn.anthropic.com
+  - DOMAIN,servicedata.anthropic.com
+  # Claude 补全 ^
+
+  # ==================== [查漏补缺：OpenAI 开发者与 Sora 视频生态] ====================
+  # 解决：OpenAI API 调用报错，以及未来 Sora 视频生成的流量泄露
+  - DOMAIN,api.openai.com
+  - DOMAIN,platform.openai.com
+  - DOMAIN,developer.openai.com
+  - DOMAIN,dashboard.openai.com
+  - DOMAIN,sora.com
+  - DOMAIN,www.sora.com
+  - DOMAIN,api.sora.com
+  - DOMAIN,sora.openai.com
+  - DOMAIN-SUFFIX,sora.com
+  # OpenAI / Sora 补全 ^
+
+  # ==================== [查漏补缺：Google AI 工作室与隐藏 API] ====================
+  # 解决：调用 Gemini API 接口，以及使用最新 NotebookLM 时的直连 403 报错
+  - DOMAIN,aistudio.google.com
+  - DOMAIN,notebooklm.google
+  - DOMAIN,notebooklm.google.com
+  - DOMAIN,alkalimeta-pa.googleapis.com
+  - DOMAIN,geller-pa.googleapis.com
+  - DOMAIN,cloudaisandbox-pa.googleapis.com
+  # Gemini 补全 ^
+
+  # ==================== [查漏补缺：极客开发者专属 (代码助手必须走代理)] ====================
+  # 解决：目前最火的 Cursor 编辑器和 GitHub Copilot 在写代码时突然断联或被封禁
+  - DOMAIN,api.githubcopilot.com
+  - DOMAIN,copilot.github.com
+  - DOMAIN,api2.cursor.sh
+  - DOMAIN-SUFFIX,githubcopilot.com
+  - DOMAIN-SUFFIX,cursor.sh
+  - DOMAIN-SUFFIX,cursor.com
+  # Dev AI 补全 ^
+
+  # ==================== [新增补齐：Meta (Llama) 与智能搜索新势力] ====================
+  # 解决：原版完全缺失了 Perplexity (顶尖 AI 搜索) 和扎克伯格的 Meta AI
+  - DOMAIN,meta.ai
+  - DOMAIN,www.meta.ai
+  - DOMAIN,imagine.meta.com
+  - DOMAIN,perplexity.ai
+  - DOMAIN,www.perplexity.ai
+  - DOMAIN,api.perplexity.ai
+  - DOMAIN,phind.com
+  - DOMAIN-SUFFIX,meta.ai
+  - DOMAIN-SUFFIX,llma.meta.com
+  - DOMAIN-SUFFIX,perplexity.ai
+  # Meta & Search AI ^
+
+  # ==================== [新增补齐：极限算力大模型聚合平台] ====================
+  # 解决：使用 Groq (地表最快推理)、Poe (全模型聚合) 等平台时的路由错误
+  - DOMAIN,groq.com
+  - DOMAIN,api.groq.com
+  - DOMAIN,poe.com
+  - DOMAIN,character.ai
+  - DOMAIN,beta.character.ai
+  - DOMAIN,coze.com
+  - DOMAIN,api.together.xyz
+  - DOMAIN-SUFFIX,groq.com
+  - DOMAIN-SUFFIX,poe.com
+  - DOMAIN-SUFFIX,character.ai
+  - DOMAIN-SUFFIX,coze.com
+  - DOMAIN-SUFFIX,together.ai
+  # 算力平台补全 ^
+
+  # ==================== [新增补齐：音视频与数字人顶尖生态] ====================
+  # 解决：原版只覆盖了文本 AI，缺失了统治级的多媒体生成 AI
+  - DOMAIN,runwayml.com
+  - DOMAIN,app.runwayml.com
+  - DOMAIN,lumalabs.ai
+  - DOMAIN,dreammachine.lumalabs.ai
+  - DOMAIN,suno.com
+  - DOMAIN,suno.ai
+  - DOMAIN,udio.com
+  - DOMAIN,elevenlabs.io
+  - DOMAIN-SUFFIX,runwayml.com
+  - DOMAIN-SUFFIX,lumalabs.ai
+  - DOMAIN-SUFFIX,heygen.com
+  - DOMAIN-SUFFIX,suno.com
+  - DOMAIN-SUFFIX,udio.com
+  - DOMAIN-SUFFIX,elevenlabs.io
+  # Audio / Video AI ^
+
+  # ==================== [新增补齐：绘图艺术生态] ====================
+  # 解决： Midjourney 和 Stable Diffusion 等云端绘图及 API 服务
+  - DOMAIN,midjourney.com
+  - DOMAIN,www.midjourney.com
+  - DOMAIN,api.midjourney.com
+  - DOMAIN,stability.ai
+  - DOMAIN,api.stability.ai
+  - DOMAIN-SUFFIX,midjourney.com
+  - DOMAIN-SUFFIX,stability.ai
+  - DOMAIN-SUFFIX,leonardo.ai
+  # Image AI ^
