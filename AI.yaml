@@ -31,8 +31,6 @@ payload:
   - DOMAIN-SUFFIX,stripe.com
   - DOMAIN-SUFFIX,turn.livekit.cloud
   - DOMAIN-KEYWORD,openai
-  - IP-CIDR,24.199.123.28/32
-  - IP-CIDR,64.23.132.171/32
   # openai ^
   - DOMAIN,api.msn.com
   - DOMAIN,api.statsig.com
@@ -81,8 +79,6 @@ payload:
   - DOMAIN-SUFFIX,stripe.com
   - DOMAIN-SUFFIX,turn.livekit.cloud
   - DOMAIN-KEYWORD,openaicom-api
-  - IP-CIDR,24.199.123.28/32
-  - IP-CIDR,64.23.132.171/32
   # Copilot ^
   - DOMAIN,ai.google.dev
   - DOMAIN,alkalimakersuite-pa.clients6.google.com
