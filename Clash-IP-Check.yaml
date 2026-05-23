@@ -6,8 +6,8 @@ payload:
   - DOMAIN,ip-api.com
   - DOMAIN,api.ip.sb
   - DOMAIN,ipinfo.io
-  - DOMAIN-SUFFIX,ipcheck.ing
-  - DOMAIN-SUFFIX,browserleaks.com
-  - DOMAIN-SUFFIX,ip.ping0.cc
-  - DOMAIN-SUFFIX,iplark.com
-  - DOMAIN-SUFFIX,net.netart.cn
+  - DOMAIN-KEYWORD,ipcheck
+  - DOMAIN-KEYWORD,browserleaks
+  - DOMAIN-KEYWORD,ping0
+  - DOMAIN-KEYWORD,netart
+  - DOMAIN-KEYWORD,iplark
