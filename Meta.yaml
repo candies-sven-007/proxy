@@ -1,0 +1,205 @@
+# NAME: Meta
+# AUTHOR: Generated with reference to blackmatrix7/ios_rule_script
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# DESCRIPTION: Meta Platforms 全系服务分流规则
+# 覆盖: Facebook / Instagram / WhatsApp / Messenger /
+#        Threads / Oculus / Quest / Workplace /
+#        Meta 广告 / CDN 基础设施
+# 排除: Meta AI (已剔除 ai.meta.com / llama 等 AI 相关规则)
+# 建议策略: 代理
+
+payload:
+  # ==============================
+  # Meta / Facebook 核心域
+  # ==============================
+  - DOMAIN-SUFFIX,meta.com
+  - DOMAIN-SUFFIX,facebook.com
+  - DOMAIN-SUFFIX,fb.com
+  - DOMAIN-SUFFIX,fb.me
+  - DOMAIN-SUFFIX,fbcdn.net                  # Facebook CDN（图片/视频）
+  - DOMAIN-SUFFIX,fbsbx.com                  # Facebook Sandbox CDN
+  - DOMAIN-SUFFIX,fbthirdpartypixel.com
+  - DOMAIN-SUFFIX,facebook.net
+
+  # ==============================
+  # Facebook 子域细化
+  # ==============================
+  - DOMAIN,www.facebook.com
+  - DOMAIN,m.facebook.com
+  - DOMAIN,api.facebook.com
+  - DOMAIN,graph.facebook.com               # Graph API
+  - DOMAIN,business.facebook.com
+  - DOMAIN,developers.facebook.com
+  - DOMAIN,l.facebook.com                   # 外链跳转
+  - DOMAIN,lm.facebook.com
+  - DOMAIN,static.xx.fbcdn.net
+  - DOMAIN,z-m-static.xx.fbcdn.net
+  - DOMAIN,scontent.xx.fbcdn.net
+  - DOMAIN,video.xx.fbcdn.net
+  - DOMAIN,lookaside.fbsbx.com
+  - DOMAIN,connect.facebook.net             # Facebook SDK/登录组件
+
+  # ==============================
+  # Instagram
+  # ==============================
+  - DOMAIN-SUFFIX,instagram.com
+  - DOMAIN-SUFFIX,cdninstagram.com           # Instagram CDN
+  - DOMAIN-SUFFIX,ig.me                      # Instagram 短链
+  - DOMAIN-SUFFIX,igscdn.com
+  - DOMAIN,www.instagram.com
+  - DOMAIN,i.instagram.com
+  - DOMAIN,api.instagram.com
+  - DOMAIN,graph.instagram.com
+  - DOMAIN,business.instagram.com
+  - DOMAIN,scontent.cdninstagram.com
+  - DOMAIN,scontent-sin6-1.cdninstagram.com
+  - DOMAIN,z-p3-instagram.internapcdn.net
+
+  # ==============================
+  # WhatsApp
+  # ==============================
+  - DOMAIN-SUFFIX,whatsapp.com
+  - DOMAIN-SUFFIX,whatsapp.net              # WhatsApp 媒体/推送服务器
+  - DOMAIN-SUFFIX,wa.me                     # WhatsApp 短链
+  - DOMAIN,web.whatsapp.com
+  - DOMAIN,api.whatsapp.com
+  - DOMAIN,v.whatsapp.net
+  - DOMAIN,media.whatsapp.net
+  - DOMAIN,static.whatsapp.net
+  - DOMAIN,mmg.whatsapp.net                 # WhatsApp 多媒体网关
+  - DOMAIN,pps.whatsapp.net                 # 推送/在线状态
+  - DOMAIN,e1.whatsapp.net                  # 消息服务器
+  - DOMAIN,e2.whatsapp.net
+  - DOMAIN,e3.whatsapp.net
+  - DOMAIN,e4.whatsapp.net
+  - DOMAIN,e5.whatsapp.net
+  - DOMAIN,e6.whatsapp.net
+  - DOMAIN,e7.whatsapp.net
+  - DOMAIN,e8.whatsapp.net
+  - DOMAIN,e9.whatsapp.net
+  - DOMAIN,e10.whatsapp.net
+  - DOMAIN,e11.whatsapp.net
+  - DOMAIN,e12.whatsapp.net
+  - DOMAIN,e13.whatsapp.net
+  - DOMAIN,e14.whatsapp.net
+  - DOMAIN,e15.whatsapp.net
+  - DOMAIN,e16.whatsapp.net
+
+  # ==============================
+  # Messenger
+  # ==============================
+  - DOMAIN-SUFFIX,messenger.com
+  - DOMAIN,www.messenger.com
+  - DOMAIN,cdn.messenger.com
+  - DOMAIN,z-p3-1-2-1-9-10.xx.fbcdn.net
+
+  # ==============================
+  # Threads (Meta 旗下文字社交)
+  # ==============================
+  - DOMAIN-SUFFIX,threads.net
+  - DOMAIN,www.threads.net
+  - DOMAIN,api.threads.net
+
+  # ==============================
+  # Oculus / Meta Quest VR
+  # ==============================
+  - DOMAIN-SUFFIX,oculus.com
+  - DOMAIN-SUFFIX,oculuscdn.com
+  - DOMAIN-SUFFIX,oculusvr.com
+  - DOMAIN,www.oculus.com
+  - DOMAIN,api.oculus.com
+  - DOMAIN,graph.oculus.com
+  - DOMAIN,securecdn.oculus.com
+  - DOMAIN,scontent.oculuscdn.com
+  - DOMAIN,cloudfront.oculuscdn.com
+
+  # ==============================
+  # Workplace by Meta（企业协作）
+  # ==============================
+  - DOMAIN-SUFFIX,workplace.com
+  - DOMAIN,graph.workplace.com
+  - DOMAIN,api.workplace.com
+  - DOMAIN,scontent.workplace.com
+
+  # ==============================
+  # Meta 广告 / 像素追踪
+  # ==============================
+  - DOMAIN-SUFFIX,atdmt.com
+  - DOMAIN-SUFFIX,atlassolutions.com
+  - DOMAIN,an.facebook.com                  # Facebook Audience Network
+  - DOMAIN,pixel.facebook.com
+  - DOMAIN,edge-chat.facebook.com
+
+  # ==============================
+  # Meta 基础设施 / 边缘网络
+  # ==============================
+  - DOMAIN-SUFFIX,edgecastcdn.net
+  - DOMAIN-SUFFIX,akamaized.net             # Meta 使用 Akamai CDN
+  - DOMAIN,star.c10r.facebook.com
+  - DOMAIN,mqtt.c10r.facebook.com           # Messenger MQTT 推送
+  - DOMAIN,edge-mqtt.facebook.com
+  - DOMAIN,edge-mqtt.instagram.com
+  - DOMAIN,gateway.instagram.com
+
+  # ==============================
+  # Meta 开放平台 / 登录
+  # ==============================
+  - DOMAIN,connect.facebook.net
+  - DOMAIN,staticxx.facebook.com
+  - DOMAIN,www.facebook.com
+
+  # ==============================
+  # 进程名
+  # ==============================
+  - PROCESS-NAME,Facebook
+  - PROCESS-NAME,com.facebook.katana          # Facebook Android
+  - PROCESS-NAME,com.facebook.lite            # Facebook Lite Android
+  - PROCESS-NAME,com.facebook.mlite           # Messenger Lite
+  - PROCESS-NAME,Instagram
+  - PROCESS-NAME,com.instagram.android        # Instagram Android
+  - PROCESS-NAME,WhatsApp
+  - PROCESS-NAME,com.whatsapp                 # WhatsApp Android
+  - PROCESS-NAME,com.whatsapp.w4b             # WhatsApp Business
+  - PROCESS-NAME,Messenger
+  - PROCESS-NAME,com.facebook.orca            # Messenger Android
+  - PROCESS-NAME,Threads
+  - PROCESS-NAME,com.instagram.barcelona      # Threads Android
+  - PROCESS-NAME,com.oculus.shellenv          # Meta Quest
+  - PROCESS-NAME,OVRServer_x64
+  - PROCESS-NAME,OculusClient
+
+  # ==============================
+  # Meta IP 段（AS32934 / AS63293）
+  # ==============================
+  - IP-CIDR,31.13.24.0/21,no-resolve
+  - IP-CIDR,31.13.64.0/18,no-resolve
+  - IP-CIDR,45.64.40.0/22,no-resolve
+  - IP-CIDR,66.220.144.0/20,no-resolve
+  - IP-CIDR,69.63.176.0/20,no-resolve
+  - IP-CIDR,69.171.224.0/19,no-resolve
+  - IP-CIDR,74.119.76.0/22,no-resolve
+  - IP-CIDR,102.132.96.0/20,no-resolve
+  - IP-CIDR,103.4.96.0/22,no-resolve
+  - IP-CIDR,129.134.0.0/16,no-resolve
+  - IP-CIDR,157.240.0.0/16,no-resolve        # Meta 主要 IP 段
+  - IP-CIDR,163.70.128.0/17,no-resolve
+  - IP-CIDR,163.77.128.0/17,no-resolve
+  - IP-CIDR,163.114.128.0/17,no-resolve
+  - IP-CIDR,173.252.64.0/18,no-resolve
+  - IP-CIDR,179.60.192.0/22,no-resolve
+  - IP-CIDR,185.89.216.0/22,no-resolve
+  - IP-CIDR,204.15.20.0/22,no-resolve
+
+  # ==============================
+  # Meta IPv6
+  # ==============================
+  - IP-CIDR6,2620:0:1c00::/40,no-resolve
+  - IP-CIDR6,2620:0:1cff::/48,no-resolve
+  - IP-CIDR6,2a03:2880::/32,no-resolve       # Meta 欧洲 IPv6
+  - IP-CIDR6,2001:67c:29::/48,no-resolve
+
+  # ==============================
+  # Meta ASN
+  # ==============================
+  - IP-ASN,32934,no-resolve                  # Facebook / Meta 主 ASN
+  - IP-ASN,63293,no-resolve                  # Meta 辅助 ASN
