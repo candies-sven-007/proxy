@@ -1,4 +1,0 @@
-payload:
-  - GEOSITE,CN
-  - GEOIP,LAN,no-resolve
-  - GEOIP,CN,no-resolve
