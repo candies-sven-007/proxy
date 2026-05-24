@@ -1,0 +1,782 @@
+# NAME: Crypto
+# DESCRIPTION: 加密货币交易所 / 钱包 / 行情 / 链上工具 全规则集
+# 覆盖: Binance / OKX / Bybit / Coinbase / Kraken / Bitget /
+#        Gate.io / HTX(Huobi) / KuCoin / MEXC / Bitfinex /
+#        Gemini / Crypto.com / dYdX / Uniswap / MetaMask /
+#        TrustWallet / Ledger / Trezor / CoinGecko / CoinMarketCap
+payload:
+  # ==============================
+  # Binance (币安)
+  # ==============================
+  - DOMAIN-SUFFIX,binance.com
+  - DOMAIN-SUFFIX,binance.us
+  - DOMAIN-SUFFIX,binance.me
+  - DOMAIN-SUFFIX,binancezh.io
+  - DOMAIN-SUFFIX,binance-zhtw.info
+  - DOMAIN-SUFFIX,binance.vision           # 币安学院
+  - DOMAIN-SUFFIX,bnbchain.org             # BNB Chain
+  - DOMAIN-SUFFIX,bscscan.com              # BSC 浏览器
+  - DOMAIN,api.binance.com
+  - DOMAIN,api1.binance.com
+  - DOMAIN,api2.binance.com
+  - DOMAIN,api3.binance.com
+  - DOMAIN,stream.binance.com
+  - DOMAIN,data.binance.com
+  - DOMAIN,www.binance.com
+  - DOMAIN,accounts.binance.com
+  - DOMAIN,fapi.binance.com                # 合约 API
+  - DOMAIN,dapi.binance.com                # 币本位合约
+
+  # ==============================
+  # OKX (原 OKEx)
+  # ==============================
+  - DOMAIN-SUFFIX,okx.com
+  - DOMAIN-SUFFIX,okex.com
+  - DOMAIN-SUFFIX,okcoin.com
+  - DOMAIN-SUFFIX,oklink.com               # OKLink 链浏览器
+  - DOMAIN-SUFFIX,okxcdn.com
+  - DOMAIN,www.okx.com
+  - DOMAIN,api.okx.com
+  - DOMAIN,static.okx.com
+  - DOMAIN,web3.okx.com                   # OKX Web3 钱包
+
+  # ==============================
+  # Bybit
+  # ==============================
+  - DOMAIN-SUFFIX,bybit.com
+  - DOMAIN-SUFFIX,bytick.com              # Bybit 行情推送
+  - DOMAIN-SUFFIX,bybit-exchange.com
+  - DOMAIN,api.bybit.com
+  - DOMAIN,api.bytick.com
+  - DOMAIN,stream.bybit.com
+  - DOMAIN,fapi.bybit.com
+
+  # ==============================
+  # Coinbase
+  # ==============================
+  - DOMAIN-SUFFIX,coinbase.com
+  - DOMAIN-SUFFIX,coinbase.org
+  - DOMAIN-SUFFIX,coinbaseassets.com
+  - DOMAIN-SUFFIX,coinbasecdn.com
+  - DOMAIN-SUFFIX,cbhh.me
+  - DOMAIN-SUFFIX,cbpro.io                # Coinbase Pro (旧)
+  - DOMAIN-SUFFIX,base.org                # Base L2
+  - DOMAIN,api.coinbase.com
+  - DOMAIN,api.exchange.coinbase.com
+  - DOMAIN,advanced-trade-api.coinbase.com
+  - DOMAIN,www.coinbase.com
+
+  # ==============================
+  # Kraken
+  # ==============================
+  - DOMAIN-SUFFIX,kraken.com
+  - DOMAIN-SUFFIX,krakenfutures.com
+  - DOMAIN,api.kraken.com
+  - DOMAIN,ws.kraken.com
+  - DOMAIN,futures.kraken.com
+
+  # ==============================
+  # Bitget
+  # ==============================
+  - DOMAIN-SUFFIX,bitget.com
+  - DOMAIN-SUFFIX,bitgetapps.com
+  - DOMAIN-SUFFIX,bitkeep.com             # BitKeep 钱包（Bitget 旗下）
+  - DOMAIN-SUFFIX,bitkeep.io
+  - DOMAIN,api.bitget.com
+  - DOMAIN,capi.bitget.com
+
+  # ==============================
+  # Gate.io
+  # ==============================
+  - DOMAIN-SUFFIX,gate.io
+  - DOMAIN-SUFFIX,gateio.ws
+  - DOMAIN-SUFFIX,gateio.pro
+  - DOMAIN-SUFFIX,gatecdn.com
+  - DOMAIN,api.gate.io
+  - DOMAIN,www.gate.io
+
+  # ==============================
+  # HTX (原 Huobi 火币)
+  # ==============================
+  - DOMAIN-SUFFIX,htx.com
+  - DOMAIN-SUFFIX,huobi.com
+  - DOMAIN-SUFFIX,huobi.pro
+  - DOMAIN-SUFFIX,huobigroup.com
+  - DOMAIN-SUFFIX,hbfile.net
+  - DOMAIN-SUFFIX,hbstatic.com
+  - DOMAIN,api.huobi.pro
+  - DOMAIN,api-aws.huobi.pro
+  - DOMAIN,status.huobigroup.com
+
+  # ==============================
+  # KuCoin
+  # ==============================
+  - DOMAIN-SUFFIX,kucoin.com
+  - DOMAIN-SUFFIX,kucoin.io
+  - DOMAIN-SUFFIX,kucoincdn.com
+  - DOMAIN,api.kucoin.com
+  - DOMAIN,openapi-v2.kucoin.com
+
+  # ==============================
+  # MEXC (抹茶)
+  # ==============================
+  - DOMAIN-SUFFIX,mexc.com
+  - DOMAIN-SUFFIX,mexc.io
+  - DOMAIN-SUFFIX,mexc-cdn.com
+  - DOMAIN,api.mexc.com
+  - DOMAIN,contract.mexc.com
+
+  # ==============================
+  # Bitfinex
+  # ==============================
+  - DOMAIN-SUFFIX,bitfinex.com
+  - DOMAIN-SUFFIX,ethfinex.com
+  - DOMAIN,api.bitfinex.com
+  - DOMAIN,api-pub.bitfinex.com
+
+  # ==============================
+  # Gemini
+  # ==============================
+  - DOMAIN-SUFFIX,gemini.com
+  - DOMAIN-SUFFIX,geminicdn.com
+  - DOMAIN,api.gemini.com
+  - DOMAIN,www.gemini.com
+
+  # ==============================
+  # Crypto.com
+  # ==============================
+  - DOMAIN-SUFFIX,crypto.com
+  - DOMAIN-SUFFIX,crypto.org               # Cronos Chain
+  - DOMAIN-SUFFIX,cronos.org
+  - DOMAIN,api.crypto.com
+  - DOMAIN,uat-api.3ona.co
+
+  # ==============================
+  # dYdX (去中心化衍生品)
+  # ==============================
+  - DOMAIN-SUFFIX,dydx.exchange
+  - DOMAIN-SUFFIX,dydx.trade
+  - DOMAIN-SUFFIX,dydxprotocol.com
+
+  # ==============================
+  # Uniswap (去中心化交易所)
+  # ==============================
+  - DOMAIN-SUFFIX,uniswap.org
+  - DOMAIN-SUFFIX,uniswap.exchange
+  - DOMAIN,app.uniswap.org
+  - DOMAIN,api.uniswap.org
+  - DOMAIN,cloudflare-ipfs.com
+
+  # ==============================
+  # 其他主流 DEX / DeFi
+  # ==============================
+  - DOMAIN-SUFFIX,sushi.com               # SushiSwap
+  - DOMAIN-SUFFIX,curve.fi                # Curve Finance
+  - DOMAIN-SUFFIX,aave.com                # Aave
+  - DOMAIN-SUFFIX,compound.finance        # Compound
+  - DOMAIN-SUFFIX,maker.org               # MakerDAO
+  - DOMAIN-SUFFIX,makerburn.com
+  - DOMAIN-SUFFIX,lido.fi                 # Lido 质押
+  - DOMAIN-SUFFIX,1inch.io                # 1inch
+  - DOMAIN-SUFFIX,1inch.exchange
+  - DOMAIN-SUFFIX,balancer.fi             # Balancer
+  - DOMAIN-SUFFIX,pancakeswap.finance     # PancakeSwap (BSC)
+  - DOMAIN-SUFFIX,raydium.io              # Raydium (Solana)
+  - DOMAIN-SUFFIX,orca.so                 # Orca (Solana)
+  - DOMAIN-SUFFIX,jupiter.ag              # Jupiter (Solana)
+  - DOMAIN-SUFFIX,jup.ag
+
+  # ==============================
+  # MetaMask 钱包
+  # ==============================
+  - DOMAIN-SUFFIX,metamask.io
+  - DOMAIN-SUFFIX,metamask.app
+  - DOMAIN-SUFFIX,infura.io               # MetaMask 默认 RPC
+  - DOMAIN-SUFFIX,consensys.io
+  - DOMAIN-SUFFIX,consensys.net
+
+  # ==============================
+  # Trust Wallet
+  # ==============================
+  - DOMAIN-SUFFIX,trustwallet.com
+  - DOMAIN-SUFFIX,trustwallet.io
+
+  # ==============================
+  # Phantom (Solana 钱包)
+  # ==============================
+  - DOMAIN-SUFFIX,phantom.app
+  - DOMAIN-SUFFIX,phantom.com
+
+  # ==============================
+  # Ledger 硬件钱包
+  # ==============================
+  - DOMAIN-SUFFIX,ledger.com
+  - DOMAIN-SUFFIX,ledgerwallet.com
+  - DOMAIN-SUFFIX,ledger-cdn.com
+
+  # ==============================
+  # Trezor 硬件钱包
+  # ==============================
+  - DOMAIN-SUFFIX,trezor.io
+  - DOMAIN-SUFFIX,trezor.com
+
+  # ==============================
+  # Exodus 钱包
+  # ==============================
+  - DOMAIN-SUFFIX,exodus.com
+  - DOMAIN-SUFFIX,exodus.io
+
+  # ==============================
+  # Rabby 钱包 (DeBank)
+  # ==============================
+  - DOMAIN-SUFFIX,rabby.io
+  - DOMAIN-SUFFIX,debank.com
+
+  # ==============================
+  # Rainbow 钱包
+  # ==============================
+  - DOMAIN-SUFFIX,rainbow.me
+
+  # ==============================
+  # 区块链浏览器
+  # ==============================
+  - DOMAIN-SUFFIX,etherscan.io            # 以太坊浏览器
+  - DOMAIN-SUFFIX,bscscan.com             # BSC 浏览器
+  - DOMAIN-SUFFIX,polygonscan.com         # Polygon 浏览器
+  - DOMAIN-SUFFIX,arbiscan.io             # Arbitrum 浏览器
+  - DOMAIN-SUFFIX,optimistic.etherscan.io # Optimism
+  - DOMAIN-SUFFIX,snowtrace.io            # Avalanche 浏览器
+  - DOMAIN-SUFFIX,solscan.io              # Solana 浏览器
+  - DOMAIN-SUFFIX,explorer.solana.com
+  - DOMAIN-SUFFIX,tronscan.org            # Tron 浏览器
+  - DOMAIN-SUFFIX,blockchain.com          # 比特币浏览器
+  - DOMAIN-SUFFIX,blockchair.com
+  - DOMAIN-SUFFIX,mempool.space           # 比特币 mempool
+  - DOMAIN-SUFFIX,btcscan.org
+
+  # ==============================
+  # 行情 / 数据工具
+  # ==============================
+  - DOMAIN-SUFFIX,coingecko.com           # CoinGecko
+  - DOMAIN-SUFFIX,coinmarketcap.com       # CoinMarketCap
+  - DOMAIN-SUFFIX,tradingview.com         # TradingView 图表
+  - DOMAIN-SUFFIX,cryptocompare.com
+  - DOMAIN-SUFFIX,coindesk.com            # 加密新闻
+  - DOMAIN-SUFFIX,cointelegraph.com       # 加密新闻
+  - DOMAIN-SUFFIX,decrypt.co
+  - DOMAIN-SUFFIX,theblock.co
+  - DOMAIN-SUFFIX,dune.com                # Dune Analytics 链上数据
+  - DOMAIN-SUFFIX,nansen.ai               # Nansen 链上分析
+  - DOMAIN-SUFFIX,glassnode.com           # Glassnode 链上指标
+  - DOMAIN-SUFFIX,messari.io              # Messari 研究
+
+  # ==============================
+  # NFT 平台
+  # ==============================
+  - DOMAIN-SUFFIX,opensea.io              # OpenSea
+  - DOMAIN-SUFFIX,blur.io                 # Blur NFT 市场
+  - DOMAIN-SUFFIX,foundation.app          # Foundation
+  - DOMAIN-SUFFIX,rarible.com             # Rarible
+  - DOMAIN-SUFFIX,magic.eden              # Magic Eden (Solana/Bitcoin)
+  - DOMAIN-SUFFIX,magiceden.io
+
+  # ==============================
+  # RPC 节点 / 基础设施
+  # ==============================
+  - DOMAIN-SUFFIX,alchemy.com             # Alchemy RPC
+  - DOMAIN-SUFFIX,alchemyapi.io
+  - DOMAIN-SUFFIX,quicknode.com           # QuickNode RPC
+  - DOMAIN-SUFFIX,ankr.com                # Ankr RPC
+  - DOMAIN-SUFFIX,moralis.io              # Moralis
+  - DOMAIN-SUFFIX,chainstack.com
+  - DOMAIN-SUFFIX,blastapi.io
+
+  # ==============================
+  # 稳定币 / 链上协议官网
+  # ==============================
+  - DOMAIN-SUFFIX,tether.to               # USDT
+  - DOMAIN-SUFFIX,circle.com              # USDC
+  - DOMAIN-SUFFIX,centre.io
+  - DOMAIN-SUFFIX,paxos.com               # USDP / PYUSD
+
+  # ==============================
+  # 进程名
+  # ==============================
+  - PROCESS-NAME,com.binance.dev          # Binance Android
+  - PROCESS-NAME,com.binance.odapplications
+  - PROCESS-NAME,com.okex.wallet          # OKX 钱包
+  - PROCESS-NAME,com.bybit.app
+  - PROCESS-NAME,com.coinbase.android
+  - PROCESS-NAME,Coinbase
+  - PROCESS-NAME,com.kucoin.exchange
+  - PROCESS-NAME,com.crypto.exchange
+  - PROCESS-NAME,io.metamask              # MetaMask 浏览器扩展进程
+  - PROCESS-NAME,com.trustwallet.app
+  - PROCESS-NAME,app.phantom
+
+# NAME: OverseaFinance
+# DESCRIPTION: 海外金融服务综合分流规则
+# 覆盖: PayPal / Wise / Revolut / Monzo / Starling /
+#       iFast / TNG / GrabPay / Touch 'n Go /
+#       Stripe / Square / Klarna / Afterpay /
+#       Interactive Brokers / Saxo / eToro / Trading212 /
+#       Moomoo / Tiger Brokers / Western Union / MoneyGram /
+#       Skrill / Neteller / Paysera / N26 / Bunq /
+#       Remitly / WorldRemit / TransferGo / OFX
+  # PayPal
+  # ==============================
+  - DOMAIN-SUFFIX,paypal.com
+  - DOMAIN-SUFFIX,paypal.me               # PayPal 收款短链
+  - DOMAIN-SUFFIX,paypalobjects.com        # PayPal 静态资源
+  - DOMAIN-SUFFIX,paypal-brasil.com.br
+  - DOMAIN-SUFFIX,paypal.cn
+  - DOMAIN-SUFFIX,venmo.com               # Venmo (PayPal 旗下)
+  - DOMAIN,api.paypal.com
+  - DOMAIN,api-m.paypal.com
+  - DOMAIN,api-m.sandbox.paypal.com
+  - DOMAIN,www.paypal.com
+  - DOMAIN,c.paypal.com
+  - DOMAIN,t.paypal.com
+  - DOMAIN,history.paypal.com
+  - DOMAIN,www.venmo.com
+  - DOMAIN,api.venmo.com
+
+  # ==============================
+  # Wise (原 TransferWise)
+  # ==============================
+  - DOMAIN-SUFFIX,wise.com
+  - DOMAIN-SUFFIX,transferwise.com        # 旧域名仍有效
+  - DOMAIN-SUFFIX,twimg.wise.com
+  - DOMAIN,api.wise.com
+  - DOMAIN,api.transferwise.com
+  - DOMAIN,www.wise.com
+  - DOMAIN,id.wise.com                    # Wise 登录/认证
+  - DOMAIN,assets.wise.com
+
+  # ==============================
+  # Revolut
+  # ==============================
+  - DOMAIN-SUFFIX,revolut.com
+  - DOMAIN-SUFFIX,revolut.codes           # Revolut 邀请短链
+  - DOMAIN-SUFFIX,revolut.cdn             # CDN
+  - DOMAIN,api.revolut.com
+  - DOMAIN,www.revolut.com
+  - DOMAIN,business.revolut.com
+  - DOMAIN,media.revolut.com
+  - DOMAIN,image.revolut.com
+
+  # ==============================
+  # Monzo (英国数字银行)
+  # ==============================
+  - DOMAIN-SUFFIX,monzo.com
+  - DOMAIN-SUFFIX,monzo.me               # 收款页面
+  - DOMAIN,api.monzo.com
+  - DOMAIN,www.monzo.com
+  - DOMAIN,join.monzo.com
+  - DOMAIN,community.monzo.com
+
+  # ==============================
+  # Starling Bank (英国数字银行)
+  # ==============================
+  - DOMAIN-SUFFIX,starlingbank.com
+  - DOMAIN,api.starlingbank.com
+  - DOMAIN,www.starlingbank.com
+
+  # ==============================
+  # N26 (欧洲数字银行)
+  # ==============================
+  - DOMAIN-SUFFIX,n26.com
+  - DOMAIN,api.n26.com
+  - DOMAIN,www.n26.com
+  - DOMAIN,app.n26.com
+
+  # ==============================
+  # Bunq (荷兰数字银行)
+  # ==============================
+  - DOMAIN-SUFFIX,bunq.com
+  - DOMAIN,api.bunq.com
+  - DOMAIN,www.bunq.com
+
+  # ==============================
+  # iFast (富达国际 / 东南亚投资平台)
+  # ==============================
+  - DOMAIN-SUFFIX,ifast.net
+  - DOMAIN-SUFFIX,ifastgb.com             # iFast 英国
+  - DOMAIN-SUFFIX,ifastfinancial.com
+  - DOMAIN-SUFFIX,ifastsg.com             # iFast 新加坡
+  - DOMAIN-SUFFIX,ifastmy.com             # iFast 马来西亚
+  - DOMAIN-SUFFIX,ifasthk.com             # iFast 香港
+  - DOMAIN-SUFFIX,poems.com.sg            # POEMS (Phillip Securities, 类似)
+  - DOMAIN,www.ifast.net
+  - DOMAIN,api.ifast.net
+
+  # ==============================
+  # Touch 'n Go / TNG eWallet (大马)
+  # ==============================
+  - DOMAIN-SUFFIX,touchngo.com.my
+  - DOMAIN-SUFFIX,tngdigital.com.my
+  - DOMAIN-SUFFIX,tngcards.com.my
+  - DOMAIN-SUFFIX,tng.com.my
+  - DOMAIN,api.tngdigital.com.my
+  - DOMAIN,www.touchngo.com.my
+  - DOMAIN,ewallet.touchngo.com.my
+  - DOMAIN,myaccount.touchngo.com.my
+
+  # ==============================
+  # GrabPay / Grab Financial
+  # ==============================
+  - DOMAIN-SUFFIX,grab.com
+  - DOMAIN-SUFFIX,grabpay.com
+  - DOMAIN-SUFFIX,grabfinancial.com
+  - DOMAIN,api.grab.com
+  - DOMAIN,pay.grab.com
+  - DOMAIN,merchant.grab.com
+
+  # ==============================
+  # Boost (马来西亚 eWallet - Axiata)
+  # ==============================
+  - DOMAIN-SUFFIX,myboost.com.my
+  - DOMAIN-SUFFIX,boostwallet.my
+  - DOMAIN,api.myboost.com.my
+
+  # ==============================
+  # ShopeePay / SeaMoney
+  # ==============================
+  - DOMAIN-SUFFIX,seamoney.com
+  - DOMAIN-SUFFIX,airpay.com
+  - DOMAIN-SUFFIX,shopeepay.com
+  - DOMAIN,pay.shopee.com
+  - DOMAIN,pay.shopee.com.my
+
+  # ==============================
+  # Stripe (支付基础设施)
+  # ==============================
+  - DOMAIN-SUFFIX,stripe.com
+  - DOMAIN-SUFFIX,stripe.network
+  - DOMAIN-SUFFIX,stripeassets.com
+  - DOMAIN-SUFFIX,stripecdn.com
+  - DOMAIN,api.stripe.com
+  - DOMAIN,js.stripe.com
+  - DOMAIN,m.stripe.com
+  - DOMAIN,dashboard.stripe.com
+  - DOMAIN,files.stripe.com
+  - DOMAIN,uploads.stripe.com
+
+  # ==============================
+  # Square / Block (Jack Dorsey)
+  # ==============================
+  - DOMAIN-SUFFIX,squareup.com
+  - DOMAIN-SUFFIX,squarespace.com
+  - DOMAIN-SUFFIX,cash.app               # Cash App (Square 旗下)
+  - DOMAIN-SUFFIX,cashapp.com
+  - DOMAIN-SUFFIX,afterpay.com           # Afterpay (Square 旗下)
+  - DOMAIN,api.squareup.com
+  - DOMAIN,connect.squareup.com
+
+  # ==============================
+  # Klarna (先买后付)
+  # ==============================
+  - DOMAIN-SUFFIX,klarna.com
+  - DOMAIN-SUFFIX,klarna.net
+  - DOMAIN,api.klarna.com
+  - DOMAIN,js.klarna.com
+
+  # ==============================
+  # Affirm (BNPL)
+  # ==============================
+  - DOMAIN-SUFFIX,affirm.com
+  - DOMAIN,api.affirm.com
+
+  # ==============================
+  # Skrill
+  # ==============================
+  - DOMAIN-SUFFIX,skrill.com
+  - DOMAIN-SUFFIX,paysafecard.com        # Skrill 母公司 Paysafe 旗下
+  - DOMAIN,api.skrill.com
+  - DOMAIN,www.skrill.com
+
+  # ==============================
+  # Neteller
+  # ==============================
+  - DOMAIN-SUFFIX,neteller.com
+  - DOMAIN,api.neteller.com
+  - DOMAIN,www.neteller.com
+
+  # ==============================
+  # Paysera (欧洲支付)
+  # ==============================
+  - DOMAIN-SUFFIX,paysera.com
+  - DOMAIN-SUFFIX,paysera.lt
+  - DOMAIN,api.paysera.com
+  - DOMAIN,www.paysera.com
+
+  # ==============================
+  # Remitly (国际汇款)
+  # ==============================
+  - DOMAIN-SUFFIX,remitly.com
+  - DOMAIN,api.remitly.com
+  - DOMAIN,www.remitly.com
+
+  # ==============================
+  # WorldRemit (国际汇款)
+  # ==============================
+  - DOMAIN-SUFFIX,worldremit.com
+  - DOMAIN,api.worldremit.com
+  - DOMAIN,www.worldremit.com
+
+  # ==============================
+  # Western Union (西联汇款)
+  # ==============================
+  - DOMAIN-SUFFIX,westernunion.com
+  - DOMAIN-SUFFIX,westernunioncdn.com
+  - DOMAIN,www.westernunion.com
+  - DOMAIN,api.westernunion.com
+
+  # ==============================
+  # MoneyGram
+  # ==============================
+  - DOMAIN-SUFFIX,moneygram.com
+  - DOMAIN,api.moneygram.com
+  - DOMAIN,www.moneygram.com
+
+  # ==============================
+  # TransferGo
+  # ==============================
+  - DOMAIN-SUFFIX,transfergo.com
+  - DOMAIN,api.transfergo.com
+
+  # ==============================
+  # OFX (原 OzForex)
+  # ==============================
+  - DOMAIN-SUFFIX,ofx.com
+  - DOMAIN,www.ofx.com
+  - DOMAIN,api.ofx.com
+
+  # ==============================
+  # Interactive Brokers (盈透证券)
+  # ==============================
+  - DOMAIN-SUFFIX,interactivebrokers.com
+  - DOMAIN-SUFFIX,ibkr.com
+  - DOMAIN-SUFFIX,ibkrcdn.com
+  - DOMAIN,www.interactivebrokers.com
+  - DOMAIN,api.ibkr.com
+  - DOMAIN,gdcdyn.interactivebrokers.com
+  - DOMAIN,download2.interactivebrokers.com
+
+  # ==============================
+  # Saxo Bank
+  # ==============================
+  - DOMAIN-SUFFIX,home.saxo
+  - DOMAIN-SUFFIX,saxobank.com
+  - DOMAIN-SUFFIX,saxotrader.com
+  - DOMAIN,api.saxobank.com
+  - DOMAIN,openapi.saxobank.com
+
+  # ==============================
+  # eToro
+  # ==============================
+  - DOMAIN-SUFFIX,etoro.com
+  - DOMAIN-SUFFIX,etorostatic.com
+  - DOMAIN,api.etoro.com
+  - DOMAIN,www.etoro.com
+
+  # ==============================
+  # Trading 212
+  # ==============================
+  - DOMAIN-SUFFIX,trading212.com
+  - DOMAIN,api.trading212.com
+  - DOMAIN,www.trading212.com
+
+  # ==============================
+  # Moomoo (富途牛牛海外版)
+  # ==============================
+  - DOMAIN-SUFFIX,moomoo.com
+  - DOMAIN-SUFFIX,moomoofinancial.com
+  - DOMAIN,api.moomoo.com
+  - DOMAIN,www.moomoo.com
+
+  # ==============================
+  # Tiger Brokers (老虎证券)
+  # ==============================
+  - DOMAIN-SUFFIX,tigerbrokers.com
+  - DOMAIN-SUFFIX,itiger.com
+  - DOMAIN,www.tigerbrokers.com
+  - DOMAIN,api.tigerbrokers.com
+
+  # ==============================
+  # Webull (韦伯)
+  # ==============================
+  - DOMAIN-SUFFIX,webull.com
+  - DOMAIN-SUFFIX,webullfintech.com
+  - DOMAIN,api.webull.com
+  - DOMAIN,www.webull.com
+
+  # ==============================
+  # Robinhood (美国零佣金券商)
+  # ==============================
+  - DOMAIN-SUFFIX,robinhood.com
+  - DOMAIN,api.robinhood.com
+  - DOMAIN,www.robinhood.com
+
+  # ==============================
+  # Charles Schwab / TD Ameritrade
+  # ==============================
+  - DOMAIN-SUFFIX,schwab.com
+  - DOMAIN-SUFFIX,tdameritrade.com
+  - DOMAIN,api.schwab.com
+  - DOMAIN,api.tdameritrade.com
+
+  # ==============================
+  # Fidelity (富达投资)
+  # ==============================
+  - DOMAIN-SUFFIX,fidelity.com
+  - DOMAIN-SUFFIX,fidelityinvestments.com
+  - DOMAIN,api.fidelity.com
+  - DOMAIN,www.fidelity.com
+
+  # ==============================
+  # Vanguard (先锋基金)
+  # ==============================
+  - DOMAIN-SUFFIX,vanguard.com
+  - DOMAIN,api.vanguard.com
+  - DOMAIN,investor.vanguard.com
+
+  # ==============================
+  # Maybank (马来西亚)
+  # ==============================
+  - DOMAIN-SUFFIX,maybank2u.com.my
+  - DOMAIN-SUFFIX,maybank.com
+  - DOMAIN-SUFFIX,maybankgold.com.my
+  - DOMAIN,m.maybank2u.com.my
+  - DOMAIN,api.maybank2u.com.my
+
+  # ==============================
+  # CIMB (马来西亚/东南亚)
+  # ==============================
+  - DOMAIN-SUFFIX,cimbclicks.com.my
+  - DOMAIN-SUFFIX,cimb.com.my
+  - DOMAIN-SUFFIX,cimb.com
+  - DOMAIN-SUFFIX,cimbbank.com
+  - DOMAIN,www.cimbclicks.com.my
+
+  # ==============================
+  # RHB (马来西亚)
+  # ==============================
+  - DOMAIN-SUFFIX,rhbgroup.com
+  - DOMAIN-SUFFIX,rhbbank.com.my
+  - DOMAIN,www.rhbbank.com.my
+
+  # ==============================
+  # Hong Leong Bank (马来西亚)
+  # ==============================
+  - DOMAIN-SUFFIX,hlb.com.my
+  - DOMAIN-SUFFIX,hongleongbank.com
+  - DOMAIN,www.hlb.com.my
+
+  # ==============================
+  # Public Bank (马来西亚)
+  # ==============================
+  - DOMAIN-SUFFIX,pbebank.com
+  - DOMAIN-SUFFIX,publicbankgroup.com
+  - DOMAIN,www.pbebank.com
+
+  # ==============================
+  # Bank Islam / Bank Rakyat (马来西亚)
+  # ==============================
+  - DOMAIN-SUFFIX,bankislam.com
+  - DOMAIN-SUFFIX,bankrakyat.com.my
+
+  # ==============================
+  # HSBC (汇丰，国际)
+  # ==============================
+  - DOMAIN-SUFFIX,hsbc.com
+  - DOMAIN-SUFFIX,hsbc.com.my
+  - DOMAIN-SUFFIX,hsbc.com.hk
+  - DOMAIN-SUFFIX,hsbc.co.uk
+  - DOMAIN-SUFFIX,hsbcprivatebank.com
+  - DOMAIN,api.hsbc.com
+  - DOMAIN,www.hsbc.com
+
+  # ==============================
+  # Standard Chartered (渣打)
+  # ==============================
+  - DOMAIN-SUFFIX,sc.com
+  - DOMAIN-SUFFIX,standardchartered.com
+  - DOMAIN,www.sc.com
+  - DOMAIN,api.sc.com
+
+  # ==============================
+  # DBS / POSB (新加坡)
+  # ==============================
+  - DOMAIN-SUFFIX,dbs.com
+  - DOMAIN-SUFFIX,dbs.com.sg
+  - DOMAIN-SUFFIX,posb.com.sg
+  - DOMAIN,api.dbs.com
+  - DOMAIN,www.dbs.com.sg
+
+  # ==============================
+  # OCBC (华侨银行 - 新加坡/马来西亚)
+  # ==============================
+  - DOMAIN-SUFFIX,ocbc.com
+  - DOMAIN-SUFFIX,ocbc.com.sg
+  - DOMAIN-SUFFIX,ocbc.com.my
+  - DOMAIN,www.ocbc.com.sg
+
+  # ==============================
+  # UOB (大华银行 - 新加坡/马来西亚)
+  # ==============================
+  - DOMAIN-SUFFIX,uob.com.sg
+  - DOMAIN-SUFFIX,uob.com.my
+  - DOMAIN-SUFFIX,uobgroup.com
+  - DOMAIN,www.uob.com.sg
+
+  # ==============================
+  # Barclays (英国)
+  # ==============================
+  - DOMAIN-SUFFIX,barclays.co.uk
+  - DOMAIN-SUFFIX,barclays.com
+  - DOMAIN-SUFFIX,barclaysus.com
+  - DOMAIN,api.barclays.com
+  - DOMAIN,www.barclays.co.uk
+
+  # ==============================
+  # NatWest / RBS (英国)
+  # ==============================
+  - DOMAIN-SUFFIX,natwest.com
+  - DOMAIN-SUFFIX,rbs.co.uk
+  - DOMAIN,www.natwest.com
+
+  # ==============================
+  # Lloyds / Halifax (英国)
+  # ==============================
+  - DOMAIN-SUFFIX,lloydsbank.com
+  - DOMAIN-SUFFIX,halifax.co.uk
+  - DOMAIN,www.lloydsbank.com
+
+  # ==============================
+  # Santander (西班牙/英国)
+  # ==============================
+  - DOMAIN-SUFFIX,santander.co.uk
+  - DOMAIN-SUFFIX,santander.com
+  - DOMAIN,www.santander.co.uk
+
+  # ==============================
+  # 进程名
+  # ==============================
+  - PROCESS-NAME,PayPal
+  - PROCESS-NAME,com.paypal.android.p2pmobile
+  - PROCESS-NAME,com.transferwise.android     # Wise Android
+  - PROCESS-NAME,com.revolut.revolut          # Revolut Android
+  - PROCESS-NAME,com.monzo.money              # Monzo Android
+  - PROCESS-NAME,com.starlingbank             # Starling Android
+  - PROCESS-NAME,de.number26.app             # N26 Android
+  - PROCESS-NAME,com.grab.driver             # Grab Android
+  - PROCESS-NAME,my.com.tng.ewallet          # TNG eWallet Android
+  - PROCESS-NAME,com.skrill.moneywallet      # Skrill Android
+  - PROCESS-NAME,com.interactivebrokers.ibcontroller
+  - PROCESS-NAME,ibcust                      # IBKR 客户端
+  - PROCESS-NAME,com.etoro.portfolio         # eToro Android
+  - PROCESS-NAME,com.moomoo.trade            # Moomoo Android
+  - PROCESS-NAME,com.tigerbrokers.stockus    # Tiger Brokers Android
+  - PROCESS-NAME,com.webull.client           # Webull Android
+  - PROCESS-NAME,com.robinhood.android       # Robinhood Android
