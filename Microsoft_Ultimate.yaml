@@ -1,122 +1,167 @@
 # -------------------------------------------------------------------------
-# Title: Microsoft System & Services Ruleset - Ultimate v2 (AI-FREE Edition)
-# Description: 纯净微软系统与全家桶服务（含企业级/开发者/深层CDN）
-#              已物理隔离所有 AI 相关域名（Copilot / Azure OpenAI / Bing AI 等）
-# Format: Clash / Mihomo Classical Rule-Set (Payload Only)
-# Updated: 2025
+# Title:       Microsoft Ultimate Ruleset - Supreme Edition
+# Description: 微软全系服务超详细规则集
+#              !! 已完全物理隔离所有 AI 功能域 !!
+#              剔除: Copilot / Bing Chat(sydney.bing.com) /
+#                   Azure OpenAI / Cognitive Services /
+#                   ai.microsoft.com / copilot.live
+# Covers:      Windows / Office 365 / Teams / Skype / Xbox /
+#              Azure / Edge / Bing(非AI) / MSN / LinkedIn /
+#              GitHub / Power Platform / Dynamics 365 /
+#              Intune / Defender / Purview / Visual Studio /
+#              WinGet / Forms / Whiteboard / Planner / Stream /
+#              Yammer / Viva / Clipchamp / Advertising
+# Format:      Clash / Mihomo Classical Rule-Set (Payload Only)
+# Sections:    22
+# Note:        DOMAIN-SUFFIX,microsoft.com 覆盖范围极广，
+#              如需精确隔离 AI，请在主配置中把 AI 规则置于本规则集之前：
+#              - DOMAIN,copilot.microsoft.com,AI服务   ← 先匹配
+#              - RULE-SET,Microsoft,微软服务           ← 后匹配
 # -------------------------------------------------------------------------
 
 payload:
 
-  # ==============================================================
-  # [BLOCK] AI 域名黑名单 — 必须放在所有规则之前，优先拦截
-  # 涵盖：Copilot、Azure OpenAI、Bing AI、M365 Copilot
-  # ==============================================================
-  # ⚠️ 在 Clash/Mihomo 中请将这些条目单独放入 REJECT 策略组
-  # 此处注释列出，供使用者手动移入 REJECT 规则集：
-  #   - DOMAIN,copilot.microsoft.com
-  #   - DOMAIN,www.bing.com/copilot (用 DOMAIN 级别无法精确屏蔽，建议在 REJECT 组加 DOMAIN,www.bing.com 整体排除)
-  #   - DOMAIN-SUFFIX,openai.azure.com
-  #   - DOMAIN-SUFFIX,cognitiveservices.azure.com
-  #   - DOMAIN,sydney.bing.com
-  #   - DOMAIN,edgeservices.bing.com (Copilot 侧边栏)
-  #   - DOMAIN,copilot-prod.microsoft.com
-  #   - DOMAIN,substrate.office.com (M365 Copilot 后端)
-  #   - DOMAIN,augloop.office.com   (M365 Copilot 循环引擎)
-  #   - DOMAIN,aiassistant.microsoft.com
-  #   - DOMAIN-SUFFIX,ai.microsoft.com
-  #   - DOMAIN-SUFFIX,cortana.ai
-  #   - DOMAIN,cortana.ai
-  #   - DOMAIN,ris.api.iris.microsoft.com (Copilot 推荐)
-  #   - DOMAIN,blobs.bing.com (Bing AI 图像生成)
-  #   - DOMAIN,designer.microsoft.com (AI 设计工具 Designer)
+  # ==================== [01. Windows 系统核心 / 更新 / 激活 / 网络诊断] ====================
 
-
-  # ==================== [01. Windows 系统核心、更新、激活 & 网络诊断] ====================
+  # --- 网络连通性检测 (NCSI) ---
   - DOMAIN,www.msftconnecttest.com
   - DOMAIN,msftconnecttest.com
   - DOMAIN,ipv6.msftconnecttest.com
   - DOMAIN,www.msftncsi.com
   - DOMAIN,msftncsi.com
   - DOMAIN,ipv6.msftncsi.com
-  - DOMAIN,apps.identrust.com
-  - DOMAIN,clock.mdhost.microsoft.com
-  - DOMAIN,slscr.update.microsoft.com
+
+  # --- 时间同步 ---
   - DOMAIN,time.windows.com
   - DOMAIN,time.nist.gov
-  - DOMAIN,clientconfig.passport.net
+  - DOMAIN,clock.mdhost.microsoft.com
+  - DOMAIN,ntp.msn.com
+
+  # --- 证书 / OCSP / CRL ---
+  - DOMAIN,apps.identrust.com
   - DOMAIN,oneocsp.microsoft.com
   - DOMAIN,ocsp.msocsp.com
   - DOMAIN,mscrl.microsoft.com
   - DOMAIN,crl.microsoft.com
   - DOMAIN,pki.microsoft.com
   - DOMAIN,pki.goog
+  - DOMAIN,ocsp.digicert.com
+  - DOMAIN,cacerts.digicert.com
+  - DOMAIN,crl3.digicert.com
+  - DOMAIN,crl4.digicert.com
+
+  # --- Windows Update 核心 ---
   - DOMAIN,download.microsoft.com
   - DOMAIN,download.windowsupdate.com
   - DOMAIN,ctldl.windowsupdate.com
-  - DOMAIN,settings-win.data.microsoft.com
-  - DOMAIN,fe3cr.delivery.mp.microsoft.com
+  - DOMAIN,update.microsoft.com
+  - DOMAIN,sls.update.microsoft.com
+  - DOMAIN,slscr.update.microsoft.com
   - DOMAIN,fe3.delivery.mp.microsoft.com
+  - DOMAIN,fe3cr.delivery.mp.microsoft.com
   - DOMAIN,geo-prod.do.dsp.mp.microsoft.com
   - DOMAIN,tg.delivery.mp.microsoft.com
   - DOMAIN,ts.delivery.mp.microsoft.com
   - DOMAIN,au.download.windowsupdate.com
-  - DOMAIN,sls.update.microsoft.com
   - DOMAIN,audownload.windowsupdate.nsatc.net
   - DOMAIN,dl.delivery.mp.microsoft.com
   - DOMAIN,emdl.ws.microsoft.com
-  - DOMAIN,wu.ec.azureedge.net
-  - DOMAIN,wuagent.microsoft.com
-  - DOMAIN,activation.sls.microsoft.com
-  - DOMAIN,crl.microsoft.com
-  - DOMAIN,validation.sls.microsoft.com
   - DOMAIN,go.microsoft.com
-  - DOMAIN,ntservicepack.microsoft.com
-  - DOMAIN,hockeyapp.net
-  - DOMAIN,definitionupdates.microsoft.com
+  - DOMAIN,aka.ms
   - DOMAIN-SUFFIX,delivery.mp.microsoft.com
   - DOMAIN-SUFFIX,update.microsoft.com
   - DOMAIN-SUFFIX,download.delivery.mp.microsoft.com
-  - DOMAIN-SUFFIX,windows.com
   - DOMAIN-SUFFIX,windowsupdate.com
   - DOMAIN-SUFFIX,wustat.windows.com
-  - DOMAIN-SUFFIX,windowsservers.org
-  - DOMAIN-SUFFIX,windows.net
-  - DOMAIN-SUFFIX,mp.microsoft.com
   - DOMAIN-KEYWORD,windowsupdate
 
+  # --- Windows 激活 / KMS / 数字许可证 ---
+  - DOMAIN,activation.sls.microsoft.com
+  - DOMAIN,activation-v2.sls.microsoft.com
+  - DOMAIN,licensing.mp.microsoft.com
+  - DOMAIN,clientconfig.passport.net
 
-  # ==================== [02. 统一身份验证、MFA、AAD & 账户同步] ====================
+  # --- Windows 系统通用域 ---
+  - DOMAIN-SUFFIX,windows.com
+  - DOMAIN-SUFFIX,windows.net
+  - DOMAIN-SUFFIX,windowsservers.org
+  - DOMAIN-SUFFIX,windowsazure.com
+  - DOMAIN-SUFFIX,microsoft-hover-test.com
+
+  # --- Windows Insider Program ---
+  - DOMAIN,insider.windows.com
+  - DOMAIN,blogs.windows.com
+
+  # --- 设置同步 / 系统配置 ---
+  - DOMAIN,settings-win.data.microsoft.com
+  - DOMAIN,settings-fd-geo.mo.microsoft.com
+  - DOMAIN,fe3cr.delivery.mp.microsoft.com
+
+  # --- 错误报告 / Watson ---
+  - DOMAIN,watson.microsoft.com
+  - DOMAIN,watson.telemetry.microsoft.com
+  - DOMAIN,umwatsonc.events.data.microsoft.com
+  - DOMAIN,ceuswatcab01.blob.core.windows.net
+  - DOMAIN,ceuswatcab02.blob.core.windows.net
+  - DOMAIN,feedback.microsoft.com
+
+  # --- 遥测 / 诊断数据 ---
+  - DOMAIN,v20.events.data.microsoft.com
+  - DOMAIN,v10.events.data.microsoft.com
+  - DOMAIN,v10.vortex-win.data.microsoft.com
+  - DOMAIN,v20.vortex-win.data.microsoft.com
+  - DOMAIN,functional.events.data.microsoft.com
+  - DOMAIN,browser.events.data.microsoft.com
+  - DOMAIN,self.events.data.microsoft.com
+  - DOMAIN,ris.api.iris.microsoft.com
+  - DOMAIN-SUFFIX,telemetry.microsoft.com
+  - DOMAIN-SUFFIX,telemetry.urs.microsoft.com
+
+  # --- Windows Package Manager (WinGet) ---
+  - DOMAIN,winget.azureedge.net
+  - DOMAIN,cdn.winget.microsoft.com
+  - DOMAIN,storeedgefd.dsx.mp.microsoft.com
+  - DOMAIN,displaycatalog.mp.microsoft.com
+  - DOMAIN,purchase.mp.microsoft.com
+
+
+  # ==================== [02. 统一身份验证 / Azure AD (Entra ID) / Graph API] ====================
+
+  # --- 登录认证核心 ---
   - DOMAIN,login.live.com
   - DOMAIN,login.microsoftonline.com
+  - DOMAIN,login.microsoft.com
   - DOMAIN,login.windows.net
   - DOMAIN,logincdn.msauth.net
   - DOMAIN,logincdn.msftauth.net
-  - DOMAIN,account.live.com
-  - DOMAIN,account.activedirectory.windowsazure.com
-  - DOMAIN,auth.gfx.ms
   - DOMAIN,signup.live.com
+  - DOMAIN,account.live.com
+  - DOMAIN,account.microsoft.com
+  - DOMAIN,account.activedirectory.windowsazure.com
   - DOMAIN,passwordreset.microsoftonline.com
   - DOMAIN,credentialuser.microsoftonline.com
-  - DOMAIN,enterpriseregistration.windows.net
+  - DOMAIN,auth.gfx.ms
+  - DOMAIN,msft.sts.microsoft.com
+
+  # --- Azure AD / Entra ID 设备注册 ---
   - DOMAIN,device.login.microsoftonline.com
+  - DOMAIN,enterpriseregistration.windows.net
   - DOMAIN,autologon.microsoftazuread-sso.com
-  - DOMAIN,account.microsoft.com
-  - DOMAIN,login.microsoft.com
-  - DOMAIN,manage.microsoft.com
-  - DOMAIN,sts.windows.net
-  - DOMAIN,graph.microsoft.com
-  - DOMAIN,graph.windows.net
   - DOMAIN,aadcdn.msauth.net
   - DOMAIN,aadcdn.msftauth.net
+  - DOMAIN,aadg.windows.net.nsatc.net
   - DOMAIN,aadcdn.msauthimages.net
   - DOMAIN,aadcdn.msftauthimages.net
-  - DOMAIN,logincdn.msauth.net
-  - DOMAIN,login.microsoftonline.us
-  - DOMAIN,esi.microsoft.com
-  - DOMAIN,fido.microsoft.com
-  - DOMAIN,authenticatorapp.microsoft.com
-  - DOMAIN,account.microsoft.com
+
+  # --- Microsoft Graph API ---
+  - DOMAIN,graph.microsoft.com
+  - DOMAIN,graph.windows.net
+
+  # --- 企业 SSO / ADFS / 条件访问 ---
+  - DOMAIN,msoid.microsoft.com
+  - DOMAIN,sts.windows.net
+  - DOMAIN,federation.microsoft.com
+  - DOMAIN,manage.microsoft.com
   - DOMAIN-SUFFIX,msauth.net
   - DOMAIN-SUFFIX,msauthimages.net
   - DOMAIN-SUFFIX,passport.net
@@ -126,397 +171,541 @@ payload:
   - DOMAIN-SUFFIX,msidentity.com
   - DOMAIN-SUFFIX,windows-int.net
   - DOMAIN-SUFFIX,microsoft-tst.com
-  - DOMAIN-SUFFIX,microsoftonline.com
-  - DOMAIN-SUFFIX,microsoftonline-p.com
+  - DOMAIN-SUFFIX,microsoftazuread-sso.com
 
 
-  # ==================== [03. OneDrive / SharePoint / Office 365 核心 & 深层CDN] ====================
+  # ==================== [03. OneDrive / SharePoint / 云存储与协作文档] ====================
+
   - DOMAIN,api.onedrive.com
   - DOMAIN,onedrive.live.com
   - DOMAIN,photos.onedrive.com
   - DOMAIN,skyapi.onedrive.com
-  - DOMAIN,spoprod-a.akamaihd.net
   - DOMAIN,oneclient.sfx.ms
   - DOMAIN,d.docs.live.net
   - DOMAIN,storage.live.com
   - DOMAIN,g.live.com
   - DOMAIN,storage.msn.com
-  - DOMAIN,office.com
-  - DOMAIN,www.office.com
-  - DOMAIN,attachments.office.net
-  - DOMAIN,excel.officeapps.live.com
-  - DOMAIN,onenote.com
-  - DOMAIN,onenote.officeapps.live.com
-  - DOMAIN,powerpoint.officeapps.live.com
-  - DOMAIN,roaming.officeapps.live.com
-  - DOMAIN,word.officeapps.live.com
-  - DOMAIN,officeclient.microsoft.com
-  - DOMAIN,config.office.apps.microsoft.com
-  - DOMAIN,nexus.officeapps.live.com
-  - DOMAIN,insertmedia.bing.office.net
-  - DOMAIN,templates.office.com
-  - DOMAIN,tds.office.com
-  - DOMAIN,omextemplates.office.net
-  - DOMAIN,cdn.odc.officeapps.live.com
-  - DOMAIN,portal.office.com
-  - DOMAIN,admin.microsoft.com
-  - DOMAIN,compliance.microsoft.com
-  - DOMAIN,security.microsoft.com
-  - DOMAIN,protection.office.com
-  - DOMAIN,provisioningapi.microsoftonline.com
-  - DOMAIN,api.office.com
-  - DOMAIN,odc.officeapps.live.com
-  - DOMAIN,officecdn.microsoft.com
-  - DOMAIN,officecdn.microsoft.com.edgesuite.net
-  - DOMAIN,ajax.aspnetcdn.com
-  - DOMAIN,appsforoffice.microsoft.com
-  - DOMAIN,res.cdn.office.net
-  - DOMAIN,c2rcdn.officeapps.live.com
-  - DOMAIN,ols.officeapps.live.com
-  - DOMAIN,officeappsaliasesprodbyhammer.trafficmanager.net
+  - DOMAIN,spoprod-a.akamaihd.net
   - DOMAIN-SUFFIX,1drv.ms
   - DOMAIN-SUFFIX,onedrive.com
   - DOMAIN-SUFFIX,sharepoint.com
   - DOMAIN-SUFFIX,sharepointonline.com
   - DOMAIN-SUFFIX,skydrive.wns.windows.com
   - DOMAIN-SUFFIX,docs.live.net
+  - DOMAIN-SUFFIX,svc.ms
+
+
+  # ==================== [04. Microsoft 365 / Office 全套服务] ====================
+
+  # --- Office 核心入口 ---
+  - DOMAIN,office.com
+  - DOMAIN,www.office.com
+  - DOMAIN,admin.microsoft.com
+  - DOMAIN,portal.microsoft365.com
+  - DOMAIN,config.office.apps.microsoft.com
+  - DOMAIN,officeclient.microsoft.com
+  - DOMAIN,nexus.officeapps.live.com
+  - DOMAIN,cdn.odc.officeapps.live.com
+  - DOMAIN,res.cdn.office.net
+
+  # --- Office 在线编辑组件 ---
+  - DOMAIN,excel.officeapps.live.com
+  - DOMAIN,onenote.com
+  - DOMAIN,onenote.officeapps.live.com
+  - DOMAIN,powerpoint.officeapps.live.com
+  - DOMAIN,word.officeapps.live.com
+  - DOMAIN,roaming.officeapps.live.com
+  - DOMAIN,attachments.office.net
+
+  # --- Office 模板 / 内嵌媒体 ---
+  - DOMAIN,templates.office.com
+  - DOMAIN,tds.office.com
+  - DOMAIN,omextemplates.office.net
+  - DOMAIN,insertmedia.bing.office.net
+
+  # --- Office 更新 / 部署 ---
+  - DOMAIN,officecdn.microsoft.com
+  - DOMAIN,officecdn.microsoft.com.edgesuite.net
+  - DOMAIN,officehomeblobs.blob.core.windows.net
+
+  # --- Microsoft 365 合规与安全门户 ---
+  - DOMAIN,compliance.microsoft.com
+  - DOMAIN,purview.microsoft.com
+  - DOMAIN,protection.office.com
+  - DOMAIN,security.microsoft.com
+  - DOMAIN,securitycenter.microsoft.com
+
+  - DOMAIN-SUFFIX,office.com
   - DOMAIN-SUFFIX,office.net
   - DOMAIN-SUFFIX,office365.com
   - DOMAIN-SUFFIX,officeapps.live.com
   - DOMAIN-SUFFIX,onenote.net
   - DOMAIN-SUFFIX,sway.com
-  - DOMAIN-SUFFIX,liveoffice.com
   - DOMAIN-SUFFIX,microsoft365.com
   - DOMAIN-SUFFIX,msocdn.com
-  - DOMAIN-SUFFIX,officecdn.microsoft.com
+  - DOMAIN-SUFFIX,liveoffice.com
+  - DOMAIN-SUFFIX,office-analytics.com
+  - DOMAIN-SUFFIX,microsoftstream.com
 
 
-  # ==================== [04. Outlook / Exchange / Mail 核心] ====================
+  # ==================== [05. Outlook / Exchange / 邮件全链路] ====================
+
   - DOMAIN,outlook.live.com
+  - DOMAIN,outlook.com
   - DOMAIN,outlook.office.com
   - DOMAIN,outlook.office365.com
   - DOMAIN,mail.live.com
   - DOMAIN,calendar.live.com
+  - DOMAIN,contacts.live.com
   - DOMAIN,autodiscover-s.outlook.com
   - DOMAIN,smtp.office365.com
-  - DOMAIN,imap-mail.outlook.com
   - DOMAIN,smtp-mail.outlook.com
+  - DOMAIN,imap.outlook.com
+  - DOMAIN,pop.outlook.com
+  - DOMAIN,imap-mail.outlook.com
   - DOMAIN,eas.outlook.com
-  - DOMAIN,substrate.office.microsoft.com
-  - DOMAIN,connectivity.office.com
-  - DOMAIN,r1.res.office365.com
-  - DOMAIN,r3.res.office365.com
-  - DOMAIN,r4.res.office365.com
-  - DOMAIN,aka.ms
   - DOMAIN-SUFFIX,outlook.com
   - DOMAIN-SUFFIX,hotmail.com
   - DOMAIN-SUFFIX,live.com
 
 
-  # ==================== [05. Teams / Skype / Lync 通信底层] ====================
+  # ==================== [06. Microsoft Teams / Skype / Lync / 实时通信] ====================
+
+  # --- Teams 核心 ---
   - DOMAIN,teams.microsoft.com
   - DOMAIN,teams.live.com
-  - DOMAIN,statics.teams.cdn.office.net
   - DOMAIN,config.teams.microsoft.com
-  - DOMAIN,teams.events.data.microsoft.com
   - DOMAIN,api.teams.skype.com
+  - DOMAIN,statics.teams.cdn.office.net
+  - DOMAIN,broadcast.teams.microsoft.com
   - DOMAIN,presence.teams.microsoft.com
-  - DOMAIN,trouter.teams.microsoft.com
+  - DOMAIN,teams.events.data.microsoft.com
+  - DOMAIN,compass-ssl.microsoft.com
+  - DOMAIN,mlccdnprod.azureedge.net
+  - DOMAIN,teams.office.com
+  - DOMAIN,ic3.teams.office.com
+
+  # --- Teams 媒体 / 会议 / 直播 ---
+  - DOMAIN,calling.cdn.skype.com
+  - DOMAIN,broadcast.skype.com
+  - DOMAIN,sdkweb.skype.com
+
+  # --- Skype ---
   - DOMAIN,skype.com
   - DOMAIN,www.skype.com
   - DOMAIN,api.skype.com
   - DOMAIN,edge.skype.com
   - DOMAIN,pricelist.skype.com
-  - DOMAIN,sfbassets.com
-  - DOMAIN,mlccdn.blob.core.windows.net
-  - DOMAIN,amc.skype.com
-  - DOMAIN,join.skype.com
-  - DOMAIN,messaging.skype.com
-  - DOMAIN,s1-cdn.meet.skype.com
-  - DOMAIN,browser.pipe.aria.microsoft.com
-  - DOMAIN,calls.skype.com
-  - DOMAIN,licdn.vmwstream.com
-  - DOMAIN-SUFFIX,s-microsoft.com
+  - DOMAIN,skypecdn.com
+  - DOMAIN,skypesocial.skype.com
+  - DOMAIN,config.edge.skype.com
   - DOMAIN-SUFFIX,teams.microsoft.com
   - DOMAIN-SUFFIX,skype.com
   - DOMAIN-SUFFIX,skypeassets.com
   - DOMAIN-SUFFIX,skypeforbusiness.com
   - DOMAIN-SUFFIX,lync.com
-  - DOMAIN-SUFFIX,skypeecs-prod-uswe-00-b.cloudapp.net
+  - DOMAIN-SUFFIX,s-microsoft.com
 
 
-  # ==================== [06. Xbox 游戏生态、GamePass & 应用商店] ====================
-  - DOMAIN,xbox.ipv6.microsoft.com
+  # ==================== [07. Xbox / Game Pass / 游戏生态] ====================
+
+  # --- 认证 / 授权 ---
   - DOMAIN,xsts.auth.xboxlive.com
-  - DOMAIN,attestation.xboxlive.com
-  - DOMAIN,cert.mgt.xboxlive.com
-  - DOMAIN,title.mgt.xboxlive.com
-  - DOMAIN,xboxlive.com
   - DOMAIN,user.auth.xboxlive.com
-  - DOMAIN,presence-heartbeat.xboxlive.com
   - DOMAIN,title.auth.xboxlive.com
   - DOMAIN,device.auth.xboxlive.com
   - DOMAIN,sandbox.auth.xboxlive.com
+  - DOMAIN,attestation.xboxlive.com
+  - DOMAIN,cert.mgt.xboxlive.com
+  - DOMAIN,title.mgt.xboxlive.com
+  - DOMAIN,xbox.ipv6.microsoft.com
+
+  # --- Xbox 服务 ---
+  - DOMAIN,xboxlive.com
+  - DOMAIN,presence-heartbeat.xboxlive.com
   - DOMAIN,eds.xboxlive.com
   - DOMAIN,inventory.xboxlive.com
+  - DOMAIN,images-eds-ssl.xboxlive.com
+  - DOMAIN,images-eds.xboxlive.com
+  - DOMAIN,gameclips-cdn.xboxlive.com
+  - DOMAIN,dlassets.xbox.com
+  - DOMAIN,dlassets2.xbox.com
+  - DOMAIN,storeimages.microsoft.com
+
+  # --- Game Pass / 云游戏 ---
   - DOMAIN,catalog.gamepass.com
   - DOMAIN,cloudgame.xbox.com
-  - DOMAIN,displaycatalog.mp.microsoft.com
-  - DOMAIN,licensing.mp.microsoft.com
-  - DOMAIN,purchase.mp.microsoft.com
-  - DOMAIN,storeedgefd.dsx.mp.microsoft.com
-  - DOMAIN,storeimages.microsoft.com
-  - DOMAIN,settings-fd-geo.mo.microsoft.com
-  - DOMAIN,notify.xboxlive.com
-  - DOMAIN,social.xboxlive.com
-  - DOMAIN,profile.xboxlive.com
-  - DOMAIN,screenshots.xboxlive.com
-  - DOMAIN,achievements.xboxlive.com
-  - DOMAIN,peoplehub.xboxlive.com
-  - DOMAIN,accounts.xboxlive.com
-  - DOMAIN,help.xbox.com
-  - DOMAIN,www.xbox.com
-  - DOMAIN,assets.xbox.com
-  - DOMAIN,compass-ssl.xbox.com
-  - DOMAIN,e1.xboxlive.com
-  - DOMAIN,rta.xboxlive.com
-  - DOMAIN,ms.xboxlive.com
-  - DOMAIN,activity.xboxlive.com
-  - DOMAIN,multiplayer.xboxlive.com
-  - DOMAIN,gamepad.xboxlive.com
-  - DOMAIN,pcapp.xbox.com
+
+  # --- 第一方游戏（Halo / Forza）---
+  - DOMAIN,svc.halowaypoint.com
+  - DOMAIN,www.halowaypoint.com
+
   - DOMAIN-SUFFIX,xbox.com
   - DOMAIN-SUFFIX,xboxab.com
   - DOMAIN-SUFFIX,xboxlive.com
   - DOMAIN-SUFFIX,xboxone.com
   - DOMAIN-SUFFIX,xboxservices.com
+  - DOMAIN-SUFFIX,xboxgamingcloud.com
   - DOMAIN-SUFFIX,playfabapi.com
   - DOMAIN-SUFFIX,gamepass.com
-  - DOMAIN-SUFFIX,storeimages.microsoft.com
+  - DOMAIN-SUFFIX,mp.microsoft.com
 
 
-  # ==================== [07. Microsoft Store / WNS 推送 / MSN 新闻（无AI）] ====================
-  - DOMAIN,storecatalogwebapprod.azurewebsites.net
-  - DOMAIN,wns.windows.com
-  - DOMAIN,client.wns.windows.com
-  - DOMAIN,cns.res.msn.com
-  - DOMAIN,www.msn.com
-  - DOMAIN,assets.msn.com
-  - DOMAIN,img-s-msn-com.akamaized.net
-  - DOMAIN,static.microsoftapphub.com
-  - DOMAIN,img.s-msn.com
-  - DOMAIN,fd.api.iris.microsoft.com
-  - DOMAIN-SUFFIX,msn.com
-  - DOMAIN-SUFFIX,microsoftapphub.com
+  # ==================== [08. Microsoft Edge 浏览器] ====================
 
-
-  # ==================== [08. Bing 搜索（非AI纯搜索引擎部分）] ====================
-  # ⚠️ 注意：Bing AI / Copilot 相关域名已排除，见顶部黑名单
-  - DOMAIN,www.bing.com
-  - DOMAIN,bing.com
-  - DOMAIN,global.bing.com
-  - DOMAIN,cn.bing.com
-  - DOMAIN,api.bing.com
-  - DOMAIN,r.bing.com
-  - DOMAIN,th.bing.com
-  - DOMAIN,tse1.mm.bing.net
-  - DOMAIN,t4.bing.com
-  - DOMAIN,dict.bing.com
-  - DOMAIN,translate.bing.com
-  - DOMAIN,webmaster.bing.com
-  - DOMAIN,advertise.bingads.microsoft.com
-  - DOMAIN-SUFFIX,bing.com
-  - DOMAIN-SUFFIX,bing.net
-  - DOMAIN-SUFFIX,bingapis.com
-  - DOMAIN-SUFFIX,bingads.com
-
-
-  # ==================== [09. Edge 浏览器 & 同步服务] ====================
-  - DOMAIN,msedge.net
   - DOMAIN,edge.microsoft.com
+  - DOMAIN,msedge.net
   - DOMAIN,msedgeextensions.sf.microsoft.com
   - DOMAIN,edge-enterprise.microsoft.com
-  - DOMAIN,edge.activity.windows.com
-  - DOMAIN,activity.windows.com
+  - DOMAIN,microsoftedgewelcome.microsoft.com
+  - DOMAIN,checkappexec.microsoft.com
+  - DOMAIN,smartscreen.microsoft.com
+  - DOMAIN,smartscreen-prod.microsoft.com
   - DOMAIN,iecvlist.microsoft.com
-  - DOMAIN,cdn.msecnd.net
-  - DOMAIN,assets.onestore.ms
-  - DOMAIN,config.edge.skype.com
-  - DOMAIN,edge.microsoft.com
-  - DOMAIN,ntp.msn.com
+  - DOMAIN,activity.windows.com
+  - DOMAIN,edge.activity.windows.com
   - DOMAIN,browser.events.data.microsoft.com
-  - DOMAIN,self.events.data.microsoft.com
-  - DOMAIN,microsoftedge.api.cdp.microsoft.com
-  - DOMAIN,edge.microsoft.com
+  - DOMAIN,assets.msn.com                       # Edge 新标签页新闻图片
+  - DOMAIN,img-s-msn-com.akamaized.net           # MSN 图片 CDN（Edge 新标签页）
   - DOMAIN-SUFFIX,msedge.net
 
 
-  # ==================== [10. Azure 基础架构（非AI服务）] ====================
-  - DOMAIN,management.azure.com
-  - DOMAIN,management.core.windows.net
-  - DOMAIN,portal.azure.com
-  - DOMAIN,api.azure.com
-  - DOMAIN,app.azure.com
-  - DOMAIN,amp.azure.net
-  - DOMAIN,fabric.microsoft.com
-  - DOMAIN,c.microsoft.com
-  - DOMAIN,dc.services.visualstudio.com
-  - DOMAIN,live.core.windows.net
-  - DOMAIN,blob.core.windows.net
-  - DOMAIN,table.core.windows.net
-  - DOMAIN,queue.core.windows.net
-  - DOMAIN,file.core.windows.net
-  - DOMAIN,servicebus.windows.net
-  - DOMAIN,vault.azure.net
-  - DOMAIN,azurehdinsight.net
-  - DOMAIN,azurewebsites.net
-  - DOMAIN,trafficmanager.net
-  - DOMAIN,cloudapp.net
-  - DOMAIN,cloudapp.azure.com
-  - DOMAIN-SUFFIX,azure.com
-  - DOMAIN-SUFFIX,azureedge.net
-  - DOMAIN-SUFFIX,azurewebsites.net
-  - DOMAIN-SUFFIX,azconfig.io
-  - DOMAIN-SUFFIX,azurecontainer.io
-  - DOMAIN-SUFFIX,windowsazure.com
-  - DOMAIN-SUFFIX,microsoftazuread-sso.com
-  - DOMAIN-SUFFIX,azure.net
-  - DOMAIN-SUFFIX,trafficmanager.net
-  - DOMAIN-SUFFIX,servicebus.windows.net
-  - DOMAIN-SUFFIX,cloudapp.net
+  # ==================== [09. Bing 搜索 / MSN 门户（纯净版）] ====================
+  # !! 已完全剔除: sydney.bing.com (Copilot后端) / edgeservices.bing.com !!
+  # !! 此处使用精确 DOMAIN 条目而非 DOMAIN-SUFFIX 以避免误覆盖 AI 域   !!
+
+  # --- Bing 搜索核心 ---
+  - DOMAIN,www.bing.com
+  - DOMAIN,global.bing.com
+  - DOMAIN,cn.bing.com
+  - DOMAIN,cc.bing.com
+  - DOMAIN,ssl.bing.com
+
+  # --- Bing 垂直搜索 ---
+  - DOMAIN,images.bing.com
+  - DOMAIN,maps.bing.com
+  - DOMAIN,news.bing.com
+  - DOMAIN,videos.bing.com
+  - DOMAIN,dict.bing.com
+  - DOMAIN,translate.bing.com
+  - DOMAIN,academic.bing.com
+  - DOMAIN,search.msn.com
+
+  # --- Bing 奖励 / 积分 ---
+  - DOMAIN,rewards.bing.com
+  - DOMAIN,prod.rewardsplatform.microsoft.com
+
+  # --- Bing 广告追踪像素 ---
+  - DOMAIN,bat.bing.com
+  - DOMAIN,uetag.bing.com
+  - DOMAIN,bingads.microsoft.com
+
+  # --- Bing API / 地图底层 ---
+  - DOMAIN-SUFFIX,bingapis.com
+  - DOMAIN-SUFFIX,bingmaps.com
+  - DOMAIN-SUFFIX,virtualearth.net
+  - DOMAIN-SUFFIX,mapcontrol.com
+
+  # --- MSN 门户 ---
+  - DOMAIN,www.msn.com
+  - DOMAIN,api.msn.com
+  - DOMAIN,cdn.content.prod.cms.msn.com
+  - DOMAIN-SUFFIX,msn.com
 
 
-  # ==================== [11. Visual Studio / GitHub / Dev 生态] ====================
-  - DOMAIN,visualstudio.com
-  - DOMAIN,vortex.data.microsoft.com
-  - DOMAIN,az764295.vo.msecnd.net
-  - DOMAIN,vscode-update.azurewebsites.net
-  - DOMAIN,vscode-sync.trafficmanager.net
-  - DOMAIN,vscode.download.prss.microsoft.com
-  - DOMAIN,vscode-cdn.net
-  - DOMAIN,update.code.visualstudio.com
-  - DOMAIN,marketplace.visualstudio.com
-  - DOMAIN,gallery.vsassets.io
-  - DOMAIN,d.vsassets.io
-  - DOMAIN,az818661.vo.msecnd.net
-  - DOMAIN,vs1.az1.vsassets.io
-  - DOMAIN,github.com
+  # ==================== [10. LinkedIn（领英）] ====================
+
+  - DOMAIN-SUFFIX,linkedin.com
+  - DOMAIN-SUFFIX,licdn.com
+  - DOMAIN-SUFFIX,lnkd.in
+  - DOMAIN-SUFFIX,linkedin-ei.com
+  - DOMAIN,www.linkedin.com
+  - DOMAIN,api.linkedin.com
+  - DOMAIN,media.licdn.com
+  - DOMAIN,static.licdn.com
+  - DOMAIN,dms.licdn.com
+  - DOMAIN,snap.licdn.com
+  - DOMAIN,realtime.www.linkedin.com
+  - DOMAIN,platform.linkedin.com                # LinkedIn SDK（第三方网站登录）
+  - DOMAIN,learning.linkedin.com                # LinkedIn Learning
+
+
+  # ==================== [11. GitHub & NPM 开发者生态] ====================
+
+  - DOMAIN-SUFFIX,github.com
+  - DOMAIN-SUFFIX,github.io
+  - DOMAIN-SUFFIX,github.dev
+  - DOMAIN-SUFFIX,github.blog
+  - DOMAIN-SUFFIX,github.community
+  - DOMAIN-SUFFIX,githubapp.com
+  - DOMAIN-SUFFIX,githubassets.com
+  - DOMAIN-SUFFIX,githubusercontent.com
+  - DOMAIN-SUFFIX,githubstatus.com
+  - DOMAIN-SUFFIX,ghcr.io                       # GitHub Container Registry
   - DOMAIN,api.github.com
+  - DOMAIN,gist.github.com
   - DOMAIN,raw.githubusercontent.com
   - DOMAIN,objects.githubusercontent.com
+  - DOMAIN,camo.githubusercontent.com
   - DOMAIN,avatars.githubusercontent.com
+  - DOMAIN,media.githubusercontent.com
   - DOMAIN,codeload.github.com
-  - DOMAIN,ghcr.io
-  - DOMAIN,pkg.github.com
-  - DOMAIN,npm.pkg.github.com
-  - DOMAIN,packages.microsoft.com
-  - DOMAIN,nuget.org
-  - DOMAIN,api.nuget.org
-  - DOMAIN,dist.nuget.org
+  - DOMAIN,alive.github.com
+  - DOMAIN,collector.github.com
+  - DOMAIN,uploads.github.com
+  - DOMAIN,git-lfs.github.com
+  - DOMAIN,pipelines.actions.githubusercontent.com
+  - DOMAIN,github-com.s3.amazonaws.com
+  - DOMAIN,github-production-release-asset-2e65be.s3.amazonaws.com
+
+  # --- NPM (GitHub 旗下) ---
+  - DOMAIN-SUFFIX,npmjs.com
+  - DOMAIN-SUFFIX,npmjs.org
+
+
+  # ==================== [12. Azure 云平台] ====================
+
+  # --- Azure 门户 & 管理 ---
+  - DOMAIN,portal.azure.com
+  - DOMAIN,management.azure.com
+  - DOMAIN,management.core.windows.net
+  - DOMAIN,amp.azure.net
+  - DOMAIN,fabric.microsoft.com
+
+  # --- Azure Storage ---
+  - DOMAIN-SUFFIX,blob.core.windows.net
+  - DOMAIN-SUFFIX,table.core.windows.net
+  - DOMAIN-SUFFIX,queue.core.windows.net
+  - DOMAIN-SUFFIX,file.core.windows.net
+
+  # --- Azure Container Registry ---
+  - DOMAIN-SUFFIX,azurecr.io
+  - DOMAIN-SUFFIX,azurecontainer.io
+
+  # --- Azure 通用 ---
+  - DOMAIN-SUFFIX,azure.com
+  - DOMAIN-SUFFIX,azure.net
+  - DOMAIN-SUFFIX,azureedge.net
+  - DOMAIN-SUFFIX,azurefd.net
+  - DOMAIN-SUFFIX,azurewebsites.net
+  - DOMAIN-SUFFIX,azurestaticapps.net
+  - DOMAIN-SUFFIX,azconfig.io
+  - DOMAIN-SUFFIX,cloudapp.net
+  - DOMAIN-SUFFIX,trafficmanager.net
+  - DOMAIN-SUFFIX,azure-api.net
+  - DOMAIN-SUFFIX,azuredatabricks.net
+  - DOMAIN-SUFFIX,azurehdinsight.net
+  - DOMAIN-SUFFIX,database.windows.net
+  - DOMAIN-SUFFIX,windowsazure.com
+  - DOMAIN-SUFFIX,microsoftcloud.com
+  - DOMAIN-SUFFIX,microsoftgateway.com
+
+
+  # ==================== [13. Azure DevOps / CI/CD 工程体系] ====================
+
+  - DOMAIN,dev.azure.com
+  - DOMAIN,vsrm.dev.azure.com
+  - DOMAIN,vssps.visualstudio.com
+  - DOMAIN,app.vssps.visualstudio.com
+  - DOMAIN,vsaex.dev.azure.com
+  - DOMAIN,vstmr.dev.azure.com
+  - DOMAIN,vsblob.dev.azure.com
+  - DOMAIN,feeds.dev.azure.com
+  - DOMAIN,pkgs.dev.azure.com
+  - DOMAIN,artifacts.dev.azure.com
+  - DOMAIN,extmgmt.dev.azure.com
+
+
+  # ==================== [14. Visual Studio / 开发者工具链] ====================
+
+  - DOMAIN,marketplace.visualstudio.com
+  - DOMAIN,vsmarketplacebadge.apphb.com
+  - DOMAIN,update.code.visualstudio.com
+  - DOMAIN,vscode.blob.core.windows.net
+  - DOMAIN,az764295.vo.msecnd.net              # VS Code CDN
+  - DOMAIN,ajax.aspnetcdn.com                  # ASP.NET CDN
+  - DOMAIN,ajax.microsoft.com
   - DOMAIN-SUFFIX,visualstudio.com
   - DOMAIN-SUFFIX,vsassets.io
+  - DOMAIN-SUFFIX,vscode.dev
   - DOMAIN-SUFFIX,nuget.org
   - DOMAIN-SUFFIX,typescriptlang.org
   - DOMAIN-SUFFIX,asp.net
-  - DOMAIN-SUFFIX,github.com
-  - DOMAIN-SUFFIX,github.io
-  - DOMAIN-SUFFIX,githubusercontent.com
-  - DOMAIN-SUFFIX,githubassets.com
-  - DOMAIN-SUFFIX,vscode-cdn.net
+  - DOMAIN-SUFFIX,dot.net
   - DOMAIN-SUFFIX,dotnet.microsoft.com
 
 
-  # ==================== [12. Windows Defender / Intune / MDE 威胁防御] ====================
+  # ==================== [15. Power Platform & Dynamics 365] ====================
+
+  # --- Power BI ---
+  - DOMAIN-SUFFIX,powerbi.com
+  - DOMAIN,api.powerbi.com
+  - DOMAIN,app.powerbi.com
+  - DOMAIN,s1.powerbi.com
+  - DOMAIN,s3.powerbi.com
+
+  # --- Power Apps ---
+  - DOMAIN-SUFFIX,powerapps.com
+  - DOMAIN,make.powerapps.com
+  - DOMAIN,admin.powerplatform.microsoft.com
+  - DOMAIN,api.bap.microsoft.com
+
+  # --- Power Automate ---
+  - DOMAIN-SUFFIX,powerautomate.com
+  - DOMAIN-SUFFIX,flow.microsoft.com
+
+  # --- Power Pages ---
+  - DOMAIN-SUFFIX,powerpages.microsoft.com
+
+  # --- Dynamics 365 / CRM ---
+  - DOMAIN-SUFFIX,dynamics.com
+  - DOMAIN-SUFFIX,microsoftdynamics.de
+  - DOMAIN,crm.dynamics.com
+  - DOMAIN,api.dynamics.com
+
+
+  # ==================== [16. Microsoft 安全体系（Defender / Sentinel / Purview）] ====================
+
+  # --- Windows Defender ---
   - DOMAIN,wdcp.microsoft.com
   - DOMAIN,wdcpalt.microsoft.com
   - DOMAIN,cp.wd.microsoft.com
   - DOMAIN,definitionupdates.microsoft.com
-  - DOMAIN,smartscreen.microsoft.com
-  - DOMAIN,smartscreen-prod.microsoft.com
-  - DOMAIN,unitedstates.smartscreen.microsoft.com
-  - DOMAIN,urs.microsoft.com
-  - DOMAIN,csp.microsoft.com
-  - DOMAIN,intune.microsoft.com
-  - DOMAIN,portal.manage.microsoft.com
-  - DOMAIN,m.manage.microsoft.com
-  - DOMAIN,fef.msuc03.manage.microsoft.com
-  - DOMAIN,device.login.microsoftonline.com
-  - DOMAIN,go.microsoft.com
-  - DOMAIN,enterpriseregistration.windows.net
-  - DOMAIN,enterpriseenrollment.manage.microsoft.com
-  - DOMAIN,enterpriseenrollment-s.manage.microsoft.com
-  - DOMAIN,mdm.microsoft.com
-  - DOMAIN,r.manage.microsoft.com
-  - DOMAIN,euprodimedatapri.blob.core.windows.net
-  - DOMAIN,euprodimedatasec.blob.core.windows.net
-  - DOMAIN,euprodimedatahotfix.blob.core.windows.net
-  - DOMAIN,us.vortex-win.data.microsoft.com
-  - DOMAIN,v20.events.data.microsoft.com
-  - DOMAIN,v10.events.data.microsoft.com
-  - DOMAIN,v10.vortex-win.data.microsoft.com
-  - DOMAIN,v20.vortex-win.data.microsoft.com
+  - DOMAIN,sevillecba.microsoft.com
+
+  # --- Defender for Endpoint / Identity ---
+  - DOMAIN,portal.atp.azure.com
+  - DOMAIN,api.securitycenter.microsoft.com
+  - DOMAIN,winatp-gw-cus.microsoft.com
+  - DOMAIN,winatp-gw-eus.microsoft.com
+  - DOMAIN,winatp-gw-weu.microsoft.com
+  - DOMAIN,winatp-gw-neu.microsoft.com
+
+  # --- Defender for Cloud Apps (MCAS) ---
+  - DOMAIN-SUFFIX,cas.ms
+  - DOMAIN-SUFFIX,mcas.ms
+  - DOMAIN-SUFFIX,adallom.com
   - DOMAIN-SUFFIX,smartscreen.microsoft.com
-  - DOMAIN-SUFFIX,telemetry.microsoft.com
-  - DOMAIN-SUFFIX,telemetry.urs.microsoft.com
-  - DOMAIN-SUFFIX,manage.microsoft.com
 
 
-  # ==================== [13. LinkedIn（微软旗下）] ====================
-  - DOMAIN,www.linkedin.com
-  - DOMAIN,linkedin.com
-  - DOMAIN,api.linkedin.com
-  - DOMAIN,media.licdn.com
-  - DOMAIN,static.licdn.com
-  - DOMAIN,platform.linkedin.com
-  - DOMAIN,snap.licdn.com
-  - DOMAIN,realtime.www.linkedin.com
-  - DOMAIN,licdn.com
-  - DOMAIN-SUFFIX,linkedin.com
-  - DOMAIN-SUFFIX,licdn.com
+  # ==================== [17. Intune / Autopilot 企业设备管理] ====================
+
+  - DOMAIN,manage.microsoft.com
+  - DOMAIN,portal.manage.microsoft.com
+  - DOMAIN,enrollment.manage.microsoft.com
+  - DOMAIN,enterpriseenrollment.manage.microsoft.com
+  - DOMAIN,dm.microsoft.com
+  - DOMAIN,config.microsoft.com
+  - DOMAIN,devicemanagement.microsoft.com
+  - DOMAIN,endpoint.microsoft.com
+  - DOMAIN,fef.msua01.manage.microsoft.com
+  - DOMAIN,ztd.dds.microsoft.com               # Windows Autopilot ZTD
+  - DOMAIN,cs.dds.microsoft.com
 
 
-  # ==================== [14. Microsoft 通用 CDN & 基础支撑] ====================
-  - DOMAIN,c.microsoft.com
-  - DOMAIN,img-prod-cms-rt-microsoft-com.akamaized.net
-  - DOMAIN,res.cdn.office.net
-  - DOMAIN,cdn.msdn.microsoft.com
-  - DOMAIN,az29176.vo.msecnd.net
-  - DOMAIN,az617494.vo.msecnd.net
-  - DOMAIN,msecnd.net
-  - DOMAIN,msdn.microsoft.com
+  # ==================== [18. Microsoft Learn / Docs / 技术社区] ====================
+
   - DOMAIN,docs.microsoft.com
   - DOMAIN,learn.microsoft.com
-  - DOMAIN,techcommunity.microsoft.com
-  - DOMAIN,devblogs.microsoft.com
-  - DOMAIN,answers.microsoft.com
   - DOMAIN,support.microsoft.com
-  - DOMAIN,feedback.microsoft.com
+  - DOMAIN,techcommunity.microsoft.com
+  - DOMAIN,blogs.microsoft.com
+  - DOMAIN,technet.microsoft.com
+  - DOMAIN,msdn.microsoft.com
+  - DOMAIN,developer.microsoft.com
+  - DOMAIN,devblogs.microsoft.com
+  - DOMAIN,research.microsoft.com
+  - DOMAIN,news.microsoft.com
   - DOMAIN,privacy.microsoft.com
-  - DOMAIN,insider.windows.com
+  - DOMAIN,events.microsoft.com
+
+
+  # ==================== [19. 协作工具（Forms / Whiteboard / Planner / To Do / Stream / Clipchamp）] ====================
+
+  # --- Microsoft Forms ---
+  - DOMAIN,forms.microsoft.com
+  - DOMAIN,forms.office.com
+
+  # --- Microsoft Whiteboard ---
+  - DOMAIN,whiteboard.microsoft.com
+  - DOMAIN-SUFFIX,wbd.ms
+
+  # --- Microsoft To Do ---
+  - DOMAIN,todo.microsoft.com
+  - DOMAIN,tasks.office.com
+
+  # --- Microsoft Planner ---
+  - DOMAIN,planner.cloud.microsoft
+  - DOMAIN,www.planner.microsoft.com
+
+  # --- Microsoft Lists ---
+  - DOMAIN,lists.microsoft.com
+
+  # --- Microsoft Stream ---
+  - DOMAIN,stream.microsoft.com
+  - DOMAIN,api.microsoftstream.com
+  - DOMAIN,web.microsoftstream.com
+
+  # --- Clipchamp（视频编辑器）---
+  - DOMAIN-SUFFIX,clipchamp.com
+  - DOMAIN,api.clipchamp.com
+
+  # --- Sway ---
+  - DOMAIN,sway.com
+  - DOMAIN-SUFFIX,sway.office.com
+
+
+  # ==================== [20. Viva / Yammer / 企业社交 & 员工体验] ====================
+
+  - DOMAIN-SUFFIX,yammer.com
+  - DOMAIN-SUFFIX,yammerusercontent.com
+  - DOMAIN,www.yammer.com
+  - DOMAIN,api.yammer.com
+  - DOMAIN,files.yammer.com
+  - DOMAIN,viva.microsoft.com
+  - DOMAIN,engage.cloud.microsoft
+
+
+  # ==================== [21. Microsoft Advertising / Store / 通用基础 CDN] ====================
+
+  # --- Microsoft Advertising ---
+  - DOMAIN,ads.microsoft.com
+  - DOMAIN-SUFFIX,bingads.com
+  - DOMAIN,bat.bing.com
+  - DOMAIN,uetag.bing.com
+  - DOMAIN,ads.bingads.microsoft.com
+  - DOMAIN,universal.lastmessage.net
+
+  # --- Microsoft Store ---
+  - DOMAIN,apps.microsoft.com
+  - DOMAIN,storeimages.microsoft.com
+  - DOMAIN,storeedgefd.dsx.mp.microsoft.com
+
+  # --- 通用基础架构 CDN ---
+  - DOMAIN,c.microsoft.com
+  - DOMAIN,c1.microsoft.com
+  - DOMAIN,cdn.msecnd.net
+  - DOMAIN,assets.onestore.ms
+  - DOMAIN,mspim.net
+  - DOMAIN,sc.imp.live.com
   - DOMAIN-SUFFIX,microsoft.com
   - DOMAIN-SUFFIX,msft.net
   - DOMAIN-SUFFIX,sfx.ms
   - DOMAIN-SUFFIX,gfx.ms
-  - DOMAIN-SUFFIX,svc.ms
-  - DOMAIN-SUFFIX,microsoftcloud.com
-  - DOMAIN-SUFFIX,microsoftgateway.com
-  - DOMAIN-SUFFIX,microsoftscc.com
-  - DOMAIN-SUFFIX,microsoftstream.com
+  - DOMAIN-SUFFIX,msecnd.net
   - DOMAIN-SUFFIX,microsoft-enterprise-untrusted.com
   - DOMAIN-SUFFIX,microsoftaccount.org
-  - DOMAIN-SUFFIX,microsoft-hover-test.com
-  - DOMAIN-SUFFIX,azureedge.net
+  - DOMAIN-SUFFIX,microsoftonline.com
+  - DOMAIN-SUFFIX,microsoftonline-p.com
+  - DOMAIN-SUFFIX,microsoftscc.com
 
 
-  # ==================== [15. Microsoft 官方 IP-CIDR 及 IPv6 网段] ====================
+  # ==================== [22. 官方 IP-CIDR 网段（含 IPv6 & ASN）] ====================
+
   - IP-CIDR,13.64.0.0/11,no-resolve
   - IP-CIDR,13.96.0.0/13,no-resolve
   - IP-CIDR,13.104.0.0/14,no-resolve
-  - IP-CIDR,20.34.0.0/15,no-resolve
-  - IP-CIDR,20.36.0.0/14,no-resolve
-  - IP-CIDR,20.40.0.0/13,no-resolve
-  - IP-CIDR,20.64.0.0/10,no-resolve
-  - IP-CIDR,20.128.0.0/16,no-resolve
+  - IP-CIDR,20.0.0.0/8,no-resolve             # Azure 公有云大段（AS8075 核心）
   - IP-CIDR,23.96.0.0/13,no-resolve
   - IP-CIDR,23.103.0.0/16,no-resolve
   - IP-CIDR,40.64.0.0/13,no-resolve
@@ -525,11 +714,10 @@ payload:
   - IP-CIDR,40.80.0.0/12,no-resolve
   - IP-CIDR,40.96.0.0/12,no-resolve
   - IP-CIDR,40.112.0.0/13,no-resolve
-  - IP-CIDR,40.120.0.0/14,no-resolve
-  - IP-CIDR,40.124.0.0/16,no-resolve
   - IP-CIDR,51.103.0.0/16,no-resolve
   - IP-CIDR,51.104.0.0/15,no-resolve
   - IP-CIDR,51.136.0.0/14,no-resolve
+  - IP-CIDR,52.128.0.0/9,no-resolve
   - IP-CIDR,52.145.0.0/16,no-resolve
   - IP-CIDR,52.146.0.0/15,no-resolve
   - IP-CIDR,52.148.0.0/14,no-resolve
@@ -539,18 +727,12 @@ payload:
   - IP-CIDR,64.4.0.0/18,no-resolve
   - IP-CIDR,65.52.0.0/14,no-resolve
   - IP-CIDR,65.55.0.0/16,no-resolve
-  - IP-CIDR,70.37.0.0/17,no-resolve
-  - IP-CIDR,70.37.128.0/18,no-resolve
-  - IP-CIDR,91.190.216.0/21,no-resolve
   - IP-CIDR,104.40.0.0/13,no-resolve
-  - IP-CIDR,104.44.0.0/14,no-resolve
   - IP-CIDR,104.208.0.0/13,no-resolve
   - IP-CIDR,111.221.0.0/16,no-resolve
   - IP-CIDR,131.107.0.0/16,no-resolve
   - IP-CIDR,134.170.0.0/16,no-resolve
   - IP-CIDR,137.116.0.0/15,no-resolve
-  - IP-CIDR,137.117.0.0/16,no-resolve
-  - IP-CIDR,137.135.0.0/16,no-resolve
   - IP-CIDR,138.91.0.0/16,no-resolve
   - IP-CIDR,150.171.0.0/16,no-resolve
   - IP-CIDR,157.54.0.0/15,no-resolve
@@ -558,19 +740,25 @@ payload:
   - IP-CIDR,157.60.0.0/16,no-resolve
   - IP-CIDR,168.61.0.0/16,no-resolve
   - IP-CIDR,168.62.0.0/15,no-resolve
+  - IP-CIDR,168.63.0.0/16,no-resolve           # Azure 内部 Wire Server（虚机必须放行）
   - IP-CIDR,191.232.0.0/14,no-resolve
+  - IP-CIDR,204.79.197.0/24,no-resolve          # Bing 搜索独立节点
   - IP-CIDR,207.46.0.0/16,no-resolve
   - IP-CIDR,207.68.128.0/18,no-resolve
   - IP-CIDR,213.199.128.0/18,no-resolve
   - IP-CIDR,213.199.160.0/19,no-resolve
+
+  # --- IPv6 ---
   - IP-CIDR6,2a01:111::/32,no-resolve
   - IP-CIDR6,2603:1000::/24,no-resolve
   - IP-CIDR6,2603:1010::/35,no-resolve
-  - IP-CIDR6,2603:1020::/32,no-resolve
-  - IP-CIDR6,2603:1030::/37,no-resolve
+  - IP-CIDR6,2603:1020::/35,no-resolve
+  - IP-CIDR6,2603:1030::/35,no-resolve
   - IP-CIDR6,2603:1040::/35,no-resolve
-  - IP-CIDR6,2603:1050::/36,no-resolve
+  - IP-CIDR6,2603:1050::/35,no-resolve
   - IP-CIDR6,2620:1ec::/36,no-resolve
-  - IP-CIDR6,2620:1ec:8fc::/48,no-resolve
-  - IP-CIDR6,2620:1ec:a92::/48,no-resolve
-  - IP-CIDR6,fd3e:4f5a:5b81::/48,no-resolve
+  - IP-CIDR6,2620:1ec:4::152/128,no-resolve
+  - IP-CIDR6,2620:1ec:c::10/128,no-resolve
+
+  # --- ASN ---
+  - IP-ASN,8075,no-resolve                      # Microsoft 主 ASN（覆盖未列出的 MS IP）
