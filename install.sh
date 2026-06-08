@@ -189,6 +189,7 @@ EOF
 # 创建配置目录
 mkdir -p /etc/sing-box
 select_protocols
+
 # -----------------------
 # 选择SS加密方式（新增）
 select_ss_method() {
@@ -240,9 +241,13 @@ fi
 
 # 将用户选择写入缓存
 mkdir -p /etc/sing-box
+# preserve existing cache if any (append/overwrite relevant keys)
+# 最简单直接：在后面 create_config 也会写入 .config_cache，先写初始值以便中间步骤可读取
 echo "CUSTOM_IP=$CUSTOM_IP" > /etc/sing-box/.config_cache.tmp || true
 echo "REALITY_SNI=$REALITY_SNI" >> /etc/sing-box/.config_cache.tmp || true
+# 保留其他可能已有的缓存条目（若存在老的 .config_cache），把新临时与旧文件合并（保新值覆盖旧值）
 if [ -f /etc/sing-box/.config_cache ]; then
+    # 将旧文件中不在新文件内的行追加
     awk 'FNR==NR{a[$1]=1;next} {split($0,k,"="); if(!(k[1] in a)) print $0}' /etc/sing-box/.config_cache.tmp /etc/sing-box/.config_cache >> /etc/sing-box/.config_cache.tmp2 || true
     mv /etc/sing-box/.config_cache.tmp2 /etc/sing-box/.config_cache.tmp || true
 fi
@@ -344,6 +349,7 @@ get_config() {
 }
 
 get_config
+
 # -----------------------
 # 安装 sing-box
 install_singbox() {
@@ -546,7 +552,8 @@ INBOUND_TUIC
         sed -i "s|PSK_TUIC_PLACEHOLDER|$PSK_TUIC|g" "$TEMP_INBOUNDS"
         need_comma=true
     fi
-if $ENABLE_REALITY; then
+    
+    if $ENABLE_REALITY; then
         $need_comma && echo "," >> "$TEMP_INBOUNDS"
         cat >> "$TEMP_INBOUNDS" <<'INBOUND_REALITY'
     {
@@ -712,6 +719,7 @@ CACHEEOF
 create_config
 
 info "配置生成完成，准备设置服务..."
+
 # -----------------------
 # 设置服务
 setup_service() {
@@ -834,45 +842,45 @@ if [ -n "${CUSTOM_IP:-}" ]; then
 else
     PUB_IP=$(get_public_ip || echo "YOUR_SERVER_IP")
     if [ "$PUB_IP" = "YOUR_SERVER_IP" ]; then
-        warn "无法获取公网 IP，请手动替换"
+        warn "无法获取公网 IP,请手动替换"
     else
         info "检测到公网 IP: $PUB_IP"
     fi
 fi
 
 # -----------------------
-# 生成 URI（安装完成后显示）
+# 生成链接(仅生成已选择的协议)
 generate_uris() {
-    local host="${PUB_IP:-YOUR_SERVER_IP}"
-    local node_suffix="${suffix:-}"
-
+    local host="$PUB_IP"
+    
     if $ENABLE_SS; then
-        ss_userinfo="${SS_METHOD}:${PSK_SS}"
+        local ss_userinfo="${SS_METHOD}:${PSK_SS}"
         ss_encoded=$(printf "%s" "$ss_userinfo" | sed 's/:/%3A/g; s/+/%2B/g; s/\//%2F/g; s/=/%3D/g')
         ss_b64=$(printf "%s" "$ss_userinfo" | base64 -w0 2>/dev/null || printf "%s" "$ss_userinfo" | base64 | tr -d '\n')
+
         echo "=== Shadowsocks (SS) ==="
-        echo "ss://${ss_encoded}@${host}:${PORT_SS}#ss${node_suffix}"
-        echo "ss://${ss_b64}@${host}:${PORT_SS}#ss${node_suffix}"
+        echo "ss://${ss_encoded}@${host}:${PORT_SS}#ss${suffix}"
+        echo "ss://${ss_b64}@${host}:${PORT_SS}#ss${suffix}"
         echo ""
     fi
-
+    
     if $ENABLE_HY2; then
         hy2_encoded=$(printf "%s" "$PSK_HY2" | sed 's/:/%3A/g; s/+/%2B/g; s/\//%2F/g; s/=/%3D/g')
         echo "=== Hysteria2 (HY2) ==="
-        echo "hy2://${hy2_encoded}@${host}:${PORT_HY2}/?sni=www.bing.com&alpn=h3&insecure=1#hy2${node_suffix}"
+        echo "hy2://${hy2_encoded}@${host}:${PORT_HY2}/?sni=www.bing.com&alpn=h3&insecure=1#hy2${suffix}"
         echo ""
     fi
 
     if $ENABLE_TUIC; then
         tuic_encoded=$(printf "%s" "$PSK_TUIC" | sed 's/:/%3A/g; s/+/%2B/g; s/\//%2F/g; s/=/%3D/g')
         echo "=== TUIC ==="
-        echo "tuic://${UUID_TUIC}:${tuic_encoded}@${host}:${PORT_TUIC}/?congestion_control=bbr&alpn=h3&sni=www.bing.com&insecure=1#tuic${node_suffix}"
+        echo "tuic://${UUID_TUIC}:${tuic_encoded}@${host}:${PORT_TUIC}/?congestion_control=bbr&alpn=h3&sni=www.bing.com&insecure=1#tuic${suffix}"
         echo ""
     fi
     
     if $ENABLE_REALITY; then
         echo "=== VLESS Reality ==="
-        echo "vless://${UUID}@${host}:${PORT_REALITY}?encryption=none&flow=xtls-rprx-vision&security=reality&sni=${REALITY_SNI}&fp=chrome&pbk=${REALITY_PUB}&sid=${REALITY_SID}#reality${node_suffix}"
+        echo "vless://${UUID}@${host}:${PORT_REALITY}?encryption=none&flow=xtls-rprx-vision&security=reality&sni=${REALITY_SNI}&fp=chrome&pbk=${REALITY_PUB}&sid=${REALITY_SID}#reality${suffix}"
         echo ""
     fi
 
@@ -880,10 +888,11 @@ generate_uris() {
         anytls_user_encoded=$(printf "%s" "$ANYTLS_USER" | sed 's/:/%3A/g; s/+/%2B/g; s/\//%2F/g; s/=/%3D/g')
         anytls_pass_encoded=$(printf "%s" "$ANYTLS_PSK" | sed 's/:/%3A/g; s/+/%2B/g; s/\//%2F/g; s/=/%3D/g')
         echo "=== AnyTLS Reality ==="
-        echo "anytls://${anytls_pass_encoded}@${host}:${PORT_ANYTLS}/?security=reality&sni=${REALITY_SNI}&fp=chrome&pbk=${REALITY_PUB}&sid=${REALITY_SID}#anytls${node_suffix}"
+        echo "anytls://${anytls_pass_encoded}@${host}:${PORT_ANYTLS}/?security=reality&sni=${REALITY_SNI}&fp=chrome&pbk=${REALITY_PUB}&sid=${REALITY_SID}#anytls${suffix}"
         echo ""
     fi
 }
+
 # -----------------------
 # 最终输出
 echo ""
@@ -928,7 +937,7 @@ echo ""
 echo "=========================================="
 
 # -----------------------
-# 创建 candies-sb 管理脚本
+# 创建 sb 管理脚本
 SB_PATH="/usr/local/bin/candies-sb"
 info "正在创建 candies-sb 管理面板: $SB_PATH"
 
@@ -999,19 +1008,23 @@ read_config() {
         return 1
     fi
     
+    # 优先加载 .protocols 文件（确认协议标记）
     PROTOCOL_FILE="/etc/sing-box/.protocols"
     if [ -f "$PROTOCOL_FILE" ]; then
         . "$PROTOCOL_FILE"
     fi
     
+    # 加载缓存文件（包含端口密码等详细配置）
     if [ -f "$CACHE_FILE" ]; then
         . "$CACHE_FILE"
     fi
     
+    # 确保有默认值
     REALITY_SNI="${REALITY_SNI:-addons.mozilla.org}"
     ENABLE_ANYTLS="${ENABLE_ANYTLS:-false}"
     CUSTOM_IP="${CUSTOM_IP:-}"
 
+    # 读取各协议配置
     if [ "${ENABLE_SS:-false}" = "true" ]; then
         SS_PORT=$(jq -r '.inbounds[] | select(.type=="shadowsocks") | .listen_port // empty' "$CONFIG_PATH" | head -n1)
         SS_PSK=$(jq -r '.inbounds[] | select(.type=="shadowsocks") | .password // empty' "$CONFIG_PATH" | head -n1)
@@ -1029,6 +1042,7 @@ read_config() {
         TUIC_PSK=$(jq -r '.inbounds[] | select(.type=="tuic") | .users[0].password // empty' "$CONFIG_PATH" | head -n1)
     fi
     
+# Reality 公共参数（Reality / AnyTLS 共用）
 if [ "${ENABLE_REALITY:-false}" = "true" ] || [ "${ENABLE_ANYTLS:-false}" = "true" ]; then
     REALITY_SID=$(jq -r '
         .inbounds[]
@@ -1039,9 +1053,12 @@ if [ "${ENABLE_REALITY:-false}" = "true" ] || [ "${ENABLE_ANYTLS:-false}" = "tru
     [ -f /etc/sing-box/.reality_pub ] && REALITY_PUB=$(cat /etc/sing-box/.reality_pub)
 fi
 
+# VLESS Reality 专属参数
 if [ "${ENABLE_REALITY:-false}" = "true" ]; then
     REALITY_PORT=$(jq -r '.inbounds[] | select(.type=="vless") | .listen_port // empty' "$CONFIG_PATH" | head -n1)
+
     REALITY_UUID=$(jq -r '.inbounds[] | select(.type=="vless") | .users[0].uuid // empty' "$CONFIG_PATH" | head -n1)
+
     REALITY_PK=$(jq -r '.inbounds[] | select(.type=="vless") | .tls.reality.private_key // empty' "$CONFIG_PATH" | head -n1)
 fi
 
@@ -1052,7 +1069,7 @@ if [ "${ENABLE_ANYTLS:-false}" = "true" ]; then
 fi
 }
 
-# 获取公网IP
+# 获取公网IP（原始方法）
 get_public_ip() {
     local ip=""
     for url in "https://api.ipify.org" "https://ipinfo.io/ip" "https://ifconfig.me"; do
@@ -1061,10 +1078,12 @@ get_public_ip() {
     done
     echo "YOUR_SERVER_IP"
 }
+
 # 生成并保存URI
 generate_uris() {
     read_config || return 1
 
+    # 优先使用用户自定义入口 IP
     if [ -n "${CUSTOM_IP:-}" ]; then
         PUBLIC_IP="$CUSTOM_IP"
     else
@@ -1232,6 +1251,7 @@ action_reset_tuic() {
     sleep 1
     generate_uris || warn "生成 URI 失败"
 }
+
 # 重置Vless Reality端口
 action_reset_reality() {
     read_config || return 1
@@ -1329,19 +1349,27 @@ action_uninstall() {
 action_generate_relay() {
     read_config || return 1
     
+    # 检查是否启用了SS
     if [ "${ENABLE_SS:-false}" != "true" ]; then
         warn "未检测到 SS 协议,需要先部署 SS 作为入站"
         read -p "是否现在部署 SS 协议?(y/N): " deploy_ss
         if [[ "$deploy_ss" =~ ^[Yy]$ ]]; then
             info "开始部署 SS 协议..."
+            
+            # 让用户选择端口
             read -p "请输入 SS 端口(留空则随机 10000-60000): " USER_SS_PORT
             SS_PORT="${USER_SS_PORT:-$(rand_port)}"
             SS_PSK=$(rand_pass)
             SS_METHOD="aes-128-gcm"
+            
             info "SS 端口: $SS_PORT | 密码已自动生成"
+            
             info "正在停止服务..."
             service_stop || warn "停止服务失败"
+            
             cp "$CONFIG_PATH" "${CONFIG_PATH}.bak"
+            
+            # 添加 SS inbound
             jq --argjson port "$SS_PORT" --arg psk "$SS_PSK" '
             .inbounds += [{
               "type": "shadowsocks",
@@ -1352,20 +1380,29 @@ action_generate_relay() {
               "tag": "ss-in"
             }]
             ' "$CONFIG_PATH" > "${CONFIG_PATH}.tmp" && mv "${CONFIG_PATH}.tmp" "$CONFIG_PATH"
+            
+            # 更新缓存和协议标记
             sed -i 's/ENABLE_SS=false/ENABLE_SS=true/' "$CACHE_FILE" 2>/dev/null || echo "ENABLE_SS=true" >> "$CACHE_FILE"
             echo "SS_PORT=$SS_PORT" >> "$CACHE_FILE"
             echo "SS_PSK=$SS_PSK" >> "$CACHE_FILE"
             echo "SS_METHOD=$SS_METHOD" >> "$CACHE_FILE"
+            
+            # 同步更新协议标记文件
             PROTOCOL_FILE="/etc/sing-box/.protocols"
             if [ -f "$PROTOCOL_FILE" ]; then
                 sed -i 's/ENABLE_SS=false/ENABLE_SS=true/' "$PROTOCOL_FILE"
             else
                 echo "ENABLE_SS=true" >> "$PROTOCOL_FILE"
             fi
+            
+            # 更新当前会话变量
             ENABLE_SS=true
+            
             info "SS 已部署 - 端口: $SS_PORT"
             service_start || warn "启动服务失败"
             sleep 1
+            
+            # 重新读取配置
             read_config
         else
             err "取消生成线路机脚本"
@@ -1373,6 +1410,7 @@ action_generate_relay() {
         fi
     fi
     
+    # 线路机模板使用 CUSTOM_IP（若设置）或当前公共 IP
     if [ -n "${CUSTOM_IP:-}" ]; then
         INBOUND_IP="${CUSTOM_IP}"
     else
@@ -1502,6 +1540,7 @@ fi
 
 PUB_IP=$(curl -s https://api.ipify.org 2>/dev/null || echo "YOUR_RELAY_IP")
 
+# 生成并保存链接
 RELAY_URI="vless://$UUID@$PUB_IP:$LISTEN_PORT?encryption=none&flow=xtls-rprx-vision&security=reality&sni=__REALITY_SNI__&fp=chrome&pbk=$REALITY_PUB&sid=$REALITY_SID#relay"
 
 mkdir -p /etc/sing-box
@@ -1517,6 +1556,7 @@ info "💡 链接已保存到: /etc/sing-box/relay_uri.txt"
 info "💡 查看链接命令: cat /etc/sing-box/relay_uri.txt"
 RELAY_EOF
 
+    # 替换占位符（INBOUND_IP/PORT/METHOD/PASSWORD 同时替换 REALITY_SNI）
     sed -i "s|__INBOUND_IP__|$INBOUND_IP|g" "$RELAY_SCRIPT"
     sed -i "s|__INBOUND_PORT__|$SS_PORT|g" "$RELAY_SCRIPT"
     sed -i "s|__INBOUND_METHOD__|$SS_METHOD|g" "$RELAY_SCRIPT"
@@ -1553,6 +1593,7 @@ show_menu() {
 3) 编辑配置文件
 MENU
 
+    # 构建协议重置选项映射
     declare -g -A MENU_MAP
     local option=4
     
@@ -1586,6 +1627,7 @@ MENU
         option=$((option + 1))
     fi
 
+    # 固定功能选项
     MENU_MAP[$option]="start"
     echo "$option) 启动服务"
     option=$((option + 1))
@@ -1624,15 +1666,18 @@ while true; do
     show_menu
     read -p "请输入选项: " opt
     
+    # 处理退出
     if [ "$opt" = "0" ]; then
         exit 0
     fi
     
+    # 处理固定选项
     case "$opt" in
         1) action_view_uri ;;
         2) action_view_config ;;
         3) action_edit_config ;;
         *)
+            # 处理动态选项
             action="${MENU_MAP[$opt]:-}"
             case "$action" in
                 reset_ss) action_reset_ss ;;
