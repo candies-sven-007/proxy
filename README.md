@@ -30,7 +30,7 @@ A powerful Sing-box automated deployment tool supporting SS / HY2 / TUIC / VLESS
 ## ✅ One-click Deploy
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/candies-sven-007/proxy/main/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/candies-sven-007/proxy/main/install-multilingual.sh)
 ```
 
 ---
