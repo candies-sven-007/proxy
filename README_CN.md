@@ -30,7 +30,7 @@
 ## ✅ 一键部署命令
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/candies-sven-007/proxy/main/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/candies-sven-007/proxy/main/install-multilingual.sh)
 ```
 
 ---
