@@ -730,6 +730,74 @@ payload:
   - DOMAIN-SUFFIX,uobgroup.com
   - DOMAIN,www.uob.com.sg
 
+  # LemFi
+  - DOMAIN-SUFFIX,lemfi.com
+  - DOMAIN-SUFFIX,lemon
+  - DOMAIN-SUFFIX,pool.ntp.org
+  - DOMAIN-SUFFIX,lemonade.finance
+  - DOMAIN,app.lemonade.finance
+  - DOMAIN,assistant.lemonade.finance
+  - DOMAIN,mobile.lemonade.finance
+  - DOMAIN,support.lemfi.com
+  - DOMAIN,blog.lemfi.com
+  - DOMAIN,trust.lemfi.com
+  - DOMAIN,careers.lemonade.finance
+  - DOMAIN-SUFFIX,appsflyersdk.com
+  - DOMAIN-SUFFIX,appsflyer.com
+  - DOMAIN,htrkqz.cdn-settings.appsflyersdk.com
+  - DOMAIN,htrkqz.launches.appsflyersdk.com
+  - DOMAIN,t.appsflyer.com
+  - DOMAIN,gcdsdk.appsflyer.com
+  - DOMAIN,lemfi-campaign-store-production.firebaseio.com
+  - DOMAIN-SUFFIX,firebaseio.com
+  - DOMAIN,firebaseremoteconfigrealtime.googleapis.com
+  - DOMAIN,firebaselogging-pa.googleapis.com
+  - DOMAIN,crashlyticsreports-pa.googleapis.com
+  - DOMAIN,firebase-settings.crashlytics.com
+  - DOMAIN-SUFFIX,crashlytics.com
+  - DOMAIN,fcm.googleapis.com
+  - DOMAIN,fcmregistrations.googleapis.com
+  - DOMAIN,firebaseinstallations.googleapis.com
+  - DOMAIN,mtalk.google.com
+  - DOMAIN,alt1-mtalk.google.com
+  - DOMAIN,alt2-mtalk.google.com
+  - DOMAIN,alt3-mtalk.google.com
+  - DOMAIN,alt4-mtalk.google.com
+  - DOMAIN,alt5-mtalk.google.com
+  - DOMAIN,alt6-mtalk.google.com
+  - DOMAIN,alt7-mtalk.google.com
+  - DOMAIN,alt8-mtalk.google.com
+  - DOMAIN-SUFFIX,sentry.io
+  - DOMAIN-SUFFIX,ingest.de.sentry.io
+  - DOMAIN-SUFFIX,branch.io
+  - DOMAIN,api2.branch.io
+  - DOMAIN,cdn.branch.io
+  - DOMAIN-SUFFIX,customer.io
+  - DOMAIN,consumer.inapp.customer.io
+  - DOMAIN,cdp-eu.customer.io
+  - DOMAIN-SUFFIX,newrelic.com
+  - DOMAIN,mobile-collector.newrelic.com
+  - DOMAIN-SUFFIX,crowdin.net
+  - DOMAIN-SUFFIX,crowdin.com
+  - DOMAIN,distributions.crowdin.net
+  - DOMAIN-SUFFIX,assetsconfigcdn.org
+  - DOMAIN-SUFFIX,beyondwickedmapping.org
+  - DOMAIN-SUFFIX,cloudflare-dns.com
+  - DOMAIN-SUFFIX,cloudflareinsights.com
+  - DOMAIN,d1c5a9xrl5sbk8.cloudfront.net
+  - DOMAIN-SUFFIX,checkout.com
+  - DOMAIN-SUFFIX,cko.io
+  - DOMAIN,api.checkout.com
+  - DOMAIN,cdn.checkout.com
+  - DOMAIN,risk.checkout.com
+  - DOMAIN,secure.checkout.com
+  - DOMAIN-SUFFIX,zendesk.com
+  - DOMAIN-SUFFIX,zdassets.com
+  - DOMAIN,ekr.zdassets.com
+  - DOMAIN,static.zdassets.com
+  - DOMAIN-SUFFIX,secureframe.com
+  - DOMAIN,client.inspectiv.com
+
   # ==============================
   # Barclays (英国)/Lemfi
   # ==============================
@@ -738,8 +806,6 @@ payload:
   - DOMAIN-SUFFIX,barclaysus.com
   - DOMAIN,api.barclays.com
   - DOMAIN,www.barclays.co.uk
-  - DOMAIN-SUFFIX,lemon
-  - DOMAIN-SUFFIX,pool.ntp.org
 
   # ==============================
   # NatWest / RBS (英国)
@@ -782,3 +848,4 @@ payload:
   - PROCESS-NAME,com.tigerbrokers.stockus    # Tiger Brokers Android
   - PROCESS-NAME,com.webull.client           # Webull Android
   - PROCESS-NAME,com.robinhood.android       # Robinhood Android
+  - PROCESS-NAME,com.lemonadeFinance.android
