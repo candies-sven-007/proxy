@@ -731,13 +731,15 @@ payload:
   - DOMAIN,www.uob.com.sg
 
   # ==============================
-  # Barclays (英国)
+  # Barclays (英国)/Lemfi
   # ==============================
   - DOMAIN-SUFFIX,barclays.co.uk
   - DOMAIN-SUFFIX,barclays.com
   - DOMAIN-SUFFIX,barclaysus.com
   - DOMAIN,api.barclays.com
   - DOMAIN,www.barclays.co.uk
+  - DOMAIN-SUFFIX,lemon
+  - DOMAIN-SUFFIX,pool.ntp.org
 
   # ==============================
   # NatWest / RBS (英国)
