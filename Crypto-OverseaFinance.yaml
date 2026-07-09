@@ -1,9 +1,6 @@
 # NAME: Crypto
 # DESCRIPTION: 加密货币交易所 / 钱包 / 行情 / 链上工具 全规则集
-# 覆盖: Binance / OKX / Bybit / Coinbase / Kraken / Bitget /
-#        Gate.io / HTX(Huobi) / KuCoin / MEXC / Bitfinex /
-#        Gemini / Crypto.com / dYdX / Uniswap / MetaMask /
-#        TrustWallet / Ledger / Trezor / CoinGecko / CoinMarketCap
+
 payload:
   # ==============================
   # Binance (币安)
@@ -133,14 +130,6 @@ payload:
   - DOMAIN-SUFFIX,ethfinex.com
   - DOMAIN,api.bitfinex.com
   - DOMAIN,api-pub.bitfinex.com
-
-  # ==============================
-  # Gemini
-  # ==============================
-  - DOMAIN-SUFFIX,gemini.com
-  - DOMAIN-SUFFIX,geminicdn.com
-  - DOMAIN,api.gemini.com
-  - DOMAIN,www.gemini.com
 
   # ==============================
   # Crypto.com
@@ -302,27 +291,29 @@ payload:
   # ==============================
   # 进程名
   # ==============================
-  - PROCESS-NAME,com.binance.dev          # Binance Android
+  - PROCESS-NAME,com.binance.dev              # Binance Android
+  - PROCESS-NAME,com.kraken.invest.app        # Kraken Android
+  - PROCESS-NAME,com.kraken.pay.app           # Krak Android
+  - PROCESS-NAME,money.boku.android           # Neverless
   - PROCESS-NAME,com.binance.odapplications
-  - PROCESS-NAME,com.okex.wallet          # OKX 钱包
+  - PROCESS-NAME,com.okex.wallet              # OKX 钱包
   - PROCESS-NAME,com.bybit.app
   - PROCESS-NAME,com.coinbase.android
   - PROCESS-NAME,Coinbase
   - PROCESS-NAME,com.kucoin.exchange
   - PROCESS-NAME,com.crypto.exchange
-  - PROCESS-NAME,io.metamask              # MetaMask 浏览器扩展进程
+  - PROCESS-NAME,io.metamask                  # MetaMask 浏览器扩展进程
   - PROCESS-NAME,com.trustwallet.app
   - PROCESS-NAME,app.phantom
+  - PROCESS-NAME,ibcust                       # IBKR 客户端
+  - PROCESS-NAME,com.etoro.portfolio          # eToro Android
+  - PROCESS-NAME,com.moomoo.trade             # Moomoo Android
+  - PROCESS-NAME,com.tigerbrokers.stockus     # Tiger Brokers Android
+  - PROCESS-NAME,com.webull.client            # Webull Android
+  - PROCESS-NAME,com.robinhood.android        # Robinhood Android
 
 # NAME: OverseaFinance
 # DESCRIPTION: 海外金融服务综合分流规则
-# 覆盖: PayPal / Wise / Revolut / Monzo / Starling /
-#       iFast / TNG / GrabPay / Touch 'n Go /
-#       Stripe / Square / Klarna / Afterpay /
-#       Interactive Brokers / Saxo / eToro / Trading212 /
-#       Moomoo / Tiger Brokers / Western Union / MoneyGram /
-#       Skrill / Neteller / Paysera / N26 / Bunq /
-#       Remitly / WorldRemit / TransferGo / OFX
   # PayPal
   # ==============================
   - DOMAIN-SUFFIX,paypal.com
@@ -799,7 +790,7 @@ payload:
   - DOMAIN,client.inspectiv.com
 
   # ==============================
-  # Barclays (英国)/Lemfi
+  # Barclays (英国)
   # ==============================
   - DOMAIN-SUFFIX,barclays.co.uk
   - DOMAIN-SUFFIX,barclays.com
@@ -831,22 +822,26 @@ payload:
   # ==============================
   # 进程名
   # ==============================
-  - PROCESS-NAME,PayPal
-  - PROCESS-NAME,com.paypal.android.p2pmobile
+  - PROCESS-NAME,im.argent.contractwalletclient # Ready Android
+  - PROCESS-NAME,com.redotpay                 # Redotpay Android
+  - PROCESS-NAME,com.dogpay.app               # Dogpay Android
+  - PROCESS-NAME,com.wirex.wallet             # COCA Android
+  - PROCESS-NAME,com.nextpls.starryblu        # Starryblu Android
+  - PROCESS-NAME,com.dtc.wallet.app           # DTCpay Android
+  - PROCESS-NAME,PayPal                       # Paypal Android
+  - PROCESS-NAME,com.paypal.android.p2pmobile # Paypal Android
+  - PROCESS-NAME,com.ifast.gb                 # IFast Android
   - PROCESS-NAME,com.goyonder.yonder          # Yonder Android
   - PROCESS-NAME,com.transferwise.android     # Wise Android
   - PROCESS-NAME,com.revolut.revolut          # Revolut Android
   - PROCESS-NAME,com.monzo.money              # Monzo Android
+  - PROCESS-NAME,co.uk.getmondo               # Monzo Android
+  - PROCESS-NAME,com.payzilch.app             # Zilch Android
+  - PROCESS-NAME,com.withplum.app             # Plum Android
   - PROCESS-NAME,com.starlingbank             # Starling Android
-  - PROCESS-NAME,de.number26.app             # N26 Android
-  - PROCESS-NAME,com.grab.driver             # Grab Android
-  - PROCESS-NAME,my.com.tng.ewallet          # TNG eWallet Android
-  - PROCESS-NAME,com.skrill.moneywallet      # Skrill Android
+  - PROCESS-NAME,de.number26.app              # N26 Android
+  - PROCESS-NAME,com.grab.driver              # Grab Android
+  - PROCESS-NAME,my.com.tng.ewallet           # TNG eWallet Android
+  - PROCESS-NAME,com.skrill.moneywallet       # Skrill Android
+  - PROCESS-NAME,com.lemonadeFinance.android  # Lemfi Android
   - PROCESS-NAME,com.interactivebrokers.ibcontroller
-  - PROCESS-NAME,ibcust                      # IBKR 客户端
-  - PROCESS-NAME,com.etoro.portfolio         # eToro Android
-  - PROCESS-NAME,com.moomoo.trade            # Moomoo Android
-  - PROCESS-NAME,com.tigerbrokers.stockus    # Tiger Brokers Android
-  - PROCESS-NAME,com.webull.client           # Webull Android
-  - PROCESS-NAME,com.robinhood.android       # Robinhood Android
-  - PROCESS-NAME,com.lemonadeFinance.android
