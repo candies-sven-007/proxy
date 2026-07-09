@@ -833,6 +833,7 @@ payload:
   # ==============================
   - PROCESS-NAME,PayPal
   - PROCESS-NAME,com.paypal.android.p2pmobile
+  - PROCESS-NAME,com.goyonder.yonder          # Yonder Android
   - PROCESS-NAME,com.transferwise.android     # Wise Android
   - PROCESS-NAME,com.revolut.revolut          # Revolut Android
   - PROCESS-NAME,com.monzo.money              # Monzo Android
