@@ -313,9 +313,7 @@ payload:
   - PROCESS-NAME,com.robinhood.android        # Robinhood Android
 
 # NAME: OverseaFinance
-# DESCRIPTION: 海外金融服务综合分流规则
   # PayPal
-  # ==============================
   - DOMAIN-SUFFIX,paypal.com
   - DOMAIN-SUFFIX,paypal.me               # PayPal 收款短链
   - DOMAIN-SUFFIX,paypalobjects.com        # PayPal 静态资源
@@ -365,6 +363,7 @@ payload:
   - DOMAIN,www.monzo.com
   - DOMAIN,join.monzo.com
   - DOMAIN,community.monzo.com
+  - DOMAIN-SUFFIX,clearscore.com
 
   # ==============================
   # Starling Bank (英国数字银行)
