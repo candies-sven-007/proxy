@@ -53,6 +53,7 @@ DOMAIN-SUFFIX,wo.vzwwo.com
 
 # BTOP / EE / Virgin (1 rule)
 DOMAIN-SUFFIX,epdg.epc.mnc030.mcc234.pub.3gppnetwork.org
+DOMAIN-SUFFIX,epdg.epc.mnc033.mcc234.pub.3gppnetwork.org
 # EEESN (1 rule)
 DOMAIN-SUFFIX,epdg.epc.mnc071.mcc234.pub.3gppnetwork.org
 # Lebara (1 rule)
