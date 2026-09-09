@@ -1,11 +1,12 @@
 payload:
   - DOMAIN-KEYWORD,chaoxing
+  - DOMAIN-KEYWORD,ali
+  - DOMAIN-KEYWORD,aliyun
   - DOMAIN-KEYWORD,alipay.com
   - DOMAIN-KEYWORD,acctedu
   - DOMAIN-KEYWORD,wps
   - DOMAIN-KEYWORD,doubao
   - DOMAIN-KEYWORD,hexhub
-  - DOMAIN-KEYWORD,aliyun
   - DOMAIN-KEYWORD,kimi
   - DOMAIN-KEYWORD,daxuesoutijiang
   - DOMAIN-KEYWORD,edu.cn
