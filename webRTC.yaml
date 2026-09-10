@@ -57,6 +57,7 @@ payload:
   - DOMAIN-SUFFIX,stun.viva.com.gr
   - DOMAIN-SUFFIX,stun.vshosting.cz
   - DOMAIN-SUFFIX,stun.zadarma.com
+  - DOMAIN-SUFFIX,kali.download
   - DOMAIN,stun.12connect.com
   - DOMAIN,stun.12voip.com
   - DOMAIN,stun.actionvoip.com
