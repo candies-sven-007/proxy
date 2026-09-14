@@ -5,6 +5,7 @@ payload:
   # ==============================
   # Binance (币安)
   # ==============================
+  - DOMAIN-KEYWORD,binance
   - DOMAIN-SUFFIX,binance.com
   - DOMAIN-SUFFIX,binance.us
   - DOMAIN-SUFFIX,binance.me
@@ -27,6 +28,7 @@ payload:
   # ==============================
   # OKX (原 OKEx)
   # ==============================
+  - DOMAIN-KEYWORD,okx
   - DOMAIN-SUFFIX,okx.com
   - DOMAIN-SUFFIX,okex.com
   - DOMAIN-SUFFIX,okcoin.com
@@ -40,6 +42,7 @@ payload:
   # ==============================
   # Bybit
   # ==============================
+  - DOMAIN-KEYWORD,bybit
   - DOMAIN-SUFFIX,bybit.com
   - DOMAIN-SUFFIX,bytick.com              # Bybit 行情推送
   - DOMAIN-SUFFIX,bybit-exchange.com
