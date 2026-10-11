@@ -1,4 +1,6 @@
 payload:
+  - DOMAIN,api.ipquery.io
+  - DOMAIN,iplocate.io
   - DOMAIN,ipwho.is
   - DOMAIN,api.myip.com
   - DOMAIN,ipapi.co
