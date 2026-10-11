@@ -13,3 +13,4 @@ payload:
   - DOMAIN-KEYWORD,ping0
   - DOMAIN-KEYWORD,netart
   - DOMAIN-KEYWORD,iplark
+  - PROCESS-NAME,mihomo
