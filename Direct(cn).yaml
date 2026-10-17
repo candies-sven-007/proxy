@@ -20,6 +20,7 @@ payload:
   - DOMAIN-SUFFIX,ifaa.org.cn
   - DOMAIN-SUFFIX,luohanacademy.com
   - DOMAIN-SUFFIX,sinopayment.com.cn
+  - DOMAIN-SUFFIX,123pan.cn
   - DOMAIN-KEYWORD,chaoxing
   - DOMAIN-KEYWORD,acctedu
   - DOMAIN-KEYWORD,wps
