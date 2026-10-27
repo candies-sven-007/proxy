@@ -181,6 +181,7 @@ payload:
   # ==============================
   # MetaMask 钱包
   # ==============================
+  - DOMAIN-SUFFIX,banxa
   - DOMAIN-SUFFIX,metamask.io
   - DOMAIN-SUFFIX,metamask.app
   - DOMAIN-SUFFIX,infura.io               # MetaMask 默认 RPC
