@@ -8,6 +8,7 @@ payload:
   - DOMAIN,ip-api.com
   - DOMAIN,api.ip.sb
   - DOMAIN,ipinfo.io
+  - DOMAIN-KEYWORD,probe.candies-365.site
   - DOMAIN-KEYWORD,ipcheck
   - DOMAIN-KEYWORD,browserleaks
   - DOMAIN-KEYWORD,ping0
