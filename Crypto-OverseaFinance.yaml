@@ -1516,7 +1516,6 @@ payload:
   - DOMAIN-SUFFIX,amalbank.so
   - DOMAIN-SUFFIX,hormuud.com
   - DOMAIN-SUFFIX,bankofafrica.dj
-  - DOMAIN-SUFFIX,cbe.com.er
   - DOMAIN-SUFFIX,nbm.mw
   - DOMAIN-SUFFIX,airtel.mw
   - DOMAIN-SUFFIX,standardlesothobank.co.ls
@@ -1528,7 +1527,6 @@ payload:
   - DOMAIN-SUFFIX,banque-comores.km
   - DOMAIN-SUFFIX,bgfibank.com
   - DOMAIN-SUFFIX,airtel.ga
-  - DOMAIN-SUFFIX,bange.gq
   - DOMAIN-SUFFIX,lumitel.bi
   - DOMAIN-SUFFIX,alrajhibank.com.sa
   - DOMAIN-SUFFIX,alahli.com
@@ -1649,8 +1647,6 @@ payload:
   - DOMAIN-SUFFIX,dc.tj
   - DOMAIN-SUFFIX,dayhanbank.gov.tm
   - DOMAIN-SUFFIX,senagatbank.com.tm
-  - DOMAIN-SUFFIX,rysgalbank.gov.tm
-  - DOMAIN-SUFFIX,altynasyr.tm
   - DOMAIN-SUFFIX,abb-bank.az
   - DOMAIN-SUFFIX,kapitalbank.az
   - DOMAIN-SUFFIX,pashabank.az
@@ -1691,7 +1687,6 @@ payload:
   - DOMAIN-SUFFIX,icbc.com.mo
   - DOMAIN-SUFFIX,bnu.com.mo
   - DOMAIN-SUFFIX,bcm.com.mo
-  - DOMAIN-SUFFIX,mpay.mo
   - DOMAIN-SUFFIX,bitbank.cc
   - DOMAIN-SUFFIX,coin.z.com
   - DOMAIN-SUFFIX,sbivc.co.jp
@@ -1761,7 +1756,6 @@ payload:
   - DOMAIN-SUFFIX,acledabank.com.kh
   - DOMAIN-SUFFIX,bakong.nbc.org.kh
   - DOMAIN-SUFFIX,bcel.com.la
-  - DOMAIN-SUFFIX,ldb.org.la
   - DOMAIN-SUFFIX,jdbbank.com.la
   - DOMAIN-SUFFIX,bibd.com.bn
   - DOMAIN-SUFFIX,baiduri.com.bn
@@ -1948,7 +1942,7 @@ payload:
   - DOMAIN-SUFFIX,bam.com.gt
   - DOMAIN-SUFFIX,bancatlan.hn
   - DOMAIN-SUFFIX,ficohsa.com
-  - DOMAIN-SUFFIX,banoccidente.hn
+  - DOMAIN-SUFFIX,bancooccidente.hn
   - DOMAIN-SUFFIX,banpais.hn
   - DOMAIN-SUFFIX,bancoagricola.com
   - DOMAIN-SUFFIX,bancocuscatlan.com
@@ -1964,7 +1958,7 @@ payload:
   - DOMAIN-SUFFIX,popularenlinea.com
   - DOMAIN-SUFFIX,banreservas.com
   - DOMAIN-SUFFIX,bhdleon.com.do
-  - DOMAIN-SUFFIX,tpago.com.do
+  - DOMAIN-SUFFIX,tpago.com
   - DOMAIN-SUFFIX,popular.com
   - DOMAIN-SUFFIX,orientalbank.com
   - DOMAIN-SUFFIX,1firstbank.com
@@ -1975,13 +1969,12 @@ payload:
   - DOMAIN-SUFFIX,sagicor.com
   - DOMAIN-SUFFIX,jnbank.com
   - DOMAIN-SUFFIX,lynk.com
-  - DOMAIN-SUFFIX,jamdex.gov.jm
   - DOMAIN-SUFFIX,sogebank.com
   - DOMAIN-SUFFIX,unibankhaiti.com
-  - DOMAIN-SUFFIX,moncash.ht
+  - DOMAIN-SUFFIX,moncash.com
   - DOMAIN-SUFFIX,natcash.ht
   - DOMAIN-SUFFIX,republictt.com
-  - DOMAIN-SUFFIX,firstcitizensgroup.com
+  - DOMAIN-SUFFIX,firstcitizenstt.com
   - DOMAIN-SUFFIX,wipay.com
   - DOMAIN-SUFFIX,combankltd.com
   - DOMAIN-SUFFIX,sanddollar.bs
