@@ -28,13 +28,11 @@ payload:
   - DOMAIN-SUFFIX,openaicom.imgix.net
   - DOMAIN-SUFFIX,segment.io
   - DOMAIN-SUFFIX,sentry.io
-  - DOMAIN-SUFFIX,stripe.com
   - DOMAIN-SUFFIX,turn.livekit.cloud
   - DOMAIN-KEYWORD,openai
   # openai ^
   - DOMAIN,api.statsig.com
   - DOMAIN,copilot.microsoft.com
-  - DOMAIN,in.appcenter.ms
   - DOMAIN,sydney.bing.com
   - DOMAIN-SUFFIX,challenges.cloudflare.com
   - DOMAIN-SUFFIX,edgeservices.bing.com
@@ -480,7 +478,6 @@ payload:
   - DOMAIN-SUFFIX,glass.health
   - DOMAIN-SUFFIX,open-evidence.com
   - DOMAIN-SUFFIX,intercom.com
-  - DOMAIN-SUFFIX,zendesk.com
   - DOMAIN-SUFFIX,forethought.ai
   - DOMAIN-SUFFIX,decagon.ai
   - DOMAIN-SUFFIX,liveperson.net
@@ -510,3 +507,5 @@ payload:
   - DOMAIN-SUFFIX,sider.ai
   - DOMAIN-SUFFIX,diabrowser.com
   - DOMAIN-SUFFIX,diabrowser.engineering
+  - DOMAIN-SUFFIX,msxiaobing.com
+  - DOMAIN-SUFFIX,msxiaoice.com

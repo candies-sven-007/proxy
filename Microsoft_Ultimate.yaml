@@ -925,8 +925,6 @@ payload:
   - DOMAIN-SUFFIX,mstea.ms
   - DOMAIN-SUFFIX,msturing.org
   - DOMAIN-SUFFIX,msvevent.com
-  - DOMAIN-SUFFIX,msxiaobing.com
-  - DOMAIN-SUFFIX,msxiaoice.com
   - DOMAIN-SUFFIX,mwf-service.akamaized.net
   - DOMAIN-SUFFIX,myhomemsn.com
   - DOMAIN-SUFFIX,mymicrosoft.com
@@ -1070,3 +1068,4 @@ payload:
   - DOMAIN-SUFFIX,xboxplayanywhere.com
   - DOMAIN-SUFFIX,xboxstudios.com
   - DOMAIN-SUFFIX,xbx.lv
+  - DOMAIN,in.appcenter.ms

@@ -1,6 +1,4 @@
 payload:
-  - DOMAIN-SUFFIX,beupisp.com
-  - DOMAIN-SUFFIX,uhdnow
   - DOMAIN-SUFFIX,uhdnow.com
 
   # --- 2026-11-18 expansion: +3 rules ---
