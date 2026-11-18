@@ -32,22 +32,10 @@ payload:
   - DOMAIN-SUFFIX,turn.livekit.cloud
   - DOMAIN-KEYWORD,openai
   # openai ^
-  - DOMAIN,api.msn.com
   - DOMAIN,api.statsig.com
-  - DOMAIN,assets.msn.com
   - DOMAIN,copilot.microsoft.com
-  - DOMAIN,gateway.bingviz.microsoft.net
-  - DOMAIN,gateway.bingviz.microsoftapp.net
   - DOMAIN,in.appcenter.ms
-  - DOMAIN,location.microsoft.com
-  - DOMAIN,odc.officeapps.live.com
-  - DOMAIN,r.bing.com
-  - DOMAIN,self.events.data.microsoft.com
-  - DOMAIN,services.bingapis.com
   - DOMAIN,sydney.bing.com
-  - DOMAIN,www.bing.com
-  - DOMAIN-SUFFIX,api.microsoftapp.net
-  - DOMAIN-SUFFIX,bing-shopping.microsoft-falcon.io
   - DOMAIN-SUFFIX,challenges.cloudflare.com
   - DOMAIN-SUFFIX,edgeservices.bing.com
   - DOMAIN-KEYWORD,openaicom-api
@@ -89,16 +77,6 @@ payload:
   - IP-CIDR6,2607:6bc0::/32,no-resolve
   - IP-ASN,399358,no-resolve
   # Claude ^
-  - DOMAIN-SUFFIX,bing.com
-  - DOMAIN-SUFFIX,bing.com.cn
-  - DOMAIN-SUFFIX,bing.net
-  - DOMAIN-SUFFIX,bingads.com
-  - DOMAIN-SUFFIX,bingagencyawards.com
-  - DOMAIN-SUFFIX,bingapistatistics.com
-  - DOMAIN-SUFFIX,bingsandbox.com
-  - DOMAIN-SUFFIX,bingvisualsearch.com
-  - DOMAIN-SUFFIX,bingworld.com
-  # Bing ^
   - DOMAIN,http-inputs-notion.splunkcloud.com
   - DOMAIN-SUFFIX,notion-static.com
   - DOMAIN-SUFFIX,notion.com

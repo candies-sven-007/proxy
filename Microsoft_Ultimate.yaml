@@ -369,6 +369,8 @@ payload:
   - DOMAIN,cn.bing.com
   - DOMAIN,cc.bing.com
   - DOMAIN,ssl.bing.com
+  - DOMAIN,bing.com
+  - DOMAIN,r.bing.com
 
   # --- Bing 垂直搜索 ---
   - DOMAIN,images.bing.com
@@ -394,6 +396,18 @@ payload:
   - DOMAIN-SUFFIX,bingmaps.com
   - DOMAIN-SUFFIX,virtualearth.net
   - DOMAIN-SUFFIX,mapcontrol.com
+
+  # --- Bing 其他域名（2026-11-18 自 AI.yaml 移入）---
+  - DOMAIN,gateway.bingviz.microsoftapp.net
+  - DOMAIN-SUFFIX,bing-shopping.microsoft-falcon.io
+  - DOMAIN-SUFFIX,bing.com.cn
+  - DOMAIN-SUFFIX,bing.net
+  - DOMAIN-SUFFIX,bingagencyawards.com
+  - DOMAIN-SUFFIX,bingapistatistics.com
+  - DOMAIN-SUFFIX,bingsandbox.com
+  - DOMAIN-SUFFIX,bingvisualsearch.com
+  - DOMAIN-SUFFIX,bingworld.com
+  - DOMAIN-SUFFIX,api.microsoftapp.net
 
   # --- MSN 门户 ---
   - DOMAIN,www.msn.com
