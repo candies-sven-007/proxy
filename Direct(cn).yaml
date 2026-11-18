@@ -22,6 +22,7 @@ payload:
   - DOMAIN-SUFFIX,luohanacademy.com
   - DOMAIN-SUFFIX,sinopayment.com.cn
   - DOMAIN-SUFFIX,123pan.cn
+  - DOMAIN-KEYWORD,ocsjs
   - DOMAIN-KEYWORD,chaoxing
   - DOMAIN-KEYWORD,acctedu
   - DOMAIN-KEYWORD,wps
