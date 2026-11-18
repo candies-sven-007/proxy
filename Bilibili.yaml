@@ -83,8 +83,8 @@ payload:
   - DOMAIN-SUFFIX,bilibiligame.cn
   - DOMAIN-SUFFIX,bilibiligame.co
   - DOMAIN-SUFFIX,bilibiligame.net
-  - DOMAIN-SUFFIX,dyhgames.com 
-  - DOMAIN-SUFFIX,dreamcast.hk   
+  - DOMAIN-SUFFIX,dyhgames.com
+  - DOMAIN-SUFFIX,dreamcast.hk
   - DOMAIN-SUFFIX,bilicomics.com
   - DOMAIN-SUFFIX,animetamashi.cn
   - DOMAIN-SUFFIX,animetamashi.com
@@ -96,7 +96,7 @@ payload:
   - DOMAIN-SUFFIX,mcbbs.net
   - DOMAIN-SUFFIX,im9.com
   - DOMAIN-SUFFIX,biligo.com
-  - DOMAIN-SUFFIX,biliplus.com 
+  - DOMAIN-SUFFIX,biliplus.com
   - DOMAIN-SUFFIX,corari.com
   - DOMAIN-SUFFIX,yo9.com
   - DOMAIN-SUFFIX,sharejoytech.com
@@ -120,10 +120,10 @@ payload:
   - IP-CIDR,120.92.153.217/32
   - IP-CIDR,134.175.207.130/32
   - IP-CIDR,203.107.1.0/24
-  - PROCESS-NAME,tv.danmaku.bili     
+  - PROCESS-NAME,tv.danmaku.bili
   - PROCESS-NAME,tv.danmaku.bilibilihd
   - PROCESS-NAME,com.bilibili.app.blue
-  - PROCESS-NAME,com.bilibili.app.in  
-  - PROCESS-NAME,com.bilibili.comic    
+  - PROCESS-NAME,com.bilibili.app.in
+  - PROCESS-NAME,com.bilibili.comic
   - PROCESS-NAME,com.bilibili.comic.intl
   - PROCESS-NAME,com.bstar.intl

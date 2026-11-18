@@ -86,7 +86,6 @@ payload:
   # --- 设置同步 / 系统配置 ---
   - DOMAIN,settings-win.data.microsoft.com
   - DOMAIN,settings-fd-geo.mo.microsoft.com
-  - DOMAIN,fe3cr.delivery.mp.microsoft.com
 
   # --- 错误报告 / Watson ---
   - DOMAIN,watson.microsoft.com
@@ -355,7 +354,6 @@ payload:
   - DOMAIN,iecvlist.microsoft.com
   - DOMAIN,activity.windows.com
   - DOMAIN,edge.activity.windows.com
-  - DOMAIN,browser.events.data.microsoft.com
   - DOMAIN,assets.msn.com                       # Edge 新标签页新闻图片
   - DOMAIN,img-s-msn-com.akamaized.net           # MSN 图片 CDN（Edge 新标签页）
   - DOMAIN-SUFFIX,msedge.net
@@ -487,7 +485,6 @@ payload:
   - DOMAIN-SUFFIX,azuredatabricks.net
   - DOMAIN-SUFFIX,azurehdinsight.net
   - DOMAIN-SUFFIX,database.windows.net
-  - DOMAIN-SUFFIX,windowsazure.com
   - DOMAIN-SUFFIX,microsoftcloud.com
   - DOMAIN-SUFFIX,microsoftgateway.com
 
@@ -581,7 +578,6 @@ payload:
 
   # ==================== [17. Intune / Autopilot 企业设备管理] ====================
 
-  - DOMAIN,manage.microsoft.com
   - DOMAIN,portal.manage.microsoft.com
   - DOMAIN,enrollment.manage.microsoft.com
   - DOMAIN,enterpriseenrollment.manage.microsoft.com
@@ -662,15 +658,11 @@ payload:
   # --- Microsoft Advertising ---
   - DOMAIN,ads.microsoft.com
   - DOMAIN-SUFFIX,bingads.com
-  - DOMAIN,bat.bing.com
-  - DOMAIN,uetag.bing.com
   - DOMAIN,ads.bingads.microsoft.com
   - DOMAIN,universal.lastmessage.net
 
   # --- Microsoft Store ---
   - DOMAIN,apps.microsoft.com
-  - DOMAIN,storeimages.microsoft.com
-  - DOMAIN,storeedgefd.dsx.mp.microsoft.com
 
   # --- 通用基础架构 CDN ---
   - DOMAIN,c.microsoft.com

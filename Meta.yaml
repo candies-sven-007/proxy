@@ -144,9 +144,7 @@ payload:
   # ==============================
   # Meta 开放平台 / 登录
   # ==============================
-  - DOMAIN,connect.facebook.net
   - DOMAIN,staticxx.facebook.com
-  - DOMAIN,www.facebook.com
 
   # ==============================
   # 进程名

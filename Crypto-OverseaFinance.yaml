@@ -234,7 +234,6 @@ payload:
   # 区块链浏览器
   # ==============================
   - DOMAIN-SUFFIX,etherscan.io            # 以太坊浏览器
-  - DOMAIN-SUFFIX,bscscan.com             # BSC 浏览器
   - DOMAIN-SUFFIX,polygonscan.com         # Polygon 浏览器
   - DOMAIN-SUFFIX,arbiscan.io             # Arbitrum 浏览器
   - DOMAIN-SUFFIX,optimistic.etherscan.io # Optimism
