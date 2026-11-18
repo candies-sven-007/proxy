@@ -126,3 +126,10 @@ payload:
   - DOMAIN,stun.whoi.edu
   - DOMAIN,stun.wifisecure.de
   - DOMAIN,stun.yealink.com
+
+  # --- 2026-11-18 expansion: +5 rules ---
+  - DOMAIN,numb.viagenie.ca
+  - DOMAIN,s1.taraba.net
+  - DOMAIN,s2.taraba.net
+  - DOMAIN,s1.voipstation.jp
+  - DOMAIN,s2.voipstation.jp

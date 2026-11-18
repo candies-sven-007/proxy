@@ -15,3 +15,54 @@ payload:
   - DOMAIN-KEYWORD,netart
   - DOMAIN-KEYWORD,iplark
   - PROCESS-NAME,mihomo
+  # --- 2026-11-18 expansion: +50 rules ---
+  - DOMAIN-SUFFIX,ipify.org
+  - DOMAIN,ifconfig.me
+  - DOMAIN,ifconfig.co
+  - DOMAIN,ifconfig.io
+  - DOMAIN,ifconfig.es
+  - DOMAIN,icanhazip.com
+  - DOMAIN,ipecho.net
+  - DOMAIN,l2.io
+  - DOMAIN,ipconfig.io
+  - DOMAIN,checkip.amazonaws.com
+  - DOMAIN,ip.me
+  - DOMAIN,freeipapi.com
+  - DOMAIN,get.geojs.io
+  - DOMAIN,api.db-ip.com
+  - DOMAIN,my-ip.io
+  - DOMAIN,ip-api.io
+  - DOMAIN,api.ip2location.io
+  - DOMAIN,api.ipapi.is
+  - DOMAIN,api.geoapify.com
+  - DOMAIN,geoip.maxmind.com
+  - DOMAIN,api.ipregistry.co
+  - DOMAIN,api.ipbase.com
+  - DOMAIN,api.country.is
+  - DOMAIN,iplocation.com
+  - DOMAIN,speed.cloudflare.com
+  - DOMAIN,ip.sb
+  - DOMAIN,api.ipinfo.io
+  - DOMAIN,demo.ip-api.com
+  - DOMAIN,edns.ip-api.com
+  - DOMAIN,ipquery.io
+  - DOMAIN,myip.com
+  - DOMAIN,whatismyipaddress.com
+  - DOMAIN,whatismyip.com
+  - DOMAIN,iplocation.net
+  - DOMAIN,ip.cn
+  - DOMAIN,myip.ipip.net
+  - DOMAIN,cip.cc
+  - DOMAIN,ip138.com
+  - DOMAIN,whoer.net
+  - DOMAIN,ipleak.net
+  - DOMAIN,dnsleaktest.com
+  - DOMAIN,api.ipstack.com
+  - DOMAIN,api.ipgeolocation.io
+  - DOMAIN,api.ipdata.co
+  - DOMAIN,ipgeolocation.abstractapi.com
+  - DOMAIN,freegeoip.app
+  - DOMAIN,ipwhois.app
+  - DOMAIN-KEYWORD,ifconfig
+  - DOMAIN-KEYWORD,ipinfo
+  - DOMAIN-KEYWORD,whatismyip

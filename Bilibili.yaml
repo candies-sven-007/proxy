@@ -127,3 +127,33 @@ payload:
   - PROCESS-NAME,com.bilibili.comic
   - PROCESS-NAME,com.bilibili.comic.intl
   - PROCESS-NAME,com.bstar.intl
+
+  # --- 2026-11-18 expansion: +28 rules ---
+  - DOMAIN-SUFFIX,bstarstatic.com
+  - DOMAIN,upos-sz-mirrorakam.akamaized.net
+  - DOMAIN-SUFFIX,bilicomic.com
+  - DOMAIN-SUFFIX,solseedr.cn
+  - DOMAIN-SUFFIX,solseed.cn
+  - DOMAIN-SUFFIX,ppgslb.cn
+  - DOMAIN-SUFFIX,ppio.com
+  - DOMAIN-SUFFIX,ppio.cn
+  - DOMAIN-SUFFIX,ppio.net.cn
+  - DOMAIN-SUFFIX,ppos.com
+  - DOMAIN-SUFFIX,zhenxyun.cn
+  - DOMAIN-SUFFIX,zhenxcloud.cn
+  - DOMAIN-SUFFIX,edge.mountaintoys.cn
+  - DOMAIN-KEYWORD,smogfly
+  - DOMAIN-SUFFIX,zhenidc.cn
+  - DOMAIN-SUFFIX,zxycdn.cn
+  - DOMAIN-SUFFIX,zhenxuanidc.cn
+  - DOMAIN-SUFFIX,zhenxuancdn.cn
+  - DOMAIN-SUFFIX,zhenxuancloud.com
+  - DOMAIN-SUFFIX,ppio.online
+  - DOMAIN-SUFFIX,ppio.cloud
+  - DOMAIN-SUFFIX,ppio.work
+  - DOMAIN-SUFFIX,ppiocdn.com
+  - DOMAIN-SUFFIX,ppiocdn.cn
+  - DOMAIN-SUFFIX,ppinfra.com
+  - DOMAIN-SUFFIX,ppgslb.com
+  - DOMAIN-KEYWORD,wuchuyun
+  - DOMAIN-KEYWORD,wuchucloud
