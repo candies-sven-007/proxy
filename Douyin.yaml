@@ -95,3 +95,9 @@ payload:
   - DOMAIN-SUFFIX,toutiaoribao.cn
   - DOMAIN-SUFFIX,toutiaoribao.net
   - DOMAIN-SUFFIX,huoshan.com
+
+  # --- 2026-11-20 00:00 +08 ---
+  - DOMAIN-SUFFIX,capcut.com
+  - DOMAIN-SUFFIX,jianying.com
+  - DOMAIN-SUFFIX,lemon8-app.com
+  - DOMAIN-SUFFIX,volcengine.com

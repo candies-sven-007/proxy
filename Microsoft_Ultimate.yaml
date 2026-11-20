@@ -1069,3 +1069,6 @@ payload:
   - DOMAIN-SUFFIX,xboxstudios.com
   - DOMAIN-SUFFIX,xbx.lv
   - DOMAIN,in.appcenter.ms
+
+  # --- 2026-11-20 00:00 +08 ---
+  - DOMAIN-SUFFIX,slideshare.net

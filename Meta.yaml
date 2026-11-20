@@ -361,3 +361,8 @@ payload:
   - DOMAIN-SUFFIX,whatsapp.org
   - DOMAIN-SUFFIX,whatsapp.tv
   - DOMAIN-SUFFIX,workplaceusecases.com
+
+  # --- 2026-11-20 00:00 +08 ---
+  - DOMAIN-SUFFIX,beatsaber.com
+  - DOMAIN-SUFFIX,metacareers.com
+  - DOMAIN-SUFFIX,threads.com

@@ -509,3 +509,24 @@ payload:
   - DOMAIN-SUFFIX,diabrowser.engineering
   - DOMAIN-SUFFIX,msxiaobing.com
   - DOMAIN-SUFFIX,msxiaoice.com
+
+  # --- 2026-11-20 00:00 +08 ---
+  - DOMAIN-SUFFIX,ai21.com
+  - DOMAIN-SUFFIX,beautiful.ai
+  - DOMAIN,bolt.new
+  - DOMAIN-SUFFIX,deepseek.com
+  - DOMAIN-SUFFIX,gamma.app
+  - DOMAIN-SUFFIX,jina.ai
+  - DOMAIN-SUFFIX,llama.com
+  - DOMAIN-SUFFIX,llamaindex.ai
+  - DOMAIN-SUFFIX,lovable.dev
+  - DOMAIN-SUFFIX,napkin.ai
+  - DOMAIN-SUFFIX,pinecone.io
+  - DOMAIN-SUFFIX,qwen.ai
+  - DOMAIN-SUFFIX,tavily.com
+  - DOMAIN-SUFFIX,tome.app
+  - DOMAIN-SUFFIX,v0.app
+  - DOMAIN-SUFFIX,v0.dev
+  - DOMAIN,wenxin.baidu.com
+  - DOMAIN,yiyan.baidu.com
+  - DOMAIN,yuanbao.tencent.com

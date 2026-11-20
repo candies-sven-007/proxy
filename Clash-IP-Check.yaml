@@ -66,3 +66,15 @@ payload:
   - DOMAIN-KEYWORD,ifconfig
   - DOMAIN-KEYWORD,ipinfo
   - DOMAIN-KEYWORD,whatismyip
+  # --- 2026-11-20 00:00 +08 ---
+  - DOMAIN,iphey.com
+  - DOMAIN,ipqualityscore.com
+  - DOMAIN,proxycheck.io
+  - DOMAIN,dnsleak.com
+  - DOMAIN,wtfismyip.com
+  - DOMAIN,ip2location.com
+  - DOMAIN,ipvoid.com
+  - DOMAIN,2ip.io
+  - DOMAIN,2ip.ru
+  - DOMAIN,ipleak.com
+  - DOMAIN,abuseipdb.com

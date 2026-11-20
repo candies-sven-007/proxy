@@ -132,3 +132,9 @@ payload:
   - DOMAIN,s2.taraba.net
   - DOMAIN,s1.voipstation.jp
   - DOMAIN,s2.voipstation.jp
+
+  # --- 2026-11-20 00:00 +08 ---
+  - DOMAIN,global.turn.twilio.com
+  - DOMAIN,openrelay.metered.ca
+  - DOMAIN,standard.relay.metered.ca
+  - DOMAIN,turn.cloudflare.com
