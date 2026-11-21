@@ -383,3 +383,21 @@ payload:
   - DOMAIN-SUFFIX,facebook.kr
   - DOMAIN-SUFFIX,facebook.pl
   - DOMAIN-SUFFIX,facebook.tw
+
+  # --- 2026-11-22 00:00 +08 ---
+  - DOMAIN-SUFFIX,camouflaj.com
+  - DOMAIN-SUFFIX,camouflaj.games
+  - DOMAIN-SUFFIX,facebook.co.nz
+  - DOMAIN-SUFFIX,facebook.com.co
+  - DOMAIN-SUFFIX,facebook.com.eg
+  - DOMAIN-SUFFIX,facebook.com.ng
+  - DOMAIN-SUFFIX,facebook.com.pt
+  - DOMAIN-SUFFIX,facebook.com.ro
+  - DOMAIN-SUFFIX,facebook.com.tw
+  - DOMAIN-SUFFIX,horizonworlds.com
+  - DOMAIN-SUFFIX,instagram.com.br
+  - DOMAIN-SUFFIX,instagram.de
+  - DOMAIN-SUFFIX,instagram.es
+  - DOMAIN-SUFFIX,instagram.fr
+  - DOMAIN-SUFFIX,instagram.it
+  - DOMAIN-SUFFIX,twistedpixelgames.com

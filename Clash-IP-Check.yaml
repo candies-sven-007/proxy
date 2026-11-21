@@ -106,3 +106,15 @@ payload:
   - DOMAIN,showmyip.com
   - DOMAIN,vpnapi.io
   - DOMAIN,whoer.com
+
+  # --- 2026-11-22 00:00 +08 ---
+  - DOMAIN,checkmyip.com
+  - DOMAIN,ip-lookup.com
+  - DOMAIN,ip-lookup.net
+  - DOMAIN,ip-tracker.org
+  - DOMAIN,ipfinder.io
+  - DOMAIN,iplookup.io
+  - DOMAIN,myip.ms
+  - DOMAIN,myipaddress.com
+  - DOMAIN,whatsmyip.com
+  - DOMAIN,whatsmyip.org

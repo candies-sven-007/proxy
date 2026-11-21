@@ -112,3 +112,6 @@ payload:
   - DOMAIN-SUFFIX,ulike.com
   - DOMAIN-SUFFIX,volcengine.cn
   - DOMAIN-SUFFIX,xingtu.com
+
+  # --- 2026-11-22 00:00 +08 ---
+  - DOMAIN-SUFFIX,fanqienovel.com

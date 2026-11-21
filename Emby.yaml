@@ -8,3 +8,6 @@ payload:
 
   # --- 2026-11-20 00:00 +08 ---
   - DOMAIN-SUFFIX,mediabrowser.tv
+
+  # --- 2026-11-22 00:00 +08 ---
+  - DOMAIN-SUFFIX,emby.tv
