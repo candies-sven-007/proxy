@@ -101,3 +101,14 @@ payload:
   - DOMAIN-SUFFIX,jianying.com
   - DOMAIN-SUFFIX,lemon8-app.com
   - DOMAIN-SUFFIX,volcengine.com
+
+  # --- 2026-11-21 00:00 +08 ---
+  - DOMAIN-SUFFIX,byteplus.com
+  - DOMAIN-SUFFIX,capcut.cn
+  - DOMAIN-SUFFIX,feishu.cn
+  - DOMAIN-SUFFIX,hypic.com
+  - DOMAIN-SUFFIX,larksuite.com
+  - DOMAIN-SUFFIX,lemon8.com
+  - DOMAIN-SUFFIX,ulike.com
+  - DOMAIN-SUFFIX,volcengine.cn
+  - DOMAIN-SUFFIX,xingtu.com

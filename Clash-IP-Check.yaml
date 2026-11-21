@@ -78,3 +78,31 @@ payload:
   - DOMAIN,2ip.ru
   - DOMAIN,ipleak.com
   - DOMAIN,abuseipdb.com
+
+  # --- 2026-11-21 00:00 +08 ---
+  - DOMAIN,2ip.ua
+  - DOMAIN,checkip.dyndns.com
+  - DOMAIN,checkip.dyndns.org
+  - DOMAIN,country.is
+  - DOMAIN,db-ip.com
+  - DOMAIN,geojs.io
+  - DOMAIN,getipintel.net
+  - DOMAIN,ip2location.io
+  - DOMAIN,ip2proxy.com
+  - DOMAIN,ipaddress.com
+  - DOMAIN,ipapi.is
+  - DOMAIN,ipbase.com
+  - DOMAIN,ipchicken.com
+  - DOMAIN,ipdata.co
+  - DOMAIN,ipgeolocation.io
+  - DOMAIN,iphub.info
+  - DOMAIN,ipip.net
+  - DOMAIN,iplocation.io
+  - DOMAIN,ipregistry.co
+  - DOMAIN,ipstack.com
+  - DOMAIN,maxmind.com
+  - DOMAIN,myip.is
+  - DOMAIN,scamalytics.com
+  - DOMAIN,showmyip.com
+  - DOMAIN,vpnapi.io
+  - DOMAIN,whoer.com

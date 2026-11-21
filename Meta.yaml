@@ -366,3 +366,20 @@ payload:
   - DOMAIN-SUFFIX,beatsaber.com
   - DOMAIN-SUFFIX,metacareers.com
   - DOMAIN-SUFFIX,threads.com
+
+  # --- 2026-11-21 00:00 +08 ---
+  - DOMAIN-SUFFIX,beatgames.com
+  - DOMAIN-SUFFIX,facebook.com.ar
+  - DOMAIN-SUFFIX,facebook.com.au
+  - DOMAIN-SUFFIX,facebook.com.br
+  - DOMAIN-SUFFIX,facebook.com.mx
+  - DOMAIN-SUFFIX,facebook.com.tr
+  - DOMAIN-SUFFIX,facebook.de
+  - DOMAIN-SUFFIX,facebook.es
+  - DOMAIN-SUFFIX,facebook.fr
+  - DOMAIN-SUFFIX,facebook.hk
+  - DOMAIN-SUFFIX,facebook.it
+  - DOMAIN-SUFFIX,facebook.jp
+  - DOMAIN-SUFFIX,facebook.kr
+  - DOMAIN-SUFFIX,facebook.pl
+  - DOMAIN-SUFFIX,facebook.tw

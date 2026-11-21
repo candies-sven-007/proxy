@@ -138,3 +138,7 @@ payload:
   - DOMAIN,openrelay.metered.ca
   - DOMAIN,standard.relay.metered.ca
   - DOMAIN,turn.cloudflare.com
+
+  # --- 2026-11-21 00:00 +08 ---
+  - DOMAIN,global.relay.metered.ca
+  - DOMAIN,turn.twilio.com

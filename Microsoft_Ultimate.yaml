@@ -1072,3 +1072,25 @@ payload:
 
   # --- 2026-11-20 00:00 +08 ---
   - DOMAIN-SUFFIX,slideshare.net
+
+  # --- 2026-11-21 00:00 +08 ---
+  - DOMAIN-SUFFIX,ageofempires.com
+  - DOMAIN-SUFFIX,arkane.com
+  - DOMAIN-SUFFIX,bethesda.com
+  - DOMAIN-SUFFIX,compulsiongames.com
+  - DOMAIN-SUFFIX,doublefine.com
+  - DOMAIN-SUFFIX,fallout.com
+  - DOMAIN-SUFFIX,flightsimulator.com
+  - DOMAIN-SUFFIX,halowaypoint.com
+  - DOMAIN-SUFFIX,inxile-entertainment.com
+  - DOMAIN-SUFFIX,minecraft.com
+  - DOMAIN-SUFFIX,ninjatheory.com
+  - DOMAIN-SUFFIX,obsidian.net
+  - DOMAIN-SUFFIX,playground-games.com
+  - DOMAIN-SUFFIX,rare.co.uk
+  - DOMAIN-SUFFIX,seaofthieves.com
+  - DOMAIN-SUFFIX,starfieldgame.com
+  - DOMAIN-SUFFIX,thecoalitionstudio.com
+  - DOMAIN-SUFFIX,undeadlabs.com
+  - DOMAIN-SUFFIX,worldsedge.com
+  - DOMAIN-SUFFIX,zenimax.com
