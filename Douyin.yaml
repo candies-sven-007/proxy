@@ -115,3 +115,24 @@ payload:
 
   # --- 2026-11-22 00:00 +08 ---
   - DOMAIN-SUFFIX,fanqienovel.com
+  # --- 2026-11-23 00:00 +08 ---
+  - DOMAIN-SUFFIX,bytedance.cn
+  - DOMAIN-SUFFIX,byteplus.cn
+  - DOMAIN-SUFFIX,capcut.net
+  - DOMAIN-SUFFIX,douyin.cn
+  - DOMAIN-SUFFIX,faceu.com
+  - DOMAIN-SUFFIX,faceu.net
+  - DOMAIN-SUFFIX,fanqie.com
+  - DOMAIN-SUFFIX,hongguo.com
+  - DOMAIN-SUFFIX,hongguodrama.com
+  - DOMAIN-SUFFIX,huoshan.cn
+  - DOMAIN-SUFFIX,ixigua.cn
+  - DOMAIN-SUFFIX,jianying.cn
+  - DOMAIN-SUFFIX,larkoffice.com
+  - DOMAIN-SUFFIX,musical.ly
+  - DOMAIN-SUFFIX,pangle.cn
+  - DOMAIN-SUFFIX,pangle.com
+  - DOMAIN-SUFFIX,pangle.io
+  - DOMAIN-SUFFIX,qingyan.com
+  - DOMAIN-SUFFIX,toutiao.cn
+  - DOMAIN-SUFFIX,volcengine.net

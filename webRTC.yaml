@@ -142,3 +142,10 @@ payload:
   # --- 2026-11-21 00:00 +08 ---
   - DOMAIN,global.relay.metered.ca
   - DOMAIN,turn.twilio.com
+  # --- 2026-11-23 00:00 +08 ---
+  - DOMAIN,eu.relay.metered.ca
+  - DOMAIN,sfu.voip.signal.org
+  - DOMAIN,turn.matrix.org
+  - DOMAIN,turn3.voip.signal.org
+  - DOMAIN,us.relay.metered.ca
+  - DOMAIN,ws-turn1.xirsys.com

@@ -118,3 +118,46 @@ payload:
   - DOMAIN,myipaddress.com
   - DOMAIN,whatsmyip.com
   - DOMAIN,whatsmyip.org
+  # --- 2026-11-23 00:00 +08 ---
+  - DOMAIN,2ip.com
+  - DOMAIN,2ip.org
+  - DOMAIN,checkmyip.org
+  - DOMAIN,dbip.com
+  - DOMAIN,dnsleaktest.net
+  - DOMAIN,dnsleaktest.org
+  - DOMAIN,freegeoip.io
+  - DOMAIN,geojs.com
+  - DOMAIN,getipintel.com
+  - DOMAIN,ip-api.net
+  - DOMAIN,ip-lookup.org
+  - DOMAIN,ip-tracker.com
+  - DOMAIN,ip2location.net
+  - DOMAIN,ipaddress.net
+  - DOMAIN,ipapi.com
+  - DOMAIN,ipbase.io
+  - DOMAIN,ipchicken.net
+  - DOMAIN,ipdata.com
+  - DOMAIN,ipfinder.com
+  - DOMAIN,ipgeolocation.com
+  - DOMAIN,iphub.com
+  - DOMAIN,ipip.com
+  - DOMAIN,ipleak.org
+  - DOMAIN,iplocate.com
+  - DOMAIN,iplookup.com
+  - DOMAIN,ipqs.com
+  - DOMAIN,ipquery.com
+  - DOMAIN,ipregistry.com
+  - DOMAIN,ipstack.net
+  - DOMAIN,ipwhois.io
+  - DOMAIN,myip.net
+  - DOMAIN,myipaddress.org
+  - DOMAIN,proxycheck.com
+  - DOMAIN,showmyip.net
+  - DOMAIN,showmyip.org
+  - DOMAIN,tnedi.me
+  - DOMAIN,v4.ident.me
+  - DOMAIN,v6.ident.me
+  - DOMAIN,vpnapi.com
+  - DOMAIN,whatsmyip.net
+  - DOMAIN,whoer.org
+  - DOMAIN,wtfismyip.net

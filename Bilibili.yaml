@@ -157,3 +157,12 @@ payload:
   - DOMAIN-SUFFIX,ppgslb.com
   - DOMAIN-KEYWORD,wuchuyun
   - DOMAIN-KEYWORD,wuchucloud
+  # --- 2026-11-23 00:00 +08 ---
+  - DOMAIN-SUFFIX,bilibili.co.jp
+  - DOMAIN-SUFFIX,bilibili.com.hk
+  - DOMAIN-SUFFIX,bilibili.com.tw
+  - DOMAIN-SUFFIX,bilibili.hk
+  - DOMAIN-SUFFIX,bilibili.jp
+  - DOMAIN-SUFFIX,bilibili.ph
+  - DOMAIN-SUFFIX,bilibili.tw
+  - DOMAIN-SUFFIX,bilibilipay.com
