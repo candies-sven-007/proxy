@@ -1,4 +1,5 @@
 payload:
+  - DOMAIN,aliyun.com
   - DOMAIN-SUFFIX,at.alicdn.com
   - DOMAIN-SUFFIX,alipay
   - DOMAIN-SUFFIX,alipay-corp.com
