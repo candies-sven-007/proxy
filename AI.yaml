@@ -916,3 +916,11 @@ payload:
   - DOMAIN-SUFFIX,ultralytics.com
   - DOMAIN-SUFFIX,vapi.ai
   - DOMAIN-SUFFIX,voyageai.com
+
+  # --- 2026-11-24 09:31 +08 ---
+  - DOMAIN-SUFFIX,askashopowner.com
+  - DOMAIN-SUFFIX,doubao.com
+  - DOMAIN-SUFFIX,kimi.com
+  - DOMAIN-SUFFIX,lingyiwanwu.com
+  - DOMAIN-SUFFIX,spiritt.ai
+  - DOMAIN-SUFFIX,tongyi.ai
