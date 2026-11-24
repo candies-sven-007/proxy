@@ -509,7 +509,6 @@ payload:
   - DOMAIN-SUFFIX,deepseek.com
   - DOMAIN-SUFFIX,gamma.app
   - DOMAIN-SUFFIX,jina.ai
-  - DOMAIN-SUFFIX,llama.com
   - DOMAIN-SUFFIX,llamaindex.ai
   - DOMAIN-SUFFIX,lovable.dev
   - DOMAIN-SUFFIX,napkin.ai

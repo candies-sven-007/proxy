@@ -24,6 +24,7 @@ payload:
   - DOMAIN,imagine.meta.com
   - DOMAIN-SUFFIX,meta.ai
   - DOMAIN-SUFFIX,llma.meta.com
+  - DOMAIN-SUFFIX,llama.com
   - DOMAIN-SUFFIX,muse.ai
   - DOMAIN-SUFFIX,metaaivm.com
   - DOMAIN-SUFFIX,metaaiusercontent.com
