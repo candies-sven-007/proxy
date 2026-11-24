@@ -4,8 +4,7 @@
 # DESCRIPTION: Meta Platforms 全系服务分流规则
 # 覆盖: Facebook / Instagram / WhatsApp / Messenger /
 #        Threads / Oculus / Quest / Workplace /
-#        Meta 广告 / CDN 基础设施
-# 排除: Meta AI (已剔除 ai.meta.com / llama 等 AI 相关规则)
+#        Meta 广告 / CDN 基础设施 / Meta AI
 # 建议策略: 代理
 
 payload:
@@ -20,6 +19,18 @@ payload:
   - DOMAIN-SUFFIX,fbsbx.com                  # Facebook Sandbox CDN
   - DOMAIN-SUFFIX,fbthirdpartypixel.com
   - DOMAIN-SUFFIX,facebook.net
+
+  # ==============================
+  # Meta AI (含 Muse)
+  # ==============================
+  - DOMAIN,meta.ai
+  - DOMAIN,www.meta.ai
+  - DOMAIN,imagine.meta.com
+  - DOMAIN-SUFFIX,meta.ai
+  - DOMAIN-SUFFIX,llma.meta.com
+  - DOMAIN-SUFFIX,muse.ai
+  - DOMAIN-SUFFIX,metaaivm.com
+  - DOMAIN-SUFFIX,metaaiusercontent.com
 
   # ==============================
   # Facebook 子域细化

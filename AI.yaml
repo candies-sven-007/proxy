@@ -112,17 +112,12 @@ payload:
   - DOMAIN-SUFFIX,cursor.com
   # Dev AI 补全 ^
 
-  - DOMAIN,meta.ai
-  - DOMAIN,www.meta.ai
-  - DOMAIN,imagine.meta.com
   - DOMAIN,perplexity.ai
   - DOMAIN,www.perplexity.ai
   - DOMAIN,api.perplexity.ai
   - DOMAIN,phind.com
-  - DOMAIN-SUFFIX,meta.ai
-  - DOMAIN-SUFFIX,llma.meta.com
   - DOMAIN-SUFFIX,perplexity.ai
-  # Meta & Search AI ^
+  # Search AI ^
 
   - DOMAIN,groq.com
   - DOMAIN,api.groq.com
@@ -324,9 +319,6 @@ payload:
   - DOMAIN,copilotprodattachments.blob.core.windows.net
   - DOMAIN,copilot-telemetry-service.githubusercontent.com
   - DOMAIN,copilot-telemetry.githubusercontent.com
-  - DOMAIN-SUFFIX,muse.ai
-  - DOMAIN-SUFFIX,metaaivm.com
-  - DOMAIN-SUFFIX,metaaiusercontent.com
   - DOMAIN-SUFFIX,grokbot.com
   - DOMAIN-SUFFIX,grokipedia.com
   - DOMAIN-SUFFIX,grok.x.com
