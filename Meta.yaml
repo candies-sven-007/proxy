@@ -170,6 +170,9 @@ payload:
   - PROCESS-NAME,com.facebook.orca            # Messenger Android
   - PROCESS-NAME,Threads
   - PROCESS-NAME,com.instagram.barcelona      # Threads Android
+  - PROCESS-NAME,com.facebook.stella          # Meta AI Android
+  - PROCESS-NAME,com.facebook.aura            # Muse Android
+  - PROCESS-NAME,com.oculus.twilight          # Meta Horizon Android
   - PROCESS-NAME,com.oculus.shellenv          # Meta Quest
   - PROCESS-NAME,OVRServer_x64
   - PROCESS-NAME,OculusClient
