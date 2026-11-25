@@ -17913,3 +17913,95 @@ payload:
   - DOMAIN-SUFFIX,zitounapay.com
   - DOMAIN-SUFFIX,zitounapayment.com
   - DOMAIN-SUFFIX,zywa.co
+
+  # --- 2026-11-25 18:46 +08 ---
+  - PROCESS-NAME,com.okinc.okex.gp  # Android OKX exchange app
+  - PROCESS-NAME,com.okx.wallet  # Android + iOS OKX Wallet
+  - PROCESS-NAME,com.okex.OKExAppstoreFull  # iOS OKX exchange app bundle ID
+  - PROCESS-NAME,org.toshi  # Android Coinbase Wallet (now renamed "Base")
+  - PROCESS-NAME,com.bitget.exchange  # Android Bitget
+  - PROCESS-NAME,com.gateio.gateio  # Android Gate.io
+  - PROCESS-NAME,pro.huobi  # Android HTX (ex Huobi)
+  - PROCESS-NAME,com.mexcpro.client  # Android MEXC
+  - PROCESS-NAME,com.bitfinex.mobileapp  # Android Bitfinex
+  - PROCESS-NAME,com.defi.wallet  # Android Crypto.com Onchain Wallet (ex DeFi Wallet)
+  - PROCESS-NAME,trade.opsdao.dydxchain  # Android dYdX
+  - PROCESS-NAME,com.uniswap.mobile  # Android Uniswap Wallet
+  - PROCESS-NAME,com.ledger.live  # Android Ledger Live / Ledger Wallet
+  - PROCESS-NAME,io.trezor.suite  # Android Trezor Suite
+  - PROCESS-NAME,exodusmovement.exodus  # Android Exodus
+  - PROCESS-NAME,com.debank.rabbymobile  # Android Rabby Wallet
+  - PROCESS-NAME,me.rainbow  # Android Rainbow Wallet
+  - PROCESS-NAME,com.starlingbank.android  # Android Starling
+  - PROCESS-NAME,de.number26.android  # Android N26
+  - PROCESS-NAME,com.bunq.android  # Android bunq
+  - PROCESS-NAME,com.squareup.cash  # Android Cash App
+  - PROCESS-NAME,com.myklarnamobile  # Android Klarna
+  - PROCESS-NAME,com.affirm.central  # Android Affirm
+  - PROCESS-NAME,com.moneybookers.skrillpayments.neteller  # Android Neteller
+  - PROCESS-NAME,lt.lemonlabs.android.paysera  # Android Paysera
+  - PROCESS-NAME,com.remitly.androidapp  # Android Remitly
+  - PROCESS-NAME,com.worldremit.android  # Android WorldRemit
+  - PROCESS-NAME,com.westernunion.android.mtapp  # Android Western Union (main app)
+  - PROCESS-NAME,com.westernunion.wuplus.eu  # Android Western Union Digital Banking / WU Plus
+  - PROCESS-NAME,com.mgi.moneygram  # Android MoneyGram
+  - PROCESS-NAME,com.transfergo.android  # Android TransferGo
+  - PROCESS-NAME,com.saxobank.go  # Android SaxoTrader
+  - PROCESS-NAME,com.saxomarkets.go  # Android SaxoTrader (SG/regional variant)
+  - PROCESS-NAME,com.avuscapital.trading212  # Android Trading 212
+  - PROCESS-NAME,com.schwab.mobile  # Android Schwab Mobile
+  - PROCESS-NAME,com.vanguard  # Android Vanguard
+  - PROCESS-NAME,com.barclays.android.barclaysmobilebanking  # Android Barclays UK
+  - PROCESS-NAME,com.rbs.mobile.android.natwest  # Android NatWest
+  - PROCESS-NAME,com.grppl.android.shell.CMBlloydsTSB73  # Android Lloyds Mobile Banking
+  - PROCESS-NAME,com.grppl.android.shell.halifax  # Android Halifax Mobile Banking
+  - PROCESS-NAME,io.zerion.android  # Android Zerion
+  - PROCESS-NAME,app.backpack.mobile  # Android Backpack
+  - PROCESS-NAME,com.solflare.mobile  # Android Solflare
+  - PROCESS-NAME,com.chainapsis.keplr  # Android Keplr
+  - PROCESS-NAME,com.ton_keeper  # Android Tonkeeper
+  - PROCESS-NAME,io.unisat  # Android UniSat
+  - PROCESS-NAME,com.secretkeylabs.xverse  # Android Xverse
+  - PROCESS-NAME,so.onekey.app.wallet  # Android OneKey
+  - PROCESS-NAME,io.safepal.wallet  # Android SafePal
+  - PROCESS-NAME,com.tangem.wallet  # Android Tangem
+  - PROCESS-NAME,org.electrum.electrum  # Android Electrum
+  - PROCESS-NAME,io.bluewallet.bluewallet  # Android BlueWallet
+  - PROCESS-NAME,io.stormbird.wallet  # Android AlphaWallet
+  - PROCESS-NAME,app.braavos.wallet  # Android Braavos
+  - PROCESS-NAME,com.lydia  # Android Sumeria/Lydia
+  - PROCESS-NAME,com.lydia.app  # Android Lydia (separate app)
+  - PROCESS-NAME,com.fpe.comptenickel  # Android Nickel
+  - PROCESS-NAME,com.shine.app  # Android Shine
+  - PROCESS-NAME,eu.qonto.qonto  # Android Qonto
+  - PROCESS-NAME,com.boursorama.android.clients  # Android Boursorama
+  - PROCESS-NAME,com.fortuneo.android  # Android Fortuneo
+  - PROCESS-NAME,fr.bnpp.digitalbanking  # Android Hello bank!
+  - PROCESS-NAME,com.tideplatform.banking  # Android Tide UK
+  - PROCESS-NAME,co.tide.tideplatform.eu  # Android Tide EU
+  - PROCESS-NAME,com.anna.money.app  # Android Anna Money UK
+  - PROCESS-NAME,com.anna.money.app.au  # Android Anna Money AU variant
+  - PROCESS-NAME,com.getcoconut.coconut  # Android Coconut
+  - PROCESS-NAME,to.chip.app  # Android Chip
+  - PROCESS-NAME,io.freetrade.android  # Android Freetrade
+  - PROCESS-NAME,com.coinjar.riemann  # Android CoinJar
+  - PROCESS-NAME,com.flutterwave.app  # Android Flutterwave
+  - PROCESS-NAME,com.flutterwave.pos  # Android Flutterwave POS
+  - PROCESS-NAME,com.flutterwave.send.prod  # Android Send App by Flutterwave
+  - PROCESS-NAME,com.paystack.zap  # Android Zap by Paystack (consumer)
+  - PROCESS-NAME,com.paystack.go  # Android Paystack Go / Merchant
+  - PROCESS-NAME,com.kudabank.app  # Android Kuda
+  - PROCESS-NAME,team.opay.pay  # Android OPay
+  - PROCESS-NAME,com.transsnet.palmpay  # Android PalmPay
+  - PROCESS-NAME,com.moniepoint.personal  # Android Moniepoint Personal
+  - PROCESS-NAME,com.moniepoint.business  # Android Moniepoint Business
+  - PROCESS-NAME,com.safaricom.mpesa.lifestyle  # Android M-Pesa
+  - PROCESS-NAME,com.safaricom.mpesa.orgapp  # Android M-PESA for Business
+  - PROCESS-NAME,capitec.acuity.mobile.prod  # Android Capitec
+  - PROCESS-NAME,consumer.cbsa.smartapp  # Android TymeBank
+  - PROCESS-NAME,com.sofi.mobile  # Android SoFi
+  - PROCESS-NAME,com.onedebit.chime  # Android Chime
+  - PROCESS-NAME,com.konylabs.capitalone  # Android Capital One Mobile
+  - PROCESS-NAME,com.americanexpress.android.acctsvcs.us  # Android Amex US
+  - PROCESS-NAME,com.mercadopago.wallet  # Android Mercado Pago
+  - PROCESS-NAME,com.nu.production  # Android Nu

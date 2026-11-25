@@ -16161,3 +16161,48 @@ payload:
   - DOMAIN,huggingfaceusercontent.com
   - DOMAIN,hf.space
   - DOMAIN,spaces.huggingface.co
+
+  # --- 2026-11-25 18:46 +08 ---
+  - PROCESS-NAME,ai.x.grok  # Android Grok
+  - PROCESS-NAME,ai.x.GrokApp  # iOS Grok bundle ID
+  - PROCESS-NAME,com.openai.chatgpt  # Android ChatGPT
+  - PROCESS-NAME,com.openai.chat  # iOS ChatGPT bundle ID
+  - PROCESS-NAME,ChatGPT.exe  # Windows ChatGPT desktop
+  - PROCESS-NAME,ChatGPT  # macOS ChatGPT desktop
+  - PROCESS-NAME,com.anthropic.claude  # Android Claude
+  - PROCESS-NAME,Claude.exe  # Windows Claude desktop
+  - PROCESS-NAME,com.google.android.apps.bard  # Android Gemini
+  - PROCESS-NAME,com.google.gemini  # iOS Gemini bundle ID
+  - PROCESS-NAME,ai.perplexity.app.android  # Android Perplexity
+  - PROCESS-NAME,ai.perplexity.app  # iOS Perplexity bundle ID
+  - PROCESS-NAME,Comet.exe  # Windows Perplexity Comet browser
+  - PROCESS-NAME,Comet  # macOS Perplexity Comet browser
+  - PROCESS-NAME,ai.perplexity.comet  # Android Perplexity Comet browser
+  - PROCESS-NAME,com.poe.android  # Android Poe
+  - PROCESS-NAME,com.quora.app.Experts  # iOS Poe bundle ID
+  - PROCESS-NAME,com.runwayml.prod  # Android Runway
+  - PROCESS-NAME,ai.character.app  # Android Character.AI
+  - PROCESS-NAME,io.elevenlabs.coreapp  # Android ElevenLabs (main app)
+  - PROCESS-NAME,io.elevenlabs.readerapp  # Android ElevenReader
+  - PROCESS-NAME,com.suno.android  # Android Suno
+  - PROCESS-NAME,ai.suno.ios  # iOS Suno bundle ID
+  - PROCESS-NAME,ai.leonardo.leonardo  # Android Leonardo.Ai
+  - PROCESS-NAME,ai.leonardo.Leonardo  # iOS Leonardo.Ai bundle ID (note capital L — differs from Android)
+  - PROCESS-NAME,notion.id  # Android Notion
+  - PROCESS-NAME,Notion.exe  # Windows Notion desktop
+  - PROCESS-NAME,Notion  # macOS Notion desktop
+  - PROCESS-NAME,com.replit.app  # Android Replit
+  - PROCESS-NAME,Cursor.exe  # Windows Cursor
+  - PROCESS-NAME,Cursor  # macOS Cursor
+  - PROCESS-NAME,cursor  # Linux Cursor
+  - PROCESS-NAME,Windsurf.exe  # Windows Windsurf editor
+  - PROCESS-NAME,Windsurf  # macOS Windsurf editor
+  - PROCESS-NAME,windsurf  # Linux Windsurf editor
+  - PROCESS-NAME,com.you.browser  # Android You.com
+  - PROCESS-NAME,com.canva.editor  # Android Canva
+  - PROCESS-NAME,com.canva.canvaeditor  # iOS Canva bundle ID
+  - PROCESS-NAME,Canva.exe  # Windows Canva desktop
+  - PROCESS-NAME,Canva  # macOS Canva desktop
+  - PROCESS-NAME,ai.mistral.chat  # Android Le Chat (now "Vibe by Mistral", same package)
+  - PROCESS-NAME,com.heygen.app  # Android HeyGen
+  - PROCESS-NAME,bg.remove.android  # Android remove.bg (Kaleido AI)

@@ -1192,3 +1192,90 @@ payload:
   - DOMAIN-SUFFIX,tormentgame.com
   - DOMAIN-SUFFIX,turn10studios.com
   - DOMAIN-SUFFIX,wehappyfew.com
+
+  # --- 2026-11-25 18:46 +08 ---
+  - PROCESS-NAME,winword.exe  # Windows + Word
+  - PROCESS-NAME,com.microsoft.office.word  # Android + Word
+  - PROCESS-NAME,com.microsoft.Office.Word  # iOS + Word
+  - PROCESS-NAME,Microsoft Word  # macOS + Word
+  - PROCESS-NAME,excel.exe  # Windows + Excel
+  - PROCESS-NAME,com.microsoft.office.excel  # Android + Excel
+  - PROCESS-NAME,com.microsoft.Office.Excel  # iOS + Excel
+  - PROCESS-NAME,Microsoft Excel  # macOS + Excel
+  - PROCESS-NAME,powerpnt.exe  # Windows + PowerPoint
+  - PROCESS-NAME,com.microsoft.office.powerpoint  # Android + PowerPoint
+  - PROCESS-NAME,com.microsoft.Office.Powerpoint  # iOS + PowerPoint
+  - PROCESS-NAME,Microsoft PowerPoint  # macOS + PowerPoint
+  - PROCESS-NAME,OUTLOOK.EXE  # Windows + Outlook (classic)
+  - PROCESS-NAME,olk.exe  # Windows + Outlook (new)
+  - PROCESS-NAME,com.microsoft.office.outlook  # Android + Outlook
+  - PROCESS-NAME,com.microsoft.Office.Outlook  # iOS + Outlook
+  - PROCESS-NAME,Microsoft Outlook  # macOS + Outlook
+  - PROCESS-NAME,onenote.exe  # Windows + OneNote
+  - PROCESS-NAME,com.microsoft.office.onenote  # Android + OneNote
+  - PROCESS-NAME,com.microsoft.onenote  # iOS + OneNote
+  - PROCESS-NAME,Microsoft OneNote  # macOS + OneNote
+  - PROCESS-NAME,msaccess.exe  # Windows + Access
+  - PROCESS-NAME,mspub.exe  # Windows + Publisher
+  - PROCESS-NAME,com.microsoft.office.officehubrow  # Android + Microsoft 365 app
+  - PROCESS-NAME,com.microsoft.officemobile  # iOS + Microsoft 365 app
+  - PROCESS-NAME,ms-teams.exe  # Windows + Teams (new)
+  - PROCESS-NAME,com.microsoft.teams  # Android + Teams
+  - PROCESS-NAME,com.microsoft.skype.teams  # iOS + Teams
+  - PROCESS-NAME,Microsoft Teams  # macOS + Teams
+  - PROCESS-NAME,Skype.exe  # Windows + Skype (RETIRED)
+  - PROCESS-NAME,com.skype.raider  # Android + Skype (RETIRED)
+  - PROCESS-NAME,com.skype.skype  # iOS + Skype (RETIRED)
+  - PROCESS-NAME,Skype  # macOS + Skype (RETIRED)
+  - PROCESS-NAME,skypeforlinux  # Linux + Skype (RETIRED)
+  - PROCESS-NAME,OneDrive.exe  # Windows + OneDrive sync
+  - PROCESS-NAME,com.microsoft.skydrive  # Android + OneDrive
+  - PROCESS-NAME,OneDrive  # macOS + OneDrive
+  - PROCESS-NAME,com.microsoft.sharepoint  # Android + SharePoint
+  - PROCESS-NAME,msedge.exe  # Windows + Edge
+  - PROCESS-NAME,com.microsoft.emmx  # Android + Edge
+  - PROCESS-NAME,com.microsoft.msedge  # iOS + Edge
+  - PROCESS-NAME,Microsoft Edge  # macOS + Edge
+  - PROCESS-NAME,microsoft-edge  # Linux + Edge
+  - PROCESS-NAME,com.microsoft.bing  # Android + Bing
+  - PROCESS-NAME,WinStore.App.exe  # Windows + Microsoft Store
+  - PROCESS-NAME,XboxPcApp.exe  # Windows + Xbox app
+  - PROCESS-NAME,com.microsoft.xboxone.smartglass  # Android + Xbox app
+  - PROCESS-NAME,GameBar.exe  # Windows + Xbox Game Bar
+  - PROCESS-NAME,GameBarFTServer.exe  # Windows + Xbox Game Bar full-trust server
+  - PROCESS-NAME,com.linkedin.android  # Android + LinkedIn
+  - PROCESS-NAME,com.linkedin.LinkedIn  # iOS + LinkedIn
+  - PROCESS-NAME,GitHubDesktop.exe  # Windows + GitHub Desktop
+  - PROCESS-NAME,GitHub Desktop  # macOS + GitHub Desktop
+  - PROCESS-NAME,Code.exe  # Windows + VS Code
+  - PROCESS-NAME,Code  # macOS + VS Code
+  - PROCESS-NAME,code  # Linux + VS Code
+  - PROCESS-NAME,devenv.exe  # Windows + Visual Studio IDE
+  - PROCESS-NAME,PBIDesktop.exe  # Windows + Power BI Desktop
+  - PROCESS-NAME,com.microsoft.powerbim  # Android + Power BI
+  - PROCESS-NAME,com.microsoft.powerbimobile  # iOS + Power BI
+  - PROCESS-NAME,com.microsoft.crm.crmphone  # Android + Dynamics 365 for Phones
+  - PROCESS-NAME,com.microsoft.crm.crmtablet  # Android + Dynamics 365 for Tablets
+  - PROCESS-NAME,com.microsoft.crm.crmphone.sales  # Android + Dynamics 365 Sales
+  - PROCESS-NAME,com.microsoft.crm.crmphone.fieldServices  # Android + Dynamics 365 Field Service
+  - PROCESS-NAME,PAD.Console.Host.exe  # Windows + Power Automate for desktop
+  - PROCESS-NAME,com.microsoft.flow  # Android + Power Automate mobile
+  - PROCESS-NAME,com.yammer.v1  # Android + Viva Engage (Yammer)
+  - PROCESS-NAME,MsMpEng.exe  # Windows + Defender Antivirus engine
+  - PROCESS-NAME,SecHealthUI.exe  # Windows + Windows Security app UI
+  - PROCESS-NAME,com.microsoft.scmx  # Android + Microsoft Defender
+  - PROCESS-NAME,Microsoft Defender  # macOS + Microsoft Defender
+  - PROCESS-NAME,CompanyPortal.exe  # Windows + Company Portal
+  - PROCESS-NAME,com.microsoft.windowsintune.companyportal  # Android + Company Portal
+  - PROCESS-NAME,com.microsoft.CompanyPortal  # iOS + Company Portal
+  - PROCESS-NAME,com.azure.authenticator  # Android + Authenticator
+  - PROCESS-NAME,com.microsoft.azureauthenticator  # iOS + Authenticator
+  - PROCESS-NAME,com.microsoft.todos  # Android + To Do
+  - PROCESS-NAME,Microsoft To Do  # macOS + To Do
+  - PROCESS-NAME,com.microsoft.familysafety  # Android + Family Safety
+  - PROCESS-NAME,mstsc.exe  # Windows + Remote Desktop Connection (built-in)
+  - PROCESS-NAME,msrdc.exe  # Windows + Windows App / MSRDC client
+  - PROCESS-NAME,com.microsoft.rdc.androidx  # Android + Windows App (formerly Remote Desktop)
+  - PROCESS-NAME,com.microsoft.planner  # Android + Planner
+  - PROCESS-NAME,com.microsoft.whiteboard.publicpreview  # Android + Whiteboard
+  - PROCESS-NAME,com.microsoft.stream  # Android + Stream (RETIRED)

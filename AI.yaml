@@ -920,3 +920,43 @@ payload:
 
   # --- 2026-11-25 08:57 +08 ---
   - DOMAIN-SUFFIX,poke.com
+
+  # --- 2026-11-25 18:46 +08 ---
+  - PROCESS-NAME,com.openai.chatgpt  # Android ChatGPT
+  - PROCESS-NAME,com.openai.chat  # iOS ChatGPT bundle ID
+  - PROCESS-NAME,ChatGPT.exe  # Windows ChatGPT desktop
+  - PROCESS-NAME,com.openai.sora  # Android Sora by OpenAI
+  - PROCESS-NAME,com.microsoft.copilot  # Android Microsoft Copilot
+  - PROCESS-NAME,Copilot.exe  # Windows Copilot app
+  - PROCESS-NAME,com.google.android.apps.bard  # Android Gemini
+  - PROCESS-NAME,com.google.gemini  # iOS Gemini bundle ID
+  - PROCESS-NAME,com.anthropic.claude  # Android package AND iOS bundle ID (identical string, one line covers both)
+  - PROCESS-NAME,Claude.exe  # Windows Claude Desktop
+  - PROCESS-NAME,claude  # macOS/Linux Claude Code CLI executable
+  - PROCESS-NAME,ai.perplexity.app.android  # Android Perplexity
+  - PROCESS-NAME,ai.perplexity.app  # iOS Perplexity bundle ID
+  - PROCESS-NAME,Perplexity.exe  # Windows Perplexity app
+  - PROCESS-NAME,ai.x.grok  # Android Grok
+  - PROCESS-NAME,ai.x.GrokApp  # iOS Grok bundle ID
+  - PROCESS-NAME,com.deepseek.chat  # Android package AND iOS bundle ID (identical string)
+  - PROCESS-NAME,com.poe.android  # Android Poe
+  - PROCESS-NAME,com.quora.app.Experts  # iOS Poe bundle ID
+  - PROCESS-NAME,ai.character.app  # Android package AND iOS bundle ID (identical string)
+  - PROCESS-NAME,com.tongyi.intl  # Android Qwen – Alibaba AI Assistant (current international listing)
+  - PROCESS-NAME,ai.qwenlm.chat.android  # Android Qwen Chat listing (Alibaba Cloud Singapore)
+  - PROCESS-NAME,notion.id  # Android package AND iOS bundle ID (identical string)
+  - PROCESS-NAME,Cursor  # macOS Cursor executable name
+  - PROCESS-NAME,cursor  # Linux Cursor main binary (/usr/share/cursor/cursor in the official .deb)
+  - PROCESS-NAME,windsurf  # macOS/Linux Windsurf executable (older installs; newer rebranded Devin Desktop)
+  - PROCESS-NAME,codex  # macOS/Linux Codex CLI executable
+  - PROCESS-NAME,devin  # macOS/Linux Devin CLI executable
+  - PROCESS-NAME,ollama.exe  # Windows Ollama
+  - PROCESS-NAME,ollama  # macOS/Linux Ollama daemon
+  - PROCESS-NAME,LM Studio  # macOS/Windows LM Studio process name
+  - PROCESS-NAME,com.runwayml.prod  # Android Runway
+  - PROCESS-NAME,com.suno.android  # Android Suno
+  - PROCESS-NAME,io.elevenlabs.coreapp  # Android ElevenLabs
+  - PROCESS-NAME,ai.leonardo.leonardo  # Android Leonardo
+  - PROCESS-NAME,com.grammarly.android.keyboard  # Android Grammarly
+  - PROCESS-NAME,com.duolingo  # Android Duolingo
+  - PROCESS-NAME,us.nobarriers.elsa  # Android ELSA Speak

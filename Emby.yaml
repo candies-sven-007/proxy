@@ -11,3 +11,13 @@ payload:
 
   # --- 2026-11-22 00:00 +08 ---
   - DOMAIN-SUFFIX,emby.tv
+
+  # --- 2026-11-25 18:46 +08 ---
+  - PROCESS-NAME,com.mb.android  # Android + Emby（手机/平板）
+  - PROCESS-NAME,tv.emby.embyatv  # Android TV + Emby for Android TV（与手机版是不同的包）
+  - PROCESS-NAME,com.emby.mobile  # iOS + Emby bundle ID
+  - PROCESS-NAME,EmbyServer.exe  # Windows + Emby Server
+  - PROCESS-NAME,Emby.Theater.exe  # Windows + Emby Theater（旧桌面客户端）
+  - PROCESS-NAME,EmbyClientWinUI.exe  # Windows + 新 Emby App（商店版，执行别名 EmbyClientWinUI；官方称其取代已停产的 Emby Theater Desktop）
+  - PROCESS-NAME,EmbyServer  # macOS + Emby Server（EmbyServer.app 内可执行名）
+  - PROCESS-NAME,emby-server  # Linux + Emby Server 启动器/服务名（emby-server.service 的 ExecStart=/opt/emby-server/bin/emby-server；真正跑流量的是上面的 EmbyServer，这条是次选）

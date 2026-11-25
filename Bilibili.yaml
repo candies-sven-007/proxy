@@ -166,3 +166,17 @@ payload:
   - DOMAIN-SUFFIX,bilibili.ph
   - DOMAIN-SUFFIX,bilibili.tw
   - DOMAIN-SUFFIX,bilibilipay.com
+
+  # --- 2026-11-25 18:46 +08 ---
+  - PROCESS-NAME,com.xiaodianshi.tv.yst  # Android TV + 哔哩哔哩TV版（云视听小电视）
+  - PROCESS-NAME,com.bilibili.bilibililive  # Android + 哔哩哔哩直播姬（手机开播端）
+  - PROCESS-NAME,com.bilibili.bilithings  # Android + 哔哩哔哩车机版
+  - PROCESS-NAME,com.bilibili.studio  # Android + iOS + 必剪 Bcut（B站官方剪辑，两平台同一标识）
+  - PROCESS-NAME,tv.danmaku.bilianime  # iOS + 哔哩哔哩主站 bundle ID（Apple Lookup id 736536022）
+  - PROCESS-NAME,tv.danmaku.biliblue  # iOS + 哔哩哔哩概念 bundle ID（与安卓概念版 com.bilibili.app.blue 不同）
+  - PROCESS-NAME,com.bilibili.inter  # iOS + bilibili 国际版 bundle ID（id 1517062289）
+  - PROCESS-NAME,com.bilibili.bilicomic  # iOS + 哔哩哔哩漫画 bundle ID（注意是单数 comic，与安卓 com.bilibili.comic 不同）
+  - PROCESS-NAME,com.bilibili.live.virtualarkit  # iOS + 哔哩哔哩直播面捕助手 bundle ID（小众直播配套，id 1626045460）
+  - PROCESS-NAME,bilibili.exe  # Windows + 哔哩哔哩 PC 客户端运行进程
+  - PROCESS-NAME,livehime.exe  # Windows + 哔哩哔哩直播姬 PC 开播端进程（另有真实 Mihomo 配置在用此值佐证：linux.do topic 2515952）
+  - PROCESS-NAME,com.bilibili.bilibiliPC  # macOS + 官方 Mac 客户端 bundle ID

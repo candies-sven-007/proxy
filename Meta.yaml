@@ -437,3 +437,13 @@ payload:
 
   # --- 2026-11-25 08:57 +08 ---
   - DOMAIN-SUFFIX,moltbook.com
+
+  # --- 2026-11-25 18:46 +08 ---
+  - PROCESS-NAME,WhatsApp.exe  # Windows + WhatsApp 桌面版（旧 Electron 版进程；文件里已有裸 WhatsApp，那是 macOS 形式，Windows 的.exe 形式缺失）
+  - PROCESS-NAME,WhatsApp.Root.exe  # Windows + WhatsApp 桌面版（现行微软商店版宿主进程，路径 C:\Program Files\WindowsApps\5319275A.WhatsAppDesktop_*\WhatsApp.Root.exe）
+  - PROCESS-NAME,com.facebook.work  # Android + Workplace from Meta
+  - PROCESS-NAME,com.facebook.workchat  # Android + Workplace Chat from Meta
+  - PROCESS-NAME,com.instagram.lite  # Android + Instagram Lite
+  - PROCESS-NAME,com.facebook.talk  # Android + Messenger Kids
+  - PROCESS-NAME,OVRRedir  # Windows + Oculus/Meta Horizon PC 运行时（OVRRedir.exe，与已有的 OVRServer_x64、OculusClient 同目录同系列，用无扩展名形式与现有条目风格一致）
+  - PROCESS-NAME,OVRServiceLauncher  # Windows + Oculus/Meta Horizon PC 运行时（OVRServiceLauncher.exe，OVRService 服务启动器）

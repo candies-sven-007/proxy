@@ -136,3 +136,26 @@ payload:
   - DOMAIN-SUFFIX,qingyan.com
   - DOMAIN-SUFFIX,toutiao.cn
   - DOMAIN-SUFFIX,volcengine.net
+
+  # --- 2026-11-25 18:46 +08 ---
+  - PROCESS-NAME,com.ss.android.ugc.aweme.lite  # Android + 抖音极速版 Douyin Lite
+  - PROCESS-NAME,com.ss.android.ugc.live  # Android + 抖音火山版 Douyin Huoshan
+  - PROCESS-NAME,com.ss.iphone.ugc.Aweme  # iOS + 抖音 bundle ID
+  - PROCESS-NAME,com.ss.iphone.ugc.aweme.lite  # iOS + 抖音极速版 bundle ID
+  - PROCESS-NAME,com.zhiliaoapp.musically  # Android + iOS（两平台同一字符串）+ TikTok
+  - PROCESS-NAME,com.ss.android.ugc.trill  # Android + TikTok（亚洲/trill 变体）
+  - PROCESS-NAME,com.ss.iphone.ugc.Ame  # iOS + TikTok（trill 变体，拼写/大小写以来源为准）
+  - PROCESS-NAME,com.zhiliaoapp.musically.go  # Android + TikTok Lite
+  - PROCESS-NAME,com.ss.android.ugc.tiktok.lite  # Android + TikTok Lite（另一地区上架包，与.musically.go 是两个不同包）
+  - PROCESS-NAME,com.ss.iphone.ugc.tiktok.lite  # iOS + TikTok Lite bundle ID
+  - PROCESS-NAME,com.lemon.lvoverseas  # Android + iOS（同一字符串）+ CapCut
+  - PROCESS-NAME,com.lemon.lv  # Android + 剪映（国内版）
+  - PROCESS-NAME,com.ss.android.article.video  # Android + 西瓜视频 Xigua
+  - PROCESS-NAME,com.ss.android.article.news  # Android + 今日头条 Toutiao
+  - PROCESS-NAME,com.ss.android.article.lite  # Android + 今日头条极速版
+  - PROCESS-NAME,com.ss.android.lark  # Android + 飞书 Feishu
+  - PROCESS-NAME,com.larksuite.suite  # Android + Lark（国际版）
+  - PROCESS-NAME,com.dragon.read  # Android + 番茄小说 Fanqie
+  - PROCESS-NAME,com.dragon.read.oversea.gp  # Android + 番茄小说海外 GP 变体
+  - PROCESS-NAME,com.phoenix.read  # Android + 红果短剧 Hongguo
+  - PROCESS-NAME,com.bd.nproject  # Android + iOS（同一字符串）+ Lemon8
