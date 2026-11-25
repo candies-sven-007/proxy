@@ -1,4 +1,6 @@
 payload:
+  - PROCESS-NAME,cue.exe
+  - PROCESS-NAME,ai.manus.agents
   - DOMAIN,browser-intake-datadoghq.com
   - DOMAIN,chat.openai.com.cdn.cloudflare.net
   - DOMAIN,openai-api.arkoselabs.com
