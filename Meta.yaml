@@ -431,3 +431,6 @@ payload:
   - DOMAIN-SUFFIX,readyatdawn.com
   - DOMAIN-SUFFIX,sanzaru.com
   - DOMAIN-SUFFIX,sparkar.com
+
+  # --- 2026-11-25 08:57 +08 ---
+  - DOMAIN-SUFFIX,moltbook.com
