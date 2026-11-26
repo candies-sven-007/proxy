@@ -960,3 +960,17 @@ payload:
   - PROCESS-NAME,com.grammarly.android.keyboard  # Android Grammarly
   - PROCESS-NAME,com.duolingo  # Android Duolingo
   - PROCESS-NAME,us.nobarriers.elsa  # Android ELSA Speak
+
+  # --- 2026-11-26 08:56 +08 ---
+  - DOMAIN-SUFFIX,maritime.sh
+  - DOMAIN-SUFFIX,latch.ai
+  - DOMAIN-SUFFIX,veylan.com
+  - DOMAIN-SUFFIX,kagent.dev
+  - DOMAIN-SUFFIX,maxma.ai
+  - DOMAIN-SUFFIX,alsona.com
+  - DOMAIN-SUFFIX,obsiva.app
+  - DOMAIN-SUFFIX,quillo.tr
+  - DOMAIN-SUFFIX,tryquillo.com
+  - DOMAIN-SUFFIX,8syncdev.com
+  - PROCESS-NAME,app.obsiva  # Android Obsiva
+  - PROCESS-NAME,com.szn.quillo  # Android Quillo

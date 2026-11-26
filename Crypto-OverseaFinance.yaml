@@ -18005,3 +18005,477 @@ payload:
   - PROCESS-NAME,com.americanexpress.android.acctsvcs.us  # Android Amex US
   - PROCESS-NAME,com.mercadopago.wallet  # Android Mercado Pago
   - PROCESS-NAME,com.nu.production  # Android Nu
+
+  # --- 2026-11-26 08:56 +08 ---
+  - DOMAIN-SUFFIX,53.com
+  - DOMAIN-SUFFIX,acemoneytransfer.com
+  - DOMAIN-SUFFIX,adopem.com.do
+  - DOMAIN-SUFFIX,aegeanbalticbank.com
+  - DOMAIN-SUFFIX,afrikpay.com
+  - DOMAIN-SUFFIX,agora.pe
+  - DOMAIN-SUFFIX,alex.nl
+  - DOMAIN-SUFFIX,algbra.com
+  - DOMAIN-SUFFIX,allaria.com.ar
+  - DOMAIN-SUFFIX,alma.com
+  - DOMAIN-SUFFIX,alor.ru
+  - DOMAIN-SUFFIX,amambay.com.py
+  - DOMAIN-SUFFIX,amfraser.com.sg
+  - DOMAIN-SUFFIX,aprobit.com
+  - DOMAIN-SUFFIX,ascendmoney.com
+  - DOMAIN-SUFFIX,ascendmoneygroup.com
+  - DOMAIN-SUFFIX,asetku.co.id
+  - DOMAIN-SUFFIX,atdeeppocket.com
+  - DOMAIN-SUFFIX,atom-bank.com
+  - DOMAIN-SUFFIX,aton.ru
+  - DOMAIN-SUFFIX,axento.nl
+  - DOMAIN-SUFFIX,azampesa.co.tz
+  - DOMAIN-SUFFIX,azimut.it
+  - DOMAIN-SUFFIX,b89.io
+  - DOMAIN-SUFFIX,balance.ca
+  - DOMAIN-SUFFIX,bancapopolaredisondrio.it
+  - DOMAIN-SUFFIX,bancaromaneasca.ro
+  - DOMAIN-SUFFIX,bancatlan.com.sv
+  - DOMAIN-SUFFIX,bancoatlantida.com.ni
+  - DOMAIN-SUFFIX,bancoatlantida.com.sv
+  - DOMAIN-SUFFIX,bancocredicorp.gt
+  - DOMAIN-SUFFIX,bancodelbajio.com.mx
+  - DOMAIN-SUFFIX,bancofinantia.com
+  - DOMAIN-SUFFIX,bancoop.com
+  - DOMAIN-SUFFIX,bancopanama.com
+  - DOMAIN-SUFFIX,bancoplata.mx
+  - DOMAIN-SUFFIX,bancopopular.hn
+  - DOMAIN-SUFFIX,banhcafe.hn
+  - DOMAIN-SUFFIX,banisipanama.com
+  - DOMAIN-SUFFIX,bank-of-africa.net
+  - DOMAIN-SUFFIX,bank.yandex.ru
+  - DOMAIN-SUFFIX,bank34.ua
+  - DOMAIN-SUFFIX,bankofbarodakenya.co.ke
+  - DOMAIN-SUFFIX,bankofmontserrat.ms
+  - DOMAIN-SUFFIX,banred.com.uy
+  - DOMAIN-SUFFIX,barita.com
+  - DOMAIN-SUFFIX,bergfuerst.com
+  - DOMAIN-SUFFIX,bfa.gob.sv
+  - DOMAIN-SUFFIX,bfi.com.cu
+  - DOMAIN-SUFFIX,bfp.com.ni
+  - DOMAIN-SUFFIX,bicentenariobu.com
+  - DOMAIN-SUFFIX,billie.io
+  - DOMAIN-SUFFIX,bimo.ec
+  - DOMAIN-SUFFIX,binance.tr
+  - DOMAIN-SUFFIX,binck.nl
+  - DOMAIN-SUFFIX,bitget.com.tr
+  - DOMAIN-SUFFIX,bitkassa.nl
+  - DOMAIN-SUFFIX,bitspenda.app
+  - DOMAIN-SUFFIX,bitsum.com
+  - DOMAIN-SUFFIX,bitt.com
+  - DOMAIN-SUFFIX,bittr.com
+  - DOMAIN-SUFFIX,bitwala.com
+  - DOMAIN-SUFFIX,bity.com.br
+  - DOMAIN-SUFFIX,blink.sv
+  - DOMAIN-SUFFIX,bmm.com.co
+  - DOMAIN-SUFFIX,bnieuropa.pt
+  - DOMAIN-SUFFIX,bnk.co.kr
+  - DOMAIN-SUFFIX,boaburkinafaso.com
+  - DOMAIN-SUFFIX,boafrance.com
+  - DOMAIN-SUFFIX,boarwanda.com
+  - DOMAIN-SUFFIX,boasenegal.com
+  - DOMAIN-SUFFIX,boatanzania.co.tz
+  - DOMAIN-SUFFIX,bourso.com
+  - DOMAIN-SUFFIX,bpce.fr
+  - DOMAIN-SUFFIX,bpi.pt
+  - DOMAIN-SUFFIX,britepayments.com
+  - DOMAIN-SUFFIX,bse.com.bb
+  - DOMAIN-SUFFIX,btabank.by
+  - DOMAIN-SUFFIX,buh.ht
+  - DOMAIN-SUFFIX,bulkestate.com
+  - DOMAIN-SUFFIX,bullmarketbrokers.com
+  - DOMAIN-SUFFIX,camtransfer.com
+  - DOMAIN-SUFFIX,candis.io
+  - DOMAIN-SUFFIX,capitalbankhaiti.biz
+  - DOMAIN-SUFFIX,caribeexpress.com.do
+  - DOMAIN-SUFFIX,caricoin.com
+  - DOMAIN-SUFFIX,cayebank.bz
+  - DOMAIN-SUFFIX,cifra-broker.ru
+  - DOMAIN-SUFFIX,cinko.io
+  - DOMAIN-SUFFIX,citibank.com.pk
+  - DOMAIN-SUFFIX,citibank.cz
+  - DOMAIN-SUFFIX,click-sec.com
+  - DOMAIN-SUFFIX,cobcreditunion.com
+  - DOMAIN-SUFFIX,codi.org.mx
+  - DOMAIN-SUFFIX,coin-trade.cc
+  - DOMAIN-SUFFIX,coopealianza.fi.cr
+  - DOMAIN-SUFFIX,copilot.money
+  - DOMAIN-SUFFIX,cornertrader.ch
+  - DOMAIN-SUFFIX,creditkarma.com
+  - DOMAIN-SUFFIX,creditopiemontese.it
+  - DOMAIN-SUFFIX,credsystem.com.br
+  - DOMAIN-SUFFIX,crowdestate.eu
+  - DOMAIN-SUFFIX,crowdpear.com
+  - DOMAIN-SUFFIX,cwbank.com
+  - DOMAIN-SUFFIX,danskebank.co.uk
+  - DOMAIN-SUFFIX,degiro.de
+  - DOMAIN-SUFFIX,digido.ph
+  - DOMAIN-SUFFIX,enzona.net
+  - DOMAIN-SUFFIX,epayco.com
+  - DOMAIN-SUFFIX,erste.hr
+  - DOMAIN-SUFFIX,fasspay.com
+  - DOMAIN-SUFFIX,feelmining.com
+  - DOMAIN-SUFFIX,ficohsa.com.pa
+  - DOMAIN-SUFFIX,fidelitygroup.com
+  - DOMAIN-SUFFIX,fifththirdbank.com
+  - DOMAIN-SUFFIX,finanbest.com
+  - DOMAIN-SUFFIX,finca.ec
+  - DOMAIN-SUFFIX,flipinversiones.com
+  - DOMAIN-SUFFIX,floabank.fr
+  - DOMAIN-SUFFIX,fpj.com.py
+  - DOMAIN-SUFFIX,fransabank.by
+  - DOMAIN-SUFFIX,freo.money
+  - DOMAIN-SUFFIX,fundler.se
+  - DOMAIN-SUFFIX,george.ro
+  - DOMAIN-SUFFIX,getbittr.com
+  - DOMAIN-SUFFIX,getcleva.com
+  - DOMAIN-SUFFIX,getdivvy.com
+  - DOMAIN-SUFFIX,ginmon.de
+  - DOMAIN-SUFFIX,haitipay.com
+  - DOMAIN-SUFFIX,haitongib.com
+  - DOMAIN-SUFFIX,handelsbanken.com
+  - DOMAIN-SUFFIX,hongleongfinance.com
+  - DOMAIN-SUFFIX,hsbc.cz
+  - DOMAIN-SUFFIX,hyperjar.com
+  - DOMAIN-SUFFIX,icashpay.com.tw
+  - DOMAIN-SUFFIX,ifunded.de
+  - DOMAIN-SUFFIX,infinitepay.io
+  - DOMAIN-SUFFIX,insingergilissen.nl
+  - DOMAIN-SUFFIX,interac.ca
+  - DOMAIN-SUFFIX,invertironline.com
+  - DOMAIN-SUFFIX,itinvest.ru
+  - DOMAIN-SUFFIX,jamstockex.com
+  - DOMAIN-SUFFIX,juanhand.ph
+  - DOMAIN-SUFFIX,just-mining.com
+  - DOMAIN-SUFFIX,kempen.com
+  - DOMAIN-SUFFIX,kgi.com.sg
+  - DOMAIN-SUFFIX,kitfinance.ru
+  - DOMAIN-SUFFIX,klickex.com
+  - DOMAIN-SUFFIX,kompasbank.dk
+  - DOMAIN-SUFFIX,kotak-securities.com
+  - DOMAIN-SUFFIX,kubix.co
+  - DOMAIN-SUFFIX,lajancash.com
+  - DOMAIN-SUFFIX,lanef.com
+  - DOMAIN-SUFFIX,lascomoney.com
+  - DOMAIN-SUFFIX,letsexchange.io
+  - DOMAIN-SUFFIX,liqid.com
+  - DOMAIN-SUFFIX,lynx.nl
+  - DOMAIN-SUFFIX,m-daq.com
+  - DOMAIN-SUFFIX,m-pay.co.ke
+  - DOMAIN-SUFFIX,m2.com
+  - DOMAIN-SUFFIX,macaupass.com
+  - DOMAIN-SUFFIX,maritimefinancial.com
+  - DOMAIN-SUFFIX,maviance.com
+  - DOMAIN-SUFFIX,maximo.pe
+  - DOMAIN-SUFFIX,maybank2u.com.ph
+  - DOMAIN-SUFFIX,me-cash.com
+  - DOMAIN-SUFFIX,memobank.com
+  - DOMAIN-SUFFIX,mercoin.com
+  - DOMAIN-SUFFIX,meria.com
+  - DOMAIN-SUFFIX,meritz.co.kr
+  - DOMAIN-SUFFIX,mexem.com
+  - DOMAIN-SUFFIX,micappital.com
+  - DOMAIN-SUFFIX,mio.com.do
+  - DOMAIN-SUFFIX,mmbs.co.uk
+  - DOMAIN-SUFFIX,mobileassist.com
+  - DOMAIN-SUFFIX,moldindconbank.md
+  - DOMAIN-SUFFIX,monarchmoney.com
+  - DOMAIN-SUFFIX,mondu.ai
+  - DOMAIN-SUFFIX,monestro.com
+  - DOMAIN-SUFFIX,moneycat.ph
+  - DOMAIN-SUFFIX,moneyexpresspr.com
+  - DOMAIN-SUFFIX,moneymatch.co
+  - DOMAIN-SUFFIX,montrose.io
+  - DOMAIN-SUFFIX,moss.com
+  - DOMAIN-SUFFIX,mutualistapichincha.com
+  - DOMAIN-SUFFIX,my.bankvostok.com.ua
+  - DOMAIN-SUFFIX,myasset.com
+  - DOMAIN-SUFFIX,myespresso.com
+  - DOMAIN-SUFFIX,myxeno.com
+  - DOMAIN-SUFFIX,nationalbank.vg
+  - DOMAIN-SUFFIX,ncbcapitalmarkets.com
+  - DOMAIN-SUFFIX,newburybs.co.uk
+  - DOMAIN-SUFFIX,nibc.nl
+  - DOMAIN-SUFFIX,nnek.nl
+  - DOMAIN-SUFFIX,nordnet.com
+  - DOMAIN-SUFFIX,nottingham.co.uk
+  - DOMAIN-SUFFIX,ocft.com
+  - DOMAIN-SUFFIX,ofgbancorp.com
+  - DOMAIN-SUFFIX,ohv.nl
+  - DOMAIN-SUFFIX,onefamily.com
+  - DOMAIN-SUFFIX,oney.fr
+  - DOMAIN-SUFFIX,pagadito.com
+  - DOMAIN-SUFFIX,palawanpay.com
+  - DOMAIN-SUFFIX,pangeamoneytransfer.com
+  - DOMAIN-SUFFIX,payme.vn
+  - DOMAIN-SUFFIX,paymentez.com
+  - DOMAIN-SUFFIX,paypay-sec.co.jp
+  - DOMAIN-SUFFIX,pbcom.com.ph
+  - DOMAIN-SUFFIX,pcbl.com.np
+  - DOMAIN-SUFFIX,pecunpay.com
+  - DOMAIN-SUFFIX,penfold.com
+  - DOMAIN-SUFFIX,pesonet.ph
+  - DOMAIN-SUFFIX,pibank.co
+  - DOMAIN-SUFFIX,pivdenny.com
+  - DOMAIN-SUFFIX,platacard.mx
+  - DOMAIN-SUFFIX,pledg.co
+  - DOMAIN-SUFFIX,plum.com
+  - DOMAIN-SUFFIX,pocketbitcoin.com
+  - DOMAIN-SUFFIX,pockit.com
+  - DOMAIN-SUFFIX,portfoliopersonal.com
+  - DOMAIN-SUFFIX,profitus.com
+  - DOMAIN-SUFFIX,promerica.com.gt
+  - DOMAIN-SUFFIX,provenwealth.com
+  - DOMAIN-SUFFIX,psbbank.com
+  - DOMAIN-SUFFIX,publicworkers.bb
+  - DOMAIN-SUFFIX,qashier.com
+  - DOMAIN-SUFFIX,qik.do
+  - DOMAIN-SUFFIX,qpaypro.com
+  - DOMAIN-SUFFIX,quicktrade.com.ar
+  - DOMAIN-SUFFIX,rathi.com
+  - DOMAIN-SUFFIX,rebellionpay.com
+  - DOMAIN-SUFFIX,reinvest24.com
+  - DOMAIN-SUFFIX,religareonline.com
+  - DOMAIN-SUFFIX,rocketmoney.com
+  - DOMAIN-SUFFIX,rwsbank.com.ua
+  - DOMAIN-SUFFIX,sabadell.com
+  - DOMAIN-SUFFIX,savy.lt
+  - DOMAIN-SUFFIX,scbl.ws
+  - DOMAIN-SUFFIX,sejaefi.com.br
+  - DOMAIN-SUFFIX,selcom.bank
+  - DOMAIN-SUFFIX,selcom.net
+  - DOMAIN-SUFFIX,shares.io
+  - DOMAIN-SUFFIX,shinhansec.com
+  - DOMAIN-SUFFIX,shopeepay.co.id
+  - DOMAIN-SUFFIX,shopeepay.com.my
+  - DOMAIN-SUFFIX,shurjopay.com.bd
+  - DOMAIN-SUFFIX,sideshift.ai
+  - DOMAIN-SUFFIX,simple.com.bo
+  - DOMAIN-SUFFIX,singfinance.com
+  - DOMAIN-SUFFIX,sistarbanc.com.uy
+  - DOMAIN-SUFFIX,sky.bank
+  - DOMAIN-SUFFIX,slimpay.com
+  - DOMAIN-SUFFIX,smfb.co.tz
+  - DOMAIN-SUFFIX,societegenerale.fr
+  - DOMAIN-SUFFIX,sofisadireto.com.br
+  - DOMAIN-SUFFIX,solana.ai
+  - DOMAIN-SUFFIX,solid.ru
+  - DOMAIN-SUFFIX,spei.org.mx
+  - DOMAIN-SUFFIX,spenda.africa
+  - DOMAIN-SUFFIX,spenn.com
+  - DOMAIN-SUFFIX,spiir.dk
+  - DOMAIN-SUFFIX,spsbbank.sr
+  - DOMAIN-SUFFIX,staffordrailwaybs.co.uk
+  - DOMAIN-SUFFIX,standardbank.com
+  - DOMAIN-SUFFIX,standardchartered.com.hk
+  - DOMAIN-SUFFIX,stgeorgesbank.com.pa
+  - DOMAIN-SUFFIX,stockex.co.tt
+  - DOMAIN-SUFFIX,stp.mx
+  - DOMAIN-SUFFIX,suitsme.co.uk
+  - DOMAIN-SUFFIX,suncash.me
+  - DOMAIN-SUFFIX,swapspace.co
+  - DOMAIN-SUFFIX,switch.com.iq
+  - DOMAIN-SUFFIX,taifungbank.com.mo
+  - DOMAIN-SUFFIX,tcbbank.com.tw
+  - DOMAIN-SUFFIX,tcbc.tc
+  - DOMAIN-SUFFIX,tchotchopay.com
+  - DOMAIN-SUFFIX,tetratrust.com
+  - DOMAIN-SUFFIX,tokenx.finance
+  - DOMAIN-SUFFIX,ton.com.br
+  - DOMAIN-SUFFIX,tradesmartonline.in
+  - DOMAIN-SUFFIX,tradestation.com
+  - DOMAIN-SUFFIX,transfermovil.etecsa.cu
+  - DOMAIN-SUFFIX,tranzak.net
+  - DOMAIN-SUFFIX,trocador.app
+  - DOMAIN-SUFFIX,tunaiku.com
+  - DOMAIN-SUFFIX,tyba.com.co
+  - DOMAIN-SUFFIX,ubacongobrazzaville.com
+  - DOMAIN-SUFFIX,ubakenya.com
+  - DOMAIN-SUFFIX,ubardc.com
+  - DOMAIN-SUFFIX,ubasenegal.com
+  - DOMAIN-SUFFIX,ubazambia.com
+  - DOMAIN-SUFFIX,uni5pay.sr
+  - DOMAIN-SUFFIX,unimoni.com
+  - DOMAIN-SUFFIX,unitransfer.com
+  - DOMAIN-SUFFIX,vaamo.de
+  - DOMAIN-SUFFIX,vcsc.com.vn
+  - DOMAIN-SUFFIX,veles-capital.ru
+  - DOMAIN-SUFFIX,ventura1.com
+  - DOMAIN-SUFFIX,visanet.com.gt
+  - DOMAIN-SUFFIX,visionfund.ec
+  - DOMAIN-SUFFIX,vmgroup.com
+  - DOMAIN-SUFFIX,vstbank.ua
+  - DOMAIN-SUFFIX,wallex.asia
+  - DOMAIN-SUFFIX,wb-bank.ru
+  - DOMAIN-SUFFIX,wbpay.ru
+  - DOMAIN-SUFFIX,wechatpay.com
+  - DOMAIN-SUFFIX,wepa.com.py
+  - DOMAIN-SUFFIX,whitebit.com.tr
+  - DOMAIN-SUFFIX,wizink.pt
+  - DOMAIN-SUFFIX,wonderfi.com
+  - DOMAIN-SUFFIX,wuestenrot.hr
+  - DOMAIN-SUFFIX,xepelin.com
+  - DOMAIN-SUFFIX,yesinvest.in
+  - DOMAIN-SUFFIX,ynab.com
+  - DOMAIN-SUFFIX,yorkshirebank.co.uk
+  - DOMAIN-SUFFIX,youbiz.com
+  - DOMAIN-SUFFIX,yuantabank.com.tw
+  - DOMAIN-SUFFIX,zebitcoin.com
+  - DOMAIN-SUFFIX,zebitex.com
+  - DOMAIN-SUFFIX,zeta.com.py
+  - DOMAIN-SUFFIX,zettle.com
+  - DOMAIN-SUFFIX,zipmex.com
+  - DOMAIN-SUFFIX,zoop.com.br
+  - PROCESS-NAME,DBO-Soft.iBank2UA.VostokBank  # iOS **vstbank.ua**
+  - PROCESS-NAME,ar.com.quicktrade.app1  # Android Quicktrade (Grupo SBS), trading
+  - PROCESS-NAME,bank.memo.ios  # iOS **memobank.com**
+  - PROCESS-NAME,bank.sky.app  # Android **sky.bank**
+  - PROCESS-NAME,br.com.gerencianet.app  # Android Efí (formerly Gerencianet), payment/fintech
+  - PROCESS-NAME,br.com.stone.ton  # Android Ton (Stone), payment
+  - PROCESS-NAME,buh.connect  # Android Banque de l'Union Haïtienne (BUH), bank (corr
+  - PROCESS-NAME,cc.coin_trade.app  # Android CoinTrade
+  - PROCESS-NAME,co.epayco.release  # Android ePayco, payment gateway
+  - PROCESS-NAME,co.ke.ekenya.creditbank  # Android Credit Bank Kenya — CB Konnect
+  - PROCESS-NAME,co.pibank.customers  # Android Pibank Colombia, digital bank
+  - PROCESS-NAME,co.you.youapp  # Android YouTrip
+  - PROCESS-NAME,com.Oney.Oney  # iOS **oney.fr**
+  - PROCESS-NAME,com.acemoneytransfer.android  # Android ACE Money Transfer
+  - PROCESS-NAME,com.afrikpay.account  # Android AfrikPay
+  - PROCESS-NAME,com.algbra.Banking  # iOS **algbra.com**
+  - PROCESS-NAME,com.almapay.portal  # iOS **alma.com**
+  - PROCESS-NAME,com.app.huduma  # Android Selcom
+  - PROCESS-NAME,com.atombank.app  # iOS **atom-bank.com**
+  - PROCESS-NAME,com.atombank.release  # Android **atom-bank.com**
+  - PROCESS-NAME,com.azampay.azampesa  # Android AzamPesa
+  - PROCESS-NAME,com.bancatlan.aolapps.bancamovilatlantida  # Android Banco Atlántida El Salvador, bank (ProCredit 
+  - PROCESS-NAME,com.bancopopular.bpopularmovil  # Android Banco Popular, bank
+  - PROCESS-NAME,com.bancosabadell.sabloc  # iOS **sabadell.com**
+  - PROCESS-NAME,com.banisi.mobile  # Android Banisi, bank (correct domain; banisi
+  - PROCESS-NAME,com.bankofbaroda.mpassbookke  # Android Bank of Baroda Kenya
+  - PROCESS-NAME,com.barodakenya  # Android Bank of Baroda Kenya
+  - PROCESS-NAME,com.bmbapp  # Android Bull Market Brokers, trading
+  - PROCESS-NAME,com.boursorama.boursoclient  # iOS **bourso.com**
+  - PROCESS-NAME,com.bullmarketbrokers.bp  # Android BullPay (Bull Market Brokers)
+  - PROCESS-NAME,com.cinko.wallet  # Android CiNKO wallet (Island Pay), crypto/digital wal
+  - PROCESS-NAME,com.citi.citimobile  # Android **citibank.cz**
+  - PROCESS-NAME,com.clairmail.fth  # Android Fifth Third Bank, bank
+  - PROCESS-NAME,com.creditkarma.mobile  # Android Credit Karma, fintech/credit
+  - PROCESS-NAME,com.cwbank.mobileapp.prod  # Android Canadian Western Bank, bank
+  - PROCESS-NAME,com.danskebank.mobilebank3.uk  # Android **danskebank.co.uk**
+  - PROCESS-NAME,com.danskebank.mobilebank3uk  # iOS **danskebank.co.uk**
+  - PROCESS-NAME,com.digitalgeko.promerica  # Android Banco Promerica Guatemala, bank
+  - PROCESS-NAME,com.divvypay.Divvy  # Android Divvy / BILL Spend & Expense, payment/expense
+  - PROCESS-NAME,com.elmaAndroidJBB  # Android Kingdom Bank Kenya — KB Mobile
+  - PROCESS-NAME,com.fasspay.biz.wallet.fp  # Android FassPay
+  - PROCESS-NAME,com.ficohsa.activities  # Android Ficohsa (Grupo Financiero Ficohsa; HQ Hondura
+  - PROCESS-NAME,com.ficohsa.pensionesycensantias  # Android Ficohsa Pensiones y Cesantías
+  - PROCESS-NAME,com.flipinversiones.app  # Android Flip Inversiones, investment (correct domain;
+  - PROCESS-NAME,com.galoyapp  # Android Blink (Bitcoin Beach Wallet), Bitcoin wallet
+  - PROCESS-NAME,com.getcleva.cleva_mobile_app  # Android Cleva
+  - PROCESS-NAME,com.getmoss.ios  # iOS **moss.com**
+  - PROCESS-NAME,com.getpenfold.app  # Android **penfold.com**
+  - PROCESS-NAME,com.ginmon.mobile  # iOS **ginmon.de**
+  - PROCESS-NAME,com.handelsbanken.mobile.android  # Android Handelsbanken SE Privat
+  - PROCESS-NAME,com.handelsbanken.mobile.android.ukpriv  # Android Handelsbanken UK Individual
+  - PROCESS-NAME,com.icb.pibank.app  # Android Pibank USA
+  - PROCESS-NAME,com.inno.Oney  # iOS **oney.fr**
+  - PROCESS-NAME,com.iol.brokerarg  # Android InvertirOnline (IOL Inversiones), trading
+  - PROCESS-NAME,com.ios.Plum  # iOS **plum.com**
+  - PROCESS-NAME,com.izettle.app  # iOS **zettle.com**
+  - PROCESS-NAME,com.juanhand.fast.cash.peso.loan.app  # Android JuanHand
+  - PROCESS-NAME,com.lanef.part  # iOS **lanef.com**
+  - PROCESS-NAME,com.m2.exchange  # Android M2
+  - PROCESS-NAME,com.mecash.app  # Android meCash (Oxford 21 Ltd
+  - PROCESS-NAME,com.mode.gblkenya.ui  # Android Guardian Bank Kenya — M-Guardian (new
+  - PROCESS-NAME,com.mofirst.xpressmoney.ui  # Android Xpress Money — remittance
+  - PROCESS-NAME,com.monarchmoney.mobile  # Android Monarch Money, budgeting
+  - PROCESS-NAME,com.moneyfarm.enterpriseapp  # iOS **moneyfarm.com**
+  - PROCESS-NAME,com.moneyfarm.moneyfarm  # Android **moneyfarm.com**
+  - PROCESS-NAME,com.moneytap.bnpl.app  # Android Freo (ex-MoneyTap
+  - PROCESS-NAME,com.nordnet  # Android **nordnet.com**
+  - PROCESS-NAME,com.nordnet.Nordnet  # iOS **nordnet.com**
+  - PROCESS-NAME,com.nutmeg.app.Nutmeg  # iOS **nutmeg.com**
+  - PROCESS-NAME,com.nutmeg.nutmeg  # Android **nutmeg.com**
+  - PROCESS-NAME,com.pagadito.app  # Android Pagadito, payment gateway
+  - PROCESS-NAME,com.palawanpay.ewallet  # Android PalawanPay
+  - PROCESS-NAME,com.pangea.android  # Android Pangea Money Transfer, remittance
+  - PROCESS-NAME,com.payme.app.user  # Android PayME (Ví PayME
+  - PROCESS-NAME,com.payme.appmerchant  # Android PayME
+  - PROCESS-NAME,com.pioneer.mpay  # Android M:Pay (Pioneer FSA Ltd
+  - PROCESS-NAME,com.pockit.mobile.android  # Android **pockit.com**
+  - PROCESS-NAME,com.pockit.mobile.ios  # iOS **pockit.com**
+  - PROCESS-NAME,com.portfoliopersonal.appmobile  # Android Portfolio Personal (PPI), trading
+  - PROCESS-NAME,com.promericabanco.mobile.promericapay  # Android Promerica Pay
+  - PROCESS-NAME,com.sbg.mobile.phone  # Android Standard Bank Group
+  - PROCESS-NAME,com.sbsa.mobile.sme  # Android Standard Bank Group
+  - PROCESS-NAME,com.selcompesa  # Android Selcom
+  - PROCESS-NAME,com.sigmaprocess.MetroBank  # Android Metrobank Panamá
+  - PROCESS-NAME,com.silvrr.finance  # Android Asetku
+  - PROCESS-NAME,com.sixdee.mfs.mmg.customer  # Android MMG Guyana
+  - PROCESS-NAME,com.skipcash  # Android SkipCash, Qatar — payments
+  - PROCESS-NAME,com.smobilpayagentapp  # Android Maviance (Smobilpay
+  - PROCESS-NAME,com.soteica.pmmovil.app  # Android Banco Promerica Móvil (Honduras)
+  - PROCESS-NAME,com.spenda  # Android Spenda (Spenda Africa Ltd
+  - PROCESS-NAME,com.standardbank.ent.bolaphone.release  # Android Standard Bank Group
+  - PROCESS-NAME,com.suitsme.app  # Android **suitsme.co.uk**
+  - PROCESS-NAME,com.t2pco.deeppocket  # Android DeepPocket (T2P
+  - PROCESS-NAME,com.tractr.hyperjar  # Android **hyperjar.com**
+  - PROCESS-NAME,com.tractr.tractr  # iOS **hyperjar.com**
+  - PROCESS-NAME,com.tradestation.MobileTrading  # Android TradeStation, trading
+  - PROCESS-NAME,com.truebill  # Android Rocket Money, budgeting/fintech
+  - PROCESS-NAME,com.tunaikumobile.app  # Android Tunaiku
+  - PROCESS-NAME,com.tyba.app  # Android Tyba, investment
+  - PROCESS-NAME,com.ubanquity.redd.uba  # Android UBA Kenya
+  - PROCESS-NAME,com.unimoni.customer  # Android Unimoni (ex-UAE Exchange
+  - PROCESS-NAME,com.unimonioman  # Android Unimoni (ex-UAE Exchange
+  - PROCESS-NAME,com.unionpay.scomapp  # Android Uni5Pay+, payment wallet (Southern Commercial
+  - PROCESS-NAME,com.vostok.BV  # iOS **vstbank.ua**
+  - PROCESS-NAME,com.vostok.bv  # Android **vstbank.ua**
+  - PROCESS-NAME,com.whitebit.android  # Android **whitebit.com.tr**
+  - PROCESS-NAME,com.whitebit.tr.android  # Android **whitebit.com.tr**
+  - PROCESS-NAME,com.xeno.investment  # Android Xeno
+  - PROCESS-NAME,com.youneedabudget.evergreen.app  # Android YNAB (You Need A Budget), budgeting
+  - PROCESS-NAME,de.liqid.app  # iOS **liqid.com**
+  - PROCESS-NAME,dif.tech.plata  # Android Plata Card, fintech card
+  - PROCESS-NAME,dk.blockbonds.spenn  # Android SPENN
+  - PROCESS-NAME,es.pecunpay.Cisneros  # iOS **pecunpay.com**
+  - PROCESS-NAME,es.pibank.customers  # Android Pibank Spain
+  - PROCESS-NAME,fi.wonder.labs.wallet  # Android WonderFi, crypto
+  - PROCESS-NAME,fr.banqueaccord.iphoneapp  # iOS **oney.fr**
+  - PROCESS-NAME,fr.oney.mobile.mescomptes  # Android **oney.fr**
+  - PROCESS-NAME,goova.sofisa.client.v2  # Android Sofisa Direto, Brazil, digital bank
+  - PROCESS-NAME,io.candis  # iOS **candis.io**
+  - PROCESS-NAME,io.cloudwalk.infinitepaydash  # Android InfinitePay (CloudWalk), payment
+  - PROCESS-NAME,io.shares.app  # Android **shares.io**
+  - PROCESS-NAME,io.thoughtbox.unimoni  # Android Unimoni (ex-UAE Exchange
+  - PROCESS-NAME,ios.pivdenny.online  # iOS **pivdenny.com**
+  - PROCESS-NAME,ma.s2m.egate.agent  # Android Switch
+  - PROCESS-NAME,ma.s2m.egate.customer  # Android Switch
+  - PROCESS-NAME,maximo.peru.pe  # Android Máximo, fintech card/wallet
+  - PROCESS-NAME,mobi.societegenerale.mobile.lappli  # Android **societegenerale.fr**
+  - PROCESS-NAME,mobi.societegenerale.mobile.lapplipro  # Android **societegenerale.fr**
+  - PROCESS-NAME,mx.com.bb.b2  # Android BajioNet Móvil Empresarial
+  - PROCESS-NAME,net.inverline.bancosabadell.officelocator.android  # Android **sabadell.com**
+  - PROCESS-NAME,net.tranzak.tranzak  # Android Tranzak
+  - PROCESS-NAME,nl.degiro.trader  # Android **degiro.de**
+  - PROCESS-NAME,om.thawani.thawaniApp  # Android Thawani Pay, Oman — payments
+  - PROCESS-NAME,om.thawani.v12  # Android Thawani Tajer
+  - PROCESS-NAME,org.microemu.android.model.common.VTUserApplicationBNBJMB  # Android Banco del Bajío (BanBajío), bank
+  - PROCESS-NAME,ph.loans.mobile  # Android Digido
+  - PROCESS-NAME,pt.bancobpi.BPI-App-Shell  # iOS **bpi.pt**
+  - PROCESS-NAME,pt.bancobpi.mobile.fiabilizacao  # Android **bpi.pt**
+  - PROCESS-NAME,ru.ftc.faktura.jur.wildberries  # Android **wb-bank.ru**
+  - PROCESS-NAME,ru.tradernet.terminal  # iOS **cifra-broker.ru**
+  - PROCESS-NAME,se.handelsbanken.TelesvarIBilder  # iOS Handelsbanken SE Privat
+  - PROCESS-NAME,se.handelsbanken.mobi.ukPrivIphone  # iOS Handelsbanken UK Individual
+  - PROCESS-NAME,sv.gob.bfa.bmovil  # Android Banco de Fomento Agropecuario (BFA), El Salva
+  - PROCESS-NAME,ua.com.cs.ifobs.sky  # Android **sky.bank**
+  - PROCESS-NAME,ua.sky.ifobs.legal  # iOS **sky.bank**
+  - PROCESS-NAME,uk.co.hsbc.hsbcukmobilebanking  # Android **hsbc.cz**
+  - PROCESS-NAME,uk.co.tandem  # iOS **tandem.co.uk**
+  - PROCESS-NAME,uk.co.tandem.android.app  # Android **tandem.co.uk**
+  - PROCESS-NAME,uk.getchip.chip  # iOS **getchip.uk**
