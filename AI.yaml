@@ -974,3 +974,36 @@ payload:
   - DOMAIN-SUFFIX,8syncdev.com
   - PROCESS-NAME,app.obsiva  # Android Obsiva
   - PROCESS-NAME,com.szn.quillo  # Android Quillo
+
+  # --- 2026-11-27 08:56 +08 ---
+  - DOMAIN-SUFFIX,agentfleets.cn
+  - DOMAIN-SUFFIX,agents-fleet.dev
+  - DOMAIN-SUFFIX,airbots.ai
+  - DOMAIN-SUFFIX,capcutgpt.com
+  - DOMAIN-SUFFIX,deskfleet.dev
+  - DOMAIN-SUFFIX,deskfleet.org
+  - DOMAIN-SUFFIX,extraorbital.dev
+  - DOMAIN-SUFFIX,haicall.in
+  - DOMAIN-SUFFIX,iwantmy.app
+  - DOMAIN-SUFFIX,labnode.space
+  - DOMAIN-SUFFIX,memoryworks.app
+  - DOMAIN-SUFFIX,myclaw.ai
+  - DOMAIN-SUFFIX,o8.run
+  - DOMAIN-SUFFIX,oc8.ai
+  - DOMAIN-SUFFIX,openotto.io
+  - DOMAIN-SUFFIX,ottante.com
+  - DOMAIN-SUFFIX,pydantic.dev
+  - DOMAIN-SUFFIX,realmemory.ai
+  - DOMAIN-SUFFIX,remlabs.ai
+  - DOMAIN-SUFFIX,remlabs.dev
+  - DOMAIN-SUFFIX,superframes.io
+  - DOMAIN-SUFFIX,unify.ai
+  - DOMAIN-SUFFIX,vibecode.surf
+  - DOMAIN-SUFFIX,viktor.com
+  - PROCESS-NAME,Ottante
+  - PROCESS-NAME,Otto
+  - PROCESS-NAME,extraorbital
+  - PROCESS-NAME,fleet
+  - PROCESS-NAME,o8
+  - PROCESS-NAME,ottoctl
+  - PROCESS-NAME,pax
