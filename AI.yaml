@@ -1009,3 +1009,44 @@ payload:
   - PROCESS-NAME,o8
   - PROCESS-NAME,ottoctl
   - PROCESS-NAME,pax
+  # --- 2026-11-28 08:57 +08 ---
+  - DOMAIN-SUFFIX,contral.ai
+  - DOMAIN-SUFFIX,pushary.com
+  - DOMAIN-SUFFIX,depost.ai
+  - DOMAIN-SUFFIX,arbitrica.com
+  - DOMAIN-SUFFIX,heywisp.ai
+  - DOMAIN,wisp.pidster.com
+  - DOMAIN,wisp.fuselabssoftware.com
+  - DOMAIN-SUFFIX,tryprosed.com
+  - DOMAIN-SUFFIX,upsolve.ai
+  - DOMAIN-SUFFIX,wizstar.com
+  - DOMAIN-SUFFIX,onsetapp.in
+  - DOMAIN-SUFFIX,aicanvas.me
+  - DOMAIN-SUFFIX,oiiyao.com
+  - DOMAIN-SUFFIX,ontargetcreators.com
+  - DOMAIN-SUFFIX,ploid.com
+  - DOMAIN-SUFFIX,ploid.ai
+  - DOMAIN-SUFFIX,chickytutor.com
+  - DOMAIN-SUFFIX,gpyou.ai
+  - DOMAIN,apps.codenotary.com
+  - DOMAIN-SUFFIX,parallelcode.app
+  - DOMAIN-SUFFIX,whispspace.com
+  - DOMAIN-SUFFIX,ctrlall.app
+  - DOMAIN,enclave.eclipse.dev
+  - DOMAIN-SUFFIX,whipdesk.com
+  - DOMAIN-SUFFIX,woomool.ai
+  - DOMAIN-SUFFIX,snibl.app
+  - DOMAIN-SUFFIX,slaycamera.com
+  - DOMAIN-SUFFIX,patch.gg
+  - DOMAIN-SUFFIX,usehub.dev
+  - PROCESS-NAME,pushary
+  - PROCESS-NAME,ploid
+  - PROCESS-NAME,gpyou
+  - PROCESS-NAME,whipdesk
+  - PROCESS-NAME,pch
+  - PROCESS-NAME,wisp
+  - PROCESS-NAME,ctrlall
+  - PROCESS-NAME,Contral
+  - PROCESS-NAME,Wisp
+  - PROCESS-NAME,Whisp
+  - PROCESS-NAME,Snibl
